@@ -1,0 +1,9 @@
+{
+  "geometry": "sphere",
+  "population": "BM0",
+  "source_fingerprint": "c21411f6373aaba8ee26f737ecfe9c730df9d49878ea4d539f5a70a352269b68",
+  "compiler": "g++ (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0",
+  "architecture": "x86-64",
+  "MAXNODES": 256,
+  "executable_sha256": "189981c617799653b633490e68eee5176a54f8572e3df98878d7e7b5217aa70a"
+}

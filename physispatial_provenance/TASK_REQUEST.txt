@@ -1,0 +1,280 @@
+Continúa el proyecto de reproducibilidad de los
+tres geometry unit tests de PhysiSpatial.
+
+CAMBIO IMPORTANTE DE ARQUITECTURA
+
+NO quiero un repositorio independiente con
+src/, models/ y geometries/.
+
+Quiero un repositorio basado directamente en
+PhysiBoSS, conservando su estructura original.
+
+Utiliza como referencia la estructura habitual de
+los sample projects de PhysiBoSS 2.2.3.
+
+OBJETIVO
+
+Preparar un PhysiBoSS completo con tres nuevos
+proyectos dentro de:
+
+sample_projects_intracellular/boolean/
+
+Los proyectos serán:
+
+1. physispatial_prism
+2. physispatial_cylinder
+3. physispatial_sphere
+
+========================================
+1. ESTRUCTURA
+========================================
+
+Cada proyecto debe conservar la estructura
+habitual de un sample project de PhysiBoSS:
+
+physispatial_cylinder/
+    main.cpp
+    Makefile
+    custom_modules/
+    config/
+    README.md
+
+Lo mismo para prism y sphere.
+
+Dentro de config/ incluir los archivos necesarios:
+
+- PhysiCell_settings.xml
+- Modelos booleanos .bnd
+- Configuraciones MaBoSS .cfg
+- Archivos de inicialización celular
+- Archivos de fuentes y geometría
+- Otros recursos utilizados realmente
+
+Adaptar los nombres y subdirectorios a la
+estructura que requiera cada proyecto original.
+
+NO inventar archivos o implementaciones.
+
+========================================
+2. CONSERVAR PHYSIBOSS
+========================================
+
+Partir de la versión original de PhysiBoSS
+compatible con nuestras simulaciones.
+
+Conservar:
+
+- core/
+- modules/
+- BioFVM/
+- addons/
+- Makefile principal
+- Dependencias
+- Sample projects existentes
+
+No modificar componentes internos de PhysiBoSS
+salvo cuando sea imprescindible para recuperar
+el comportamiento original.
+
+Documentar versión, commit y modificaciones.
+
+El ZIP debe contener una distribución completa
+y funcional de PhysiBoSS con nuestros tres tests.
+
+Respetar las licencias y atribuciones originales.
+
+========================================
+3. RECUPERAR LOS TESTS ORIGINALES
+========================================
+
+Localizar en MN5 las implementaciones originales
+de Prism, Cylinder y Sphere utilizadas en el
+trabajo de PhysiSpatial/Ramachandran.
+
+Recuperar:
+
+- Código C++.
+- Configuraciones XML.
+- Modelos booleanos.
+- Condiciones iniciales.
+- Definición de fuentes farmacológicas.
+- Parámetros de difusión.
+- Condiciones de contorno.
+- Parámetros de las poblaciones celulares.
+
+Preservar la física de las simulaciones originales.
+
+No reconstruir los modelos desde cero.
+
+Si las implementaciones requieren diferencias,
+mantenerlas dentro de sus respectivos proyectos.
+
+========================================
+4. INTEGRACIÓN CON MAKE
+========================================
+
+Añadir tres targets al Makefile principal:
+
+make physispatial-prism
+make physispatial-cylinder
+make physispatial-sphere
+
+Cada target debe cargar su proyecto del mismo
+modo que los sample projects originales de PhysiBoSS.
+
+Debe copiar correctamente:
+
+- main.cpp
+- Makefile
+- custom_modules/
+- config/
+
+Después debe poder compilarse mediante:
+
+make -j
+
+Comprobar que el cambio entre proyectos funciona
+con el procedimiento estándar de PhysiBoSS.
+
+No alterar los targets originales.
+
+========================================
+5. DIFUSIÓN Y CONCENTRACIÓN
+========================================
+
+Quiero poder modificar fácilmente:
+
+D = coeficiente de difusión.
+C = concentración administrada.
+
+Priorizar que estos parámetros puedan cambiarse
+desde PhysiCell_settings.xml sin tocar código C++.
+
+Verificar sus ubicaciones reales y sus unidades.
+
+Si algún parámetro está hardcoded:
+- Identificarlo.
+- Evaluar cómo parametrizarlo sin cambiar la física.
+- Mantener compatibilidad con el caso original.
+
+Incluir valores originales por defecto.
+
+Debe ser posible ejecutar distintas combinaciones
+D/C sin recompilar para cada combinación,
+siempre que la implementación lo permita.
+
+========================================
+6. POBLACIONES CELULARES
+========================================
+
+Conservar los modelos originales BM0, BM1 y BM2.
+
+No modificar sus redes booleanas,
+parámetros farmacodinámicos ni mappings.
+
+Documentar cómo seleccionar las poblaciones
+o reproducir las condiciones originales.
+
+No asumir que los tres tests utilizan exactamente
+la misma configuración celular sin verificarlo.
+
+========================================
+7. PARAMETER SWEEPS
+========================================
+
+Añadir una utilidad sencilla para ejecutar
+múltiples combinaciones D/C.
+
+Mantenerla separada de los sample projects,
+sin modificar su estructura convencional.
+
+Permitir seleccionar:
+
+- Geometry: prism, cylinder, sphere.
+- Diffusion.
+- Concentration.
+- Población, cuando corresponda.
+- Semilla aleatoria.
+
+Cada combinación debe generar sus propios
+outputs sin sobrescribir ejecuciones anteriores.
+
+Incluir soporte opcional para SLURM en MN5.
+
+========================================
+8. VALIDACIÓN
+========================================
+
+Comprobar:
+
+1. Que los tres proyectos cargan correctamente.
+2. Que compilan con el Makefile correspondiente.
+3. Que los modelos booleanos se encuentran.
+4. Que las fuentes se inicializan correctamente.
+5. Que D y C se aplican realmente.
+6. Que las dimensiones geométricas coinciden
+   con las originales.
+7. Que las condiciones iniciales y de contorno
+   permanecen inalteradas.
+8. Que se generan outputs válidos.
+
+Realizar pruebas mínimas de funcionamiento.
+
+No ejecutar barridos completos.
+
+Comparar las configuraciones recuperadas
+con las simulaciones originales.
+
+Documentar cualquier diferencia.
+
+========================================
+9. DOCUMENTACIÓN
+========================================
+
+Crear un README general en inglés que explique:
+
+- Qué es PhysiSpatial.
+- Qué representan los tres unit tests.
+- Cómo compilar PhysiBoSS.
+- Cómo cargar cada sample project.
+- Cómo modificar concentración y difusión.
+- Cómo ejecutar simulaciones.
+- Cómo realizar barridos D/C.
+- Cómo utilizar MN5.
+- Cómo localizar los resultados.
+
+Cada proyecto debe tener también su propio
+README con sus particularidades geométricas.
+
+========================================
+10. ENTREGA
+========================================
+
+Crear:
+
+PhysiBoSS_PhysiSpatial_UnitTests.zip
+
+El ZIP debe contener:
+
+- PhysiBoSS completo.
+- Los tres sample projects integrados.
+- Makefile principal actualizado.
+- Modelos booleanos originales.
+- Configuraciones parametrizables.
+- Scripts de barridos D/C.
+- Documentación.
+- Resultados de validación.
+- Informe de procedencia del código.
+
+Preparado para crear posteriormente un
+repositorio GitHub basado en PhysiBoSS.
+
+No publicar automáticamente.
+No modificar simulaciones originales.
+No ejecutar simulaciones costosas.
+No instalar software innecesario.
+No realizar monitorización continua.
+
+Si no es posible recuperar algún componente
+original, documentarlo en lugar de sustituirlo
+por una implementación aproximada.

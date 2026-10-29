@@ -1,0 +1,443 @@
+Using config file config/run.xml ... 
+Disabling automated spring adhesions and detachments!
+Using system clock for random seed
+Setting up RNG with seed 3685320538
+1
+dc? 1
+User parameters in XML config file: 
+Bool parameters:: 
+read_init: 1 [dimensionless]
+
+Int parameters:: 
+random_seed: 42 [dimensionless]
+number_of_cells: 0 [none]
+
+Double parameters:: 
+time_remove_o2: 35000 [dimensionless]
+o2_conc1: 38 [dimensionless]
+ecm_conc: 20 [dimensionless]
+ecm_value: 0.01 [dimensionless]
+cell_ecm_repulsion: 15 [dimensionless]
+drug_conc: 2e-07 [dimensionless]
+hill_coeff_pressure: 15 [1/min]
+pressure_half: 1 [1/min]
+drug_X_half_max: 1e-07 [mM]
+drug_X_Hill_coeff: 2 [dimensionless]
+drug_X_permeability: 0.1 [dimensionless]
+div_initialization: 0 [dimensionless]
+
+String parameters:: 
+blood_source_file: ./config/BM0/prisma_wall_drug_2.tsv [dimensionless]
+ecm_density_file: ./config/BM0/ecm_prisma.tsv [dimensionless]
+substrate_to_monitor: ecm [dimensionless]
+drug_X_target: TNFalpha [dimensionless]
+
+
+which boundaries?
+1 1 1 1 1 1
+
+Microenvironment summary: microenvironment: 
+
+Mesh information: 
+type: uniform Cartesian
+Domain: [-600,580] micron x [-180,180] micron x [-180,180] micron
+   resolution: dx = 20 micron
+   voxels: 19116
+   voxel faces: 0
+   volume: 1.52928e+08 cubic micron
+Densities: (3 total)
+   oxygen:
+     units: mmHg
+     diffusion coefficient: 100000 micron^2 / min
+     decay rate: 0.1 min^-1
+     diffusion length scale: 1000 micron
+     initial condition: 38 mmHg
+     boundary condition: 0 mmHg (enabled: false)
+   drug_A:
+     units: dimensionless
+     diffusion coefficient: 1250 micron^2 / min
+     decay rate: 0.1 min^-1
+     diffusion length scale: 111.803 micron
+     initial condition: 0 dimensionless
+     boundary condition: 0 dimensionless (enabled: false)
+   ecm:
+     units: dimensionless
+     diffusion coefficient: 0 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 0 micron
+     initial condition: 0 dimensionless
+     boundary condition: 0 dimensionless (enabled: false)
+
+WARNING: Setting the random seed again.
+	You probably have set a user parameter called random_seed.
+	Here, we will use the random seed set in user parameters.
+	HOWEVER, as of PhysiCell 1.14.0, you should set the random seed in the <options><random_seed> element in the config file.
+	Future versions of PhysiCell may throw an error here. Kindly remove the user parameter and just use the <options><random_seed> element.
+Setting up RNG with seed 42
+virtual_wall_at_domain_edge: enabled
+Pre-processing type 0 named green
+Pre-processing type 1 named blue
+Pre-processing type 2 named orange
+Processing green ... 
+what?!?
+  --------- attachment_elastic_constant = 0.01
+Processing blue ... 
+	Copying from type green ... 
+copying data ... 
+green to blue
+what?!?
+  --------- attachment_elastic_constant = 0.01
+Processing orange ... 
+	Copying from type green ... 
+copying data ... 
+green to orange
+what?!?
+  --------- attachment_elastic_constant = 0.01
+Signals: 
+=======
+0 : oxygen
+1 : drug_A
+2 : ecm
+3 : intracellular oxygen
+4 : intracellular drug_A
+5 : intracellular ecm
+6 : oxygen gradient
+7 : drug_A gradient
+8 : ecm gradient
+9 : pressure
+10 : volume
+11 : contact with green
+12 : contact with blue
+13 : contact with orange
+14 : contact with live cell
+15 : contact with dead cell
+16 : contact with apoptotic cell
+17 : contact with necrotic cell
+18 : contact with other dead cell
+19 : contact with basement membrane
+20 : damage
+21 : damage delivered
+22 : attacking
+23 : dead
+24 : total attack time
+25 : time
+26 : custom:nucleus_deform
+27 : custom:apoptosis_rate
+28 : custom:death_commitment_decay
+29 : custom:Hypoxia_node
+30 : custom:Proliferation_node
+31 : custom:cell_pressure
+32 : custom:TNFalpha_node
+33 : custom:anti_Raf_node
+34 : custom:drug_A_external_density
+35 : custom:drug_A_internal_density
+36 : custom:oxygen_external_density
+37 : custom:oxygen_internal_density
+38 : custom:time
+39 : apoptotic
+40 : necrotic
+
+
+Behaviors: 
+=========
+0 : oxygen secretion
+1 : drug_A secretion
+2 : ecm secretion
+3 : oxygen secretion target
+4 : drug_A secretion target
+5 : ecm secretion target
+6 : oxygen uptake
+7 : drug_A uptake
+8 : ecm uptake
+9 : oxygen export
+10 : drug_A export
+11 : ecm export
+12 : cycle entry
+13 : exit from cycle phase 1
+14 : exit from cycle phase 2
+15 : exit from cycle phase 3
+16 : exit from cycle phase 4
+17 : exit from cycle phase 5
+18 : apoptosis
+19 : necrosis
+20 : migration speed
+21 : migration bias
+22 : migration persistence time
+23 : chemotactic response to oxygen
+24 : chemotactic response to drug_A
+25 : chemotactic response to ecm
+26 : cell-cell adhesion
+27 : cell-cell adhesion elastic constant
+28 : adhesive affinity to green
+29 : adhesive affinity to blue
+30 : adhesive affinity to orange
+31 : relative maximum adhesion distance
+32 : cell-cell repulsion
+33 : cell-BM adhesion
+34 : cell-BM repulsion
+35 : phagocytose apoptotic cell
+36 : phagocytose necrotic cell
+37 : phagocytose other dead cell
+38 : phagocytose green
+39 : phagocytose blue
+40 : phagocytose orange
+41 : attack green
+42 : attack blue
+43 : attack orange
+44 : fuse to green
+45 : fuse to blue
+46 : fuse to orange
+47 : transform to green
+48 : transform to blue
+49 : transform to orange
+50 : custom:nucleus_deform
+51 : custom:apoptosis_rate
+52 : custom:death_commitment_decay
+53 : custom:Hypoxia_node
+54 : custom:Proliferation_node
+55 : custom:cell_pressure
+56 : custom:TNFalpha_node
+57 : custom:anti_Raf_node
+58 : custom:drug_A_external_density
+59 : custom:drug_A_internal_density
+60 : custom:oxygen_external_density
+61 : custom:oxygen_internal_density
+62 : custom:time
+63 : is_movable
+64 : immunogenicity to green
+65 : immunogenicity to blue
+66 : immunogenicity to orange
+67 : cell attachment rate
+68 : cell detachment rate
+69 : maximum number of cell attachments
+70 : attack damage rate
+71 : attack duration
+72 : damage rate
+73 : damage repair rate
+
+
+ruleset
+	Ruleset disabled ... 
+Behavioral rules for cell type green:
+===================================================
+
+Behavioral rules for cell type blue:
+===================================================
+
+Behavioral rules for cell type orange:
+===================================================
+
+Exporting rules to file output/cell_rules.csv (v1 format) ... 
+Done!
+
+0 :: type:0 name: green
+	 cycle model: Live (code=5)
+		Phase 0: Live
+		Cycle transitions: 
+		-----------------
+		Live --> Live w mean duration 1000 min
+	 death models: 
+		0 : Apoptosis (code=100) with rate 1e-05 1/min
+		death phase transitions: 
+		------------------------
+		Apoptotic --> Debris w mean duration 516 min
+		1 : Necrosis (code=101) with rate 0 1/min
+		death phase transitions: 
+		------------------------
+		Necrotic (swelling) --> Necrotic (lysed) w mean duration 1e-16 min
+		Necrotic (lysed) --> Debris w mean duration 86400 min
+	 key functions: 
+		 migration bias rule: false
+		 custom rule: true
+		 phenotype rule: false
+		 volume update function: true
+		 mechanics function: true
+		 contact function: true
+		 cell division function: false
+	motility (enabled: true in 3D)
+		speed: 0.1 micron/min
+		bias: 0.3 
+		persistence time: 1 min
+		chemotaxis (enabled: false)
+			along 1 * grad(oxygen) 
+	mechanics:
+		cell_cell_adhesion_strength: 0.4
+		cell_cell_repulsion_strength: 10
+		rel max adhesion dist: 1.25
+		cell_BM_adhesion_strength: 4
+		cell_BM_repulsion_strength: 10
+		attachment_elastic_constant: 0.01
+		attachment_rate: 0
+		detachment_rate: 0
+	intracellular model using maboss
+		 model bnd : ./config/BM0/Fumia2013_META_only_RNA_visium_norm_0.bnd
+		 model cfg : ./config/BM0/Fumia2013_META_only_RNA_visium_norm_0.cfg
+		 dt = 10
+		 0 initial values override
+		 0 parameters override
+		 0 mutations override
+		 scaling = 1
+		 time_stochasticity = 1
+		 start_time = 0
+		 0 input mapping defined
+		 0 output mapping defined
+		 global inheritance = 0
+		 0 node-specific inheritance defined
+
+	custom data: 
+		nucleus_deform: 0 
+		apoptosis_rate: 6e-06 1/min
+		death_commitment_decay: 1e-07 1/min
+		Hypoxia_node: 0 dimensionless
+		Proliferation_node: 0 dimensionless
+		cell_pressure: 0 dimensionless
+		TNFalpha_node: 0 dimensionless
+		anti_Raf_node: 0 dimensionless
+		drug_A_external_density: 0 dimensionless
+		drug_A_internal_density: 0 dimensionless
+		oxygen_external_density: 0 dimensionless
+		oxygen_internal_density: 0 dimensionless
+		time: 0 dimensionless
+	custom vector data: 
+			NOTE: custom vector data will eventually be merged with custom data
+1 :: type:1 name: blue
+	 cycle model: Live (code=5)
+		Phase 0: Live
+		Cycle transitions: 
+		-----------------
+		Live --> Live w mean duration 1000 min
+	 death models: 
+		0 : Apoptosis (code=100) with rate 1e-05 1/min
+		death phase transitions: 
+		------------------------
+		Apoptotic --> Debris w mean duration 516 min
+		1 : Necrosis (code=101) with rate 0 1/min
+		death phase transitions: 
+		------------------------
+		Necrotic (swelling) --> Necrotic (lysed) w mean duration 1e-16 min
+		Necrotic (lysed) --> Debris w mean duration 86400 min
+	 key functions: 
+		 migration bias rule: false
+		 custom rule: true
+		 phenotype rule: false
+		 volume update function: true
+		 mechanics function: true
+		 contact function: true
+		 cell division function: false
+	motility (enabled: true in 3D)
+		speed: 0.1 micron/min
+		bias: 0.3 
+		persistence time: 1 min
+		chemotaxis (enabled: false)
+			along 1 * grad(oxygen) 
+	mechanics:
+		cell_cell_adhesion_strength: 0.4
+		cell_cell_repulsion_strength: 10
+		rel max adhesion dist: 1.25
+		cell_BM_adhesion_strength: 4
+		cell_BM_repulsion_strength: 10
+		attachment_elastic_constant: 0.01
+		attachment_rate: 0
+		detachment_rate: 0
+	intracellular model using maboss
+		 model bnd : ./config/BM0/Fumia2013_META_only_RNA_visium_norm_1.bnd
+		 model cfg : ./config/BM0/Fumia2013_META_only_RNA_visium_norm_1.cfg
+		 dt = 10
+		 0 initial values override
+		 0 parameters override
+		 0 mutations override
+		 scaling = 1
+		 time_stochasticity = 1
+		 start_time = 0
+		 0 input mapping defined
+		 0 output mapping defined
+		 global inheritance = 0
+		 0 node-specific inheritance defined
+
+	custom data: 
+		nucleus_deform: 0 
+		apoptosis_rate: 6e-06 1/min
+		death_commitment_decay: 1e-07 1/min
+		Hypoxia_node: 0 dimensionless
+		Proliferation_node: 0 dimensionless
+		cell_pressure: 0 dimensionless
+		TNFalpha_node: 0 dimensionless
+		anti_Raf_node: 0 dimensionless
+		drug_A_external_density: 0 dimensionless
+		drug_A_internal_density: 0 dimensionless
+		oxygen_external_density: 0 dimensionless
+		oxygen_internal_density: 0 dimensionless
+		time: 0 dimensionless
+	custom vector data: 
+			NOTE: custom vector data will eventually be merged with custom data
+2 :: type:2 name: orange
+	 cycle model: Live (code=5)
+		Phase 0: Live
+		Cycle transitions: 
+		-----------------
+		Live --> Live w mean duration 1000 min
+	 death models: 
+		0 : Apoptosis (code=100) with rate 1e-05 1/min
+		death phase transitions: 
+		------------------------
+		Apoptotic --> Debris w mean duration 516 min
+		1 : Necrosis (code=101) with rate 0 1/min
+		death phase transitions: 
+		------------------------
+		Necrotic (swelling) --> Necrotic (lysed) w mean duration 1e-16 min
+		Necrotic (lysed) --> Debris w mean duration 86400 min
+	 key functions: 
+		 migration bias rule: false
+		 custom rule: true
+		 phenotype rule: false
+		 volume update function: true
+		 mechanics function: true
+		 contact function: true
+		 cell division function: false
+	motility (enabled: true in 3D)
+		speed: 0.1 micron/min
+		bias: 0.3 
+		persistence time: 1 min
+		chemotaxis (enabled: false)
+			along 1 * grad(oxygen) 
+	mechanics:
+		cell_cell_adhesion_strength: 0.4
+		cell_cell_repulsion_strength: 10
+		rel max adhesion dist: 1.25
+		cell_BM_adhesion_strength: 4
+		cell_BM_repulsion_strength: 10
+		attachment_elastic_constant: 0.01
+		attachment_rate: 0
+		detachment_rate: 0
+	intracellular model using maboss
+		 model bnd : ./config/BM0/Fumia2013_META_only_RNA_visium_norm_2.bnd
+		 model cfg : ./config/BM0/Fumia2013_META_only_RNA_visium_norm_2.cfg
+		 dt = 10
+		 0 initial values override
+		 0 parameters override
+		 0 mutations override
+		 scaling = 1
+		 time_stochasticity = 1
+		 start_time = 0
+		 0 input mapping defined
+		 0 output mapping defined
+		 global inheritance = 0
+		 0 node-specific inheritance defined
+
+	custom data: 
+		nucleus_deform: 0 
+		apoptosis_rate: 6e-06 1/min
+		death_commitment_decay: 1e-07 1/min
+		Hypoxia_node: 0 dimensionless
+		Proliferation_node: 0 dimensionless
+		cell_pressure: 0 dimensionless
+		TNFalpha_node: 0 dimensionless
+		anti_Raf_node: 0 dimensionless
+		drug_A_external_density: 0 dimensionless
+		drug_A_internal_density: 0 dimensionless
+		oxygen_external_density: 0 dimensionless
+		oxygen_internal_density: 0 dimensionless
+		time: 0 dimensionless
+	custom vector data: 
+			NOTE: custom vector data will eventually be merged with custom data
+voy

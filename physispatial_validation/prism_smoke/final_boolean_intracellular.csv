@@ -1,0 +1,1219 @@
+ID,state
+0,GSH -- VEGF
+1,GSH -- VEGF
+2,Apoptosis -- VEGF
+3,GSH -- Proliferation
+4,GSH -- Proliferation
+5,GSH
+6,GSH
+7,GSH -- VEGF
+8,GSH -- Proliferation
+9,GSH -- VEGF
+10,VEGF
+11,GSH -- Proliferation -- VEGF
+12,GSH -- Apoptosis -- Proliferation -- DNA_Repair
+13,<nil>
+14,GSH
+15,GSH -- Proliferation -- VEGF
+16,GSH -- Proliferation -- GLUT1 -- VEGF
+17,GSH
+18,GSH -- Proliferation -- DNA_Repair
+19,Proliferation
+20,GSH -- Apoptosis
+21,GSH
+22,COX412
+23,GSH -- Proliferation -- Lactic_acid
+24,GSH -- Proliferation -- VEGF
+25,GSH -- Proliferation
+26,GSH -- VEGF
+27,Proliferation -- VEGF -- DNA_Repair
+28,GSH
+29,Proliferation
+30,GSH
+31,GSH
+32,GSH -- VEGF
+33,GSH -- Apoptosis -- Proliferation
+34,Proliferation -- Lactic_acid -- DNA_Repair
+35,Lactic_acid
+36,GSH -- VEGF
+37,VEGF
+38,GSH -- VEGF
+39,GSH -- Proliferation -- VEGF
+40,<nil>
+41,GSH -- Apoptosis
+42,GSH
+43,GSH
+44,Proliferation
+45,GSH -- Proliferation -- GLUT1 -- VEGF
+46,GSH -- VEGF
+47,Proliferation
+48,GSH
+49,GSH -- Proliferation -- GLUT1
+50,GSH
+51,GSH -- VEGF
+52,GSH -- Apoptosis -- Proliferation
+53,Proliferation
+54,GSH -- Apoptosis -- Proliferation
+55,GSH -- Apoptosis -- Proliferation -- GLUT1
+56,GSH
+57,<nil>
+58,GSH -- Proliferation -- VEGF
+59,GSH
+60,Apoptosis
+61,GSH -- Proliferation -- GLUT1 -- VEGF
+62,Proliferation
+63,VEGF
+64,<nil>
+65,GSH -- Proliferation -- VEGF
+66,GSH -- Proliferation -- Lactic_acid -- COX412
+67,GSH -- VEGF
+68,<nil>
+69,GSH -- Proliferation
+70,GSH -- Proliferation -- VEGF
+71,Proliferation
+72,Proliferation
+73,GSH -- VEGF
+74,GSH
+75,Proliferation -- DNA_Repair
+76,GSH
+77,GSH -- GLUT1 -- VEGF
+78,GSH
+79,<nil>
+80,Proliferation -- COX412
+81,GSH -- GLUT1 -- VEGF
+82,GSH -- VEGF
+83,GSH -- VEGF
+84,GSH -- Proliferation -- VEGF
+85,GSH
+86,Proliferation -- COX412
+87,<nil>
+88,GSH -- VEGF
+89,<nil>
+90,GSH
+91,GSH
+92,Apoptosis -- Proliferation -- DNA_Repair
+93,Proliferation
+94,GSH -- Proliferation -- VEGF
+95,GSH -- Proliferation -- GLUT1
+96,GSH -- VEGF
+97,Apoptosis -- Proliferation
+98,Proliferation -- Lactic_acid
+99,Apoptosis -- Proliferation
+100,GSH -- VEGF
+101,GSH -- VEGF
+102,GSH -- Proliferation -- VEGF
+103,GSH -- Apoptosis -- Proliferation -- COX412
+104,VEGF
+105,GSH
+106,GSH
+107,<nil>
+108,Proliferation -- GLUT1 -- VEGF
+109,GSH
+110,Proliferation
+111,GSH -- VEGF
+112,GSH
+113,<nil>
+114,GSH -- VEGF
+115,Proliferation
+116,GSH -- VEGF
+117,GSH -- VEGF
+118,GSH -- VEGF
+119,GSH -- VEGF
+120,Proliferation
+121,GSH -- VEGF
+122,GSH -- VEGF
+123,GSH -- VEGF
+124,Proliferation
+125,GSH -- VEGF
+126,GSH
+127,<nil>
+128,GSH
+129,GSH -- VEGF
+130,GLUT1 -- VEGF
+131,GSH -- Proliferation
+132,Proliferation
+133,GSH -- VEGF
+134,Proliferation
+135,GSH -- Apoptosis -- Proliferation
+136,Proliferation -- VEGF
+137,GSH -- Proliferation -- VEGF
+138,GSH -- VEGF
+139,GSH -- Proliferation -- VEGF
+140,Apoptosis -- Proliferation
+141,GSH
+142,GSH
+143,GSH
+144,Proliferation -- VEGF
+145,GSH -- Proliferation
+146,GSH -- Proliferation
+147,GSH -- VEGF
+148,GSH
+149,Proliferation -- Lactic_acid
+150,Apoptosis
+151,Apoptosis -- Proliferation -- COX412
+152,Apoptosis -- Proliferation
+153,Proliferation
+154,GSH
+155,GSH -- VEGF
+156,GSH -- Proliferation
+157,GSH -- Proliferation -- VEGF
+158,GSH
+159,GSH -- VEGF
+160,Proliferation -- Lactic_acid
+161,Apoptosis -- COX412
+162,GSH -- VEGF
+163,GSH -- GLUT1 -- VEGF
+164,<nil>
+165,GSH -- VEGF
+166,GSH -- Proliferation -- VEGF
+167,<nil>
+168,VEGF
+169,Proliferation
+170,GSH
+171,Proliferation -- VEGF
+172,GSH -- VEGF
+173,GSH -- VEGF
+174,GSH -- VEGF
+175,Proliferation
+176,GSH -- VEGF
+177,GSH
+178,GSH -- Proliferation -- VEGF
+179,GSH
+180,Apoptosis -- DNA_Repair
+181,GSH
+182,Proliferation
+183,GSH -- VEGF
+184,Proliferation
+185,GSH -- Proliferation
+186,GSH -- Proliferation -- VEGF
+187,GSH -- VEGF
+188,GSH -- VEGF
+189,GSH -- Apoptosis
+190,GSH -- Proliferation
+191,GSH -- Proliferation -- VEGF
+192,<nil>
+193,GSH -- VEGF
+194,<nil>
+195,Proliferation
+196,GSH -- GLUT1 -- VEGF -- COX412
+197,GSH -- Proliferation -- VEGF
+198,GSH
+199,<nil>
+200,GSH -- VEGF
+201,GSH -- VEGF
+202,<nil>
+203,GSH -- Apoptosis
+204,GSH -- Proliferation -- VEGF
+205,GSH -- VEGF
+206,Apoptosis
+207,Proliferation
+208,GSH -- VEGF
+209,GSH -- Proliferation
+210,Proliferation -- VEGF
+211,VEGF
+212,GSH -- Apoptosis -- VEGF -- DNA_Repair
+213,GSH -- VEGF
+214,Proliferation -- VEGF
+215,<nil>
+216,Apoptosis
+217,Apoptosis -- Proliferation -- Lactic_acid
+218,GSH -- VEGF
+219,GSH -- VEGF
+220,GSH -- VEGF
+221,GSH
+222,<nil>
+223,GSH -- Apoptosis
+224,GSH -- GLUT1 -- VEGF -- Lactic_acid -- COX412
+225,<nil>
+226,<nil>
+227,GSH -- VEGF
+228,VEGF
+229,GSH -- Proliferation -- VEGF
+230,<nil>
+231,VEGF
+232,GSH -- Proliferation -- VEGF
+233,GSH -- VEGF
+234,GSH -- Proliferation -- GLUT1 -- VEGF
+235,GSH -- Proliferation -- GLUT1 -- VEGF
+236,GSH -- VEGF
+237,GSH
+238,Apoptosis -- DNA_Repair
+239,GSH -- VEGF
+240,GSH -- VEGF
+241,GSH
+242,GSH -- Proliferation
+243,GSH
+244,GSH -- VEGF
+245,<nil>
+246,GSH -- Apoptosis -- Proliferation
+247,GSH
+248,Proliferation
+249,GSH -- VEGF
+250,GSH -- VEGF
+251,Proliferation
+252,GSH -- Apoptosis
+253,GSH -- VEGF
+254,GSH -- Proliferation -- GLUT1 -- VEGF
+255,<nil>
+256,Proliferation -- DNA_Repair
+257,GSH -- VEGF
+258,GSH -- VEGF
+259,GSH -- VEGF
+260,GSH -- Proliferation -- VEGF
+261,GSH -- Proliferation
+262,GSH -- Proliferation
+263,GSH -- Proliferation -- VEGF
+264,GSH
+265,GSH -- Proliferation -- VEGF
+266,GSH
+267,GSH -- VEGF
+268,GSH -- VEGF
+269,GSH -- Proliferation -- VEGF
+270,GSH -- Proliferation -- GLUT1 -- VEGF
+271,GSH -- Proliferation
+272,GSH -- Proliferation -- VEGF
+273,VEGF
+274,GSH -- Proliferation -- VEGF
+275,GSH -- VEGF
+276,GSH -- VEGF
+277,Apoptosis -- Proliferation -- DNA_Repair
+278,Proliferation -- Lactic_acid -- COX412
+279,Proliferation -- VEGF
+280,GSH
+281,Proliferation -- DNA_Repair
+282,GSH
+283,Lactic_acid
+284,GSH
+285,GSH
+286,<nil>
+287,GSH
+288,GSH -- DNA_Repair
+289,Proliferation -- Lactic_acid -- DNA_Repair
+290,Apoptosis -- Proliferation
+291,Proliferation
+292,Proliferation
+293,GSH -- VEGF
+294,GSH -- VEGF
+295,GSH -- VEGF
+296,VEGF
+297,GSH -- Apoptosis -- VEGF
+298,Proliferation -- VEGF
+299,GSH -- VEGF
+300,GSH -- Proliferation
+301,<nil>
+302,GSH -- Proliferation
+303,GSH -- VEGF
+304,GSH -- VEGF
+305,GSH -- Apoptosis -- Proliferation
+306,GSH
+307,VEGF
+308,GSH -- VEGF
+309,GSH -- VEGF
+310,GSH -- Apoptosis
+311,GSH -- VEGF
+312,VEGF
+313,GSH -- Apoptosis
+314,Apoptosis
+315,GSH -- Proliferation -- Lactic_acid -- COX412 -- DNA_Repair
+316,GSH -- Proliferation -- VEGF
+317,GSH
+318,Proliferation -- Lactic_acid -- COX412
+319,Proliferation
+320,Apoptosis -- Proliferation
+321,<nil>
+322,GSH
+323,GSH -- VEGF
+324,Proliferation
+325,GSH -- Proliferation -- Lactic_acid
+326,GSH
+327,GSH -- Apoptosis -- Proliferation
+328,GSH -- VEGF
+329,Proliferation
+330,GSH -- VEGF
+331,GSH -- Proliferation -- GLUT1 -- VEGF
+332,<nil>
+333,GSH
+334,VEGF
+335,GSH -- Proliferation
+336,GSH
+337,GSH -- Proliferation -- VEGF
+338,GSH -- Proliferation -- VEGF
+339,Apoptosis -- Proliferation
+340,Apoptosis -- Proliferation
+341,GSH -- Proliferation -- VEGF
+342,<nil>
+343,GSH -- VEGF
+344,GSH
+345,GSH -- Proliferation
+346,Apoptosis -- DNA_Repair
+347,GSH -- Proliferation
+348,GSH -- VEGF
+349,GSH -- Apoptosis
+350,GSH
+351,GSH -- VEGF
+352,GSH
+353,GSH -- VEGF
+354,GSH -- Proliferation
+355,GSH -- VEGF
+356,GSH -- Apoptosis -- Proliferation
+357,Apoptosis -- Proliferation -- VEGF -- Lactic_acid -- DNA_Repair
+358,Apoptosis -- Proliferation -- Lactic_acid
+359,GSH -- COX412
+360,<nil>
+361,GSH -- Proliferation -- GLUT1 -- VEGF
+362,GSH
+363,GSH
+364,<nil>
+365,DNA_Repair
+366,GSH -- Proliferation -- GLUT1 -- VEGF
+367,GSH -- VEGF
+368,Apoptosis -- Proliferation -- DNA_Repair
+369,GSH
+370,GSH
+371,GSH -- Proliferation -- GLUT1 -- VEGF
+372,VEGF
+373,GSH -- VEGF
+374,VEGF
+375,Proliferation
+376,GSH
+377,Apoptosis -- Proliferation
+378,<nil>
+379,GSH -- VEGF
+380,GSH -- Proliferation
+381,GSH
+382,<nil>
+383,GSH -- VEGF
+384,GSH -- Proliferation -- COX412
+385,GSH -- Apoptosis
+386,Proliferation
+387,Apoptosis -- Proliferation -- VEGF
+388,<nil>
+389,GSH -- Proliferation
+390,GSH
+391,<nil>
+392,VEGF
+393,Proliferation
+394,Proliferation -- VEGF
+395,GSH
+396,Proliferation -- VEGF
+397,Apoptosis -- Proliferation
+398,Proliferation -- Lactic_acid
+399,GSH -- Proliferation -- VEGF
+400,GSH
+401,GSH -- VEGF
+402,Apoptosis -- Proliferation
+403,GSH -- VEGF
+404,GSH -- Proliferation -- VEGF
+405,GSH -- Proliferation
+406,GSH -- Proliferation -- GLUT1 -- VEGF
+407,GSH -- Proliferation -- Lactic_acid -- COX412
+408,<nil>
+409,Apoptosis -- Proliferation
+410,GSH -- VEGF
+411,Apoptosis
+412,GSH -- Proliferation -- Lactic_acid -- DNA_Repair
+413,GSH -- Apoptosis -- Proliferation -- VEGF
+414,Proliferation
+415,<nil>
+416,GSH -- Proliferation
+417,GSH -- Apoptosis -- DNA_Repair
+418,<nil>
+419,Apoptosis -- Proliferation
+420,GSH -- Proliferation -- GLUT1 -- VEGF
+421,GSH -- Proliferation -- GLUT1 -- VEGF
+422,GSH
+423,GSH -- Proliferation
+424,VEGF
+425,Proliferation
+426,<nil>
+427,Apoptosis
+428,DNA_Repair
+429,GSH
+430,GSH -- Proliferation -- VEGF -- DNA_Repair
+431,Apoptosis -- Proliferation
+432,GSH -- Proliferation -- GLUT1 -- VEGF
+433,GSH -- Proliferation -- VEGF
+434,GSH -- Proliferation
+435,Proliferation
+436,GSH -- Proliferation -- VEGF
+437,GSH -- Proliferation -- VEGF
+438,GSH -- VEGF
+439,GSH
+440,GSH
+441,<nil>
+442,GSH -- VEGF
+443,Proliferation
+444,GSH -- Proliferation -- GLUT1 -- VEGF
+445,GSH -- Proliferation
+446,GSH -- Proliferation -- DNA_Repair
+447,Apoptosis -- Proliferation -- DNA_Repair
+448,<nil>
+449,<nil>
+450,GSH -- VEGF
+451,GSH -- Proliferation
+452,Proliferation
+453,GSH -- Proliferation -- VEGF
+454,<nil>
+455,Apoptosis -- Proliferation -- VEGF -- DNA_Repair
+456,<nil>
+457,GSH
+458,GSH -- VEGF -- Lactic_acid -- COX412
+459,<nil>
+460,Apoptosis -- Proliferation -- VEGF -- COX412
+461,Apoptosis -- Proliferation
+462,GSH -- VEGF
+463,GSH -- Proliferation -- GLUT1 -- VEGF
+464,GSH -- Proliferation -- VEGF
+465,Proliferation
+466,GSH -- VEGF
+467,VEGF
+468,GSH -- Proliferation
+469,GSH -- VEGF
+470,<nil>
+471,GSH -- Proliferation -- VEGF
+472,Proliferation
+473,<nil>
+474,Apoptosis -- Proliferation
+475,Apoptosis -- Proliferation
+476,GSH -- VEGF
+477,Proliferation
+478,GSH -- VEGF
+479,GSH -- VEGF
+480,<nil>
+481,GSH -- Apoptosis -- Proliferation
+482,GSH -- VEGF
+483,GSH -- VEGF
+484,GSH -- VEGF
+485,GSH -- VEGF
+486,Apoptosis
+487,Proliferation -- DNA_Repair
+488,GSH -- Proliferation
+489,GSH -- Proliferation
+490,Proliferation
+491,GSH -- VEGF
+492,Proliferation
+493,GSH -- Apoptosis -- Proliferation -- DNA_Repair
+494,Proliferation -- Lactic_acid
+495,GSH -- Proliferation -- VEGF
+496,Proliferation
+497,Apoptosis -- Proliferation
+498,GSH -- VEGF
+499,GSH
+500,GSH -- Apoptosis -- Proliferation -- VEGF
+501,GSH -- Proliferation -- VEGF
+502,DNA_Repair
+503,Proliferation
+504,GSH
+505,<nil>
+506,GSH -- VEGF
+507,GSH -- VEGF
+508,Proliferation
+509,Apoptosis -- Proliferation -- DNA_Repair
+510,Proliferation
+511,Proliferation
+512,GSH -- VEGF
+513,GSH -- Apoptosis -- Proliferation -- COX412 -- DNA_Repair
+514,GSH
+515,VEGF
+516,GSH -- Proliferation -- GLUT1 -- VEGF
+517,VEGF
+518,GSH -- VEGF
+519,GSH -- Apoptosis -- Proliferation -- VEGF -- COX412
+520,GSH -- Proliferation -- VEGF
+521,GSH -- VEGF
+522,GSH -- Proliferation -- GLUT1 -- VEGF
+523,Proliferation
+524,Proliferation
+525,Apoptosis -- Proliferation -- DNA_Repair
+526,GSH -- VEGF
+527,GSH -- Proliferation
+528,GSH
+529,<nil>
+530,GSH
+531,Proliferation -- DNA_Repair
+532,<nil>
+533,GSH -- Proliferation
+534,GSH -- Proliferation -- DNA_Repair
+535,Proliferation
+536,Proliferation -- VEGF
+537,VEGF
+538,Apoptosis -- Proliferation -- VEGF
+539,Proliferation
+540,GSH -- VEGF
+541,GSH
+542,GSH -- Proliferation -- VEGF
+543,GSH -- Proliferation
+544,GSH -- VEGF
+545,GSH -- Apoptosis -- VEGF
+546,GSH -- VEGF
+547,Proliferation -- Lactic_acid
+548,<nil>
+549,GSH -- Proliferation -- GLUT1 -- VEGF
+550,GSH -- Proliferation -- GLUT1 -- VEGF
+551,GSH -- Apoptosis -- Proliferation
+552,GSH -- Proliferation
+553,GSH -- VEGF
+554,Apoptosis -- Proliferation
+555,GSH
+556,Proliferation
+557,GSH -- VEGF
+558,GSH -- Apoptosis -- Proliferation
+559,Proliferation
+560,Apoptosis -- Proliferation
+561,GSH -- VEGF
+562,GSH -- VEGF
+563,GSH
+564,GSH -- COX412
+565,GSH -- GLUT1 -- VEGF -- COX412
+566,GSH -- Proliferation -- VEGF
+567,GSH -- VEGF
+568,GSH -- VEGF
+569,GSH -- Proliferation -- VEGF
+570,GSH -- VEGF
+571,GSH -- Proliferation
+572,GSH -- Proliferation
+573,Proliferation
+574,Proliferation
+575,GSH -- VEGF
+576,GSH -- VEGF
+577,GSH
+578,GSH -- VEGF
+579,GSH -- VEGF
+580,GSH
+581,GSH -- Proliferation
+582,Proliferation -- Lactic_acid
+583,GSH -- VEGF
+584,GSH
+585,GSH
+586,GSH -- Apoptosis -- Proliferation -- Lactic_acid -- DNA_Repair
+587,Apoptosis -- Proliferation
+588,<nil>
+589,GSH -- Proliferation -- Lactic_acid
+590,GSH -- Proliferation
+591,GSH -- Proliferation -- GLUT1 -- VEGF
+592,GSH
+593,GSH -- VEGF
+594,GSH -- VEGF
+595,GSH -- VEGF
+596,<nil>
+597,Proliferation
+598,GSH -- Proliferation
+599,Apoptosis -- Proliferation
+600,VEGF
+601,GSH -- VEGF
+602,GSH -- VEGF
+603,GSH -- Proliferation -- VEGF
+604,GSH -- VEGF -- COX412
+605,GSH -- Proliferation -- VEGF
+606,GSH -- Apoptosis
+607,GSH -- Proliferation -- VEGF
+608,GSH -- Proliferation
+609,GSH -- VEGF
+610,GSH -- Apoptosis
+611,<nil>
+612,Proliferation
+613,Proliferation -- DNA_Repair
+614,Apoptosis -- Proliferation -- Lactic_acid
+615,GSH
+616,GSH -- Proliferation -- VEGF
+617,GSH -- Proliferation -- VEGF
+618,GSH -- VEGF
+619,<nil>
+620,<nil>
+621,GSH
+622,GSH -- VEGF
+623,Apoptosis
+624,GSH -- Proliferation -- GLUT1 -- VEGF
+625,GSH -- VEGF
+626,GSH -- VEGF
+627,Proliferation
+628,Apoptosis
+629,Apoptosis -- VEGF
+630,Proliferation
+631,Proliferation
+632,Apoptosis -- Proliferation
+633,GSH -- Proliferation -- GLUT1 -- VEGF
+634,GSH
+635,GSH -- Proliferation -- VEGF
+636,GSH
+637,GSH
+638,GSH -- Proliferation -- VEGF
+639,VEGF
+640,GSH -- VEGF
+641,Proliferation
+642,GSH -- VEGF
+643,GSH -- Apoptosis
+644,Apoptosis -- Proliferation -- Lactic_acid -- COX412
+645,GSH -- Proliferation
+646,GSH -- Proliferation
+647,<nil>
+648,GSH -- VEGF -- Lactic_acid -- COX412
+649,GSH -- Proliferation -- GLUT1 -- VEGF
+650,GSH
+651,GSH
+652,GSH -- VEGF
+653,Apoptosis
+654,GSH
+655,Proliferation -- Lactic_acid -- DNA_Repair
+656,Apoptosis -- Proliferation
+657,Proliferation -- VEGF
+658,GSH -- Proliferation -- VEGF
+659,GSH -- VEGF
+660,Apoptosis -- Proliferation -- VEGF -- Lactic_acid
+661,Apoptosis -- Proliferation
+662,GSH
+663,GSH -- Proliferation -- GLUT1 -- VEGF
+664,Proliferation
+665,Proliferation
+666,Proliferation
+667,GSH
+668,GSH -- Proliferation -- GLUT1 -- VEGF
+669,GSH
+670,Proliferation -- Lactic_acid -- DNA_Repair
+671,GSH -- Apoptosis -- Proliferation
+672,GSH -- VEGF
+673,GSH -- Proliferation -- VEGF
+674,Apoptosis
+675,GSH -- Apoptosis -- COX412 -- DNA_Repair
+676,GSH
+677,GSH -- Proliferation -- VEGF
+678,GSH -- Proliferation
+679,GSH -- VEGF
+680,Apoptosis -- Proliferation
+681,GSH -- VEGF
+682,GSH -- Apoptosis
+683,GSH -- VEGF
+684,VEGF
+685,DNA_Repair
+686,<nil>
+687,GSH -- Proliferation -- VEGF
+688,GSH -- VEGF
+689,Apoptosis -- Proliferation -- COX412 -- DNA_Repair
+690,GSH -- Apoptosis -- Proliferation
+691,Proliferation
+692,<nil>
+693,Proliferation -- GLUT1 -- DNA_Repair
+694,GSH
+695,GSH -- VEGF
+696,<nil>
+697,GSH -- Proliferation
+698,Proliferation
+699,GSH -- Proliferation -- Lactic_acid
+700,GSH -- VEGF
+701,GSH -- VEGF
+702,Proliferation
+703,Proliferation
+704,<nil>
+705,GSH
+706,GSH -- Apoptosis -- Proliferation -- Lactic_acid
+707,GSH -- VEGF
+708,GSH
+709,GSH
+710,GSH -- VEGF
+711,Proliferation -- VEGF
+712,<nil>
+713,GSH -- Proliferation
+714,GSH -- Proliferation -- DNA_Repair
+715,GSH -- Proliferation -- GLUT1 -- VEGF
+716,GSH
+717,GSH -- Apoptosis
+718,GSH -- Proliferation
+719,GSH -- VEGF
+720,VEGF
+721,GSH -- VEGF
+722,GSH -- Proliferation -- GLUT1
+723,Proliferation -- Lactic_acid
+724,GSH -- Proliferation -- VEGF
+725,GSH -- Apoptosis
+726,GSH -- VEGF
+727,GSH -- VEGF
+728,GSH -- Apoptosis
+729,GSH
+730,<nil>
+731,GSH -- Proliferation -- VEGF
+732,GSH -- Proliferation
+733,<nil>
+734,<nil>
+735,Proliferation
+736,GSH -- Proliferation
+737,GSH -- VEGF
+738,Apoptosis -- Proliferation
+739,GSH -- Proliferation -- VEGF
+740,GSH -- Proliferation
+741,GSH
+742,GSH
+743,GSH -- VEGF
+744,GSH
+745,GSH -- Proliferation -- Lactic_acid
+746,Proliferation
+747,VEGF
+748,GSH -- Proliferation -- VEGF
+749,Apoptosis -- Proliferation
+750,Proliferation
+751,<nil>
+752,Apoptosis
+753,COX412
+754,GSH -- Proliferation -- COX412
+755,GSH -- VEGF
+756,GSH
+757,GSH -- VEGF
+758,GSH -- VEGF
+759,GSH
+760,Proliferation -- DNA_Repair
+761,GSH -- Lactic_acid
+762,GSH -- Proliferation -- GLUT1 -- VEGF
+763,GSH -- GLUT1 -- VEGF -- COX412
+764,<nil>
+765,GSH -- VEGF
+766,GSH
+767,GSH
+768,GSH
+769,Apoptosis -- Proliferation -- DNA_Repair
+770,VEGF
+771,GSH -- Proliferation
+772,Apoptosis -- COX412 -- DNA_Repair
+773,GSH -- Proliferation -- VEGF
+774,Proliferation
+775,Apoptosis -- Proliferation
+776,GSH -- Apoptosis
+777,GSH -- COX412
+778,GSH -- Proliferation -- VEGF
+779,Lactic_acid
+780,GSH -- VEGF
+781,GSH -- VEGF
+782,GSH -- VEGF
+783,GSH
+784,GSH -- VEGF
+785,GSH -- VEGF
+786,GSH
+787,GSH -- VEGF
+788,Proliferation
+789,GSH
+790,GSH -- Proliferation -- GLUT1 -- VEGF -- COX412
+791,Apoptosis -- Proliferation
+792,Apoptosis -- Proliferation -- Lactic_acid
+793,GSH -- Proliferation
+794,GSH
+795,GSH -- Proliferation
+796,GSH -- Proliferation -- GLUT1 -- VEGF
+797,<nil>
+798,Proliferation
+799,<nil>
+800,GSH -- Proliferation -- VEGF
+801,GSH -- VEGF
+802,GSH
+803,GSH
+804,Proliferation -- VEGF
+805,Proliferation
+806,Proliferation -- VEGF
+807,Apoptosis -- VEGF
+808,<nil>
+809,Proliferation
+810,GSH -- VEGF
+811,GSH
+812,GSH
+813,VEGF
+814,GSH -- Apoptosis -- Proliferation -- VEGF -- DNA_Repair
+815,Apoptosis -- Proliferation
+816,Proliferation
+817,GSH -- Proliferation -- VEGF
+818,GSH -- Proliferation -- GLUT1 -- VEGF -- Lactic_acid -- COX412
+819,GSH
+820,<nil>
+821,Proliferation
+822,GSH -- Proliferation -- VEGF
+823,Proliferation
+824,Apoptosis -- Proliferation
+825,GSH
+826,VEGF
+827,GSH
+828,GSH
+829,GSH -- VEGF
+830,VEGF
+831,<nil>
+832,GSH -- VEGF
+833,GSH -- Proliferation -- GLUT1 -- VEGF
+834,Proliferation
+835,GSH
+836,<nil>
+837,GSH -- Proliferation -- VEGF
+838,GSH -- VEGF
+839,Proliferation -- DNA_Repair
+840,GSH -- Proliferation
+841,Proliferation
+842,<nil>
+843,GSH -- VEGF
+844,GSH -- Apoptosis -- Proliferation
+845,GSH -- VEGF
+846,<nil>
+847,GSH -- Proliferation -- VEGF
+848,GSH
+849,GSH -- Proliferation -- GLUT1 -- VEGF
+850,Proliferation
+851,GSH -- Apoptosis
+852,GSH
+853,Apoptosis
+854,Apoptosis
+855,<nil>
+856,Apoptosis -- Proliferation
+857,GSH -- GLUT1 -- VEGF -- Lactic_acid
+858,GSH -- Proliferation -- VEGF
+859,GSH -- VEGF
+860,Apoptosis -- Proliferation
+861,Apoptosis -- Proliferation
+862,GSH -- Proliferation -- GLUT1 -- VEGF
+863,GSH -- VEGF
+864,GSH -- Proliferation
+865,GSH -- Proliferation
+866,Apoptosis -- Proliferation
+867,GSH -- VEGF
+868,VEGF
+869,<nil>
+870,GSH -- VEGF
+871,GSH -- Apoptosis -- Proliferation
+872,GSH -- Apoptosis -- Proliferation -- DNA_Repair
+873,GSH -- VEGF
+874,GSH
+875,Proliferation
+876,GSH -- COX412
+877,Proliferation
+878,<nil>
+879,<nil>
+880,Proliferation
+881,GSH -- Proliferation -- VEGF
+882,GSH
+883,GSH -- VEGF
+884,DNA_Repair
+885,GSH -- Proliferation
+886,Proliferation
+887,GSH -- Apoptosis
+888,GSH -- Proliferation -- VEGF
+889,GSH
+890,GSH -- Proliferation -- VEGF
+891,<nil>
+892,Apoptosis -- Proliferation
+893,GSH -- Proliferation -- VEGF
+894,GSH -- VEGF
+895,Proliferation
+896,GSH -- DNA_Repair
+897,GSH
+898,GSH -- Apoptosis
+899,GSH -- Proliferation -- VEGF
+900,<nil>
+901,Proliferation -- DNA_Repair
+902,Proliferation
+903,<nil>
+904,Proliferation -- COX412
+905,Proliferation
+906,GSH -- VEGF
+907,Proliferation
+908,Apoptosis -- Proliferation
+909,GSH
+910,Proliferation
+911,GSH -- Proliferation -- VEGF
+912,<nil>
+913,GSH -- Proliferation -- VEGF
+914,Proliferation
+915,GSH -- Proliferation -- VEGF
+916,GSH -- Proliferation -- GLUT1 -- VEGF -- Lactic_acid
+917,GSH -- Apoptosis -- VEGF
+918,GSH -- Proliferation -- VEGF
+919,GSH -- Proliferation -- GLUT1 -- VEGF
+920,Proliferation -- VEGF
+921,GSH
+922,GSH -- Apoptosis -- DNA_Repair
+923,GSH -- Proliferation
+924,GSH -- COX412
+925,Apoptosis -- Proliferation
+926,Apoptosis -- Proliferation
+927,GSH -- VEGF
+928,GSH -- Apoptosis -- DNA_Repair
+929,GSH -- DNA_Repair
+930,Proliferation -- VEGF
+931,GSH -- Proliferation -- GLUT1 -- VEGF
+932,Proliferation -- Lactic_acid -- DNA_Repair
+933,Proliferation
+934,GSH -- VEGF
+935,Proliferation
+936,GSH -- Apoptosis -- Proliferation
+937,GSH -- Proliferation
+938,GSH -- VEGF
+939,GSH
+940,GSH
+941,GSH -- VEGF
+942,GSH
+943,GSH -- Proliferation -- VEGF
+944,GSH -- VEGF
+945,Apoptosis -- Proliferation -- VEGF -- COX412
+946,GSH -- VEGF
+947,GSH -- VEGF
+948,<nil>
+949,GSH -- VEGF
+950,Apoptosis -- Proliferation
+951,GSH -- Proliferation -- Lactic_acid
+952,GSH
+953,<nil>
+954,GSH -- Proliferation -- GLUT1 -- VEGF
+955,GSH
+956,Apoptosis -- Proliferation
+957,GSH -- Apoptosis -- Proliferation -- VEGF
+958,GSH
+959,Apoptosis -- Lactic_acid
+960,GSH -- VEGF
+961,GSH
+962,GSH
+963,Proliferation -- DNA_Repair
+964,GSH -- Proliferation -- VEGF
+965,GSH -- Proliferation -- GLUT1
+966,<nil>
+967,GSH -- Proliferation -- VEGF
+968,GSH
+969,GSH -- Proliferation
+970,Apoptosis -- VEGF
+971,GSH
+972,GSH -- Proliferation
+973,GSH -- Apoptosis -- VEGF -- DNA_Repair
+974,GSH -- Proliferation
+975,GSH -- VEGF
+976,Proliferation
+977,GSH -- Proliferation
+978,GSH -- Proliferation
+979,GSH -- VEGF
+980,GSH -- VEGF
+981,GSH -- Proliferation -- VEGF
+982,<nil>
+983,GSH -- VEGF
+984,<nil>
+985,GSH -- VEGF
+986,GSH
+987,VEGF
+988,<nil>
+989,GSH -- Proliferation
+990,GSH -- GLUT1 -- VEGF
+991,GSH -- Apoptosis
+992,GSH
+993,GSH -- Proliferation
+994,GSH -- Proliferation -- GLUT1 -- VEGF
+995,Proliferation -- Lactic_acid -- DNA_Repair
+996,Proliferation
+997,Proliferation -- COX412
+998,<nil>
+999,GSH -- VEGF
+1000,GSH -- GLUT1 -- VEGF -- COX412
+1001,GSH -- VEGF
+1002,GSH -- VEGF
+1003,<nil>
+1004,GSH -- VEGF
+1005,<nil>
+1006,GSH -- Proliferation
+1007,GSH
+1008,GSH
+1009,GSH -- VEGF
+1010,GSH -- Proliferation -- VEGF
+1011,GSH -- Proliferation -- VEGF
+1012,GSH -- Apoptosis -- Proliferation -- DNA_Repair
+1013,GSH -- VEGF
+1014,Apoptosis
+1015,GSH -- Proliferation
+1016,Proliferation
+1017,GSH -- VEGF
+1018,GSH -- Proliferation
+1019,Apoptosis -- Proliferation
+1020,GSH -- VEGF
+1021,Apoptosis -- Proliferation
+1022,GSH -- Proliferation
+1023,Proliferation
+1024,GSH -- VEGF
+1025,Proliferation
+1026,GSH -- Proliferation
+1027,Proliferation -- DNA_Repair
+1028,GSH -- VEGF
+1029,GSH -- Proliferation
+1030,GSH -- Apoptosis -- Proliferation
+1031,Proliferation
+1032,Proliferation
+1033,GSH -- VEGF
+1034,Proliferation
+1035,Apoptosis -- Proliferation -- VEGF -- Lactic_acid -- COX412
+1036,Apoptosis
+1037,GSH -- VEGF
+1038,Lactic_acid -- DNA_Repair
+1039,GSH -- Proliferation -- VEGF
+1040,GSH -- Proliferation -- GLUT1 -- VEGF
+1041,GSH
+1042,Apoptosis -- Proliferation
+1043,GSH -- VEGF -- COX412
+1044,GSH -- Apoptosis -- Proliferation
+1045,Proliferation
+1046,GSH -- VEGF
+1047,Proliferation -- VEGF
+1048,GSH -- Proliferation -- VEGF
+1049,Proliferation
+1050,Proliferation -- DNA_Repair
+1051,Proliferation
+1052,GSH -- Proliferation
+1053,Proliferation
+1054,Apoptosis -- Proliferation
+1055,Proliferation
+1056,Proliferation
+1057,GSH
+1058,GSH -- VEGF
+1059,GSH -- Proliferation -- GLUT1 -- VEGF
+1060,Proliferation
+1061,GSH -- VEGF
+1062,GSH -- Proliferation
+1063,Apoptosis -- Proliferation
+1064,GSH
+1065,GSH
+1066,GSH
+1067,GSH -- Apoptosis -- Lactic_acid
+1068,Proliferation
+1069,GSH -- Proliferation -- GLUT1 -- VEGF
+1070,GSH
+1071,GSH -- Apoptosis -- Proliferation -- VEGF
+1072,GSH -- Proliferation -- GLUT1 -- VEGF
+1073,Apoptosis -- Proliferation
+1074,GSH
+1075,GSH -- VEGF
+1076,GSH
+1077,GSH -- Proliferation
+1078,GSH -- Proliferation
+1079,GSH -- VEGF
+1080,GSH -- Proliferation -- DNA_Repair
+1081,Proliferation -- DNA_Repair
+1082,Apoptosis -- Proliferation
+1083,<nil>
+1084,Apoptosis -- Proliferation -- DNA_Repair
+1085,GSH -- Proliferation
+1086,GSH -- VEGF
+1087,GSH -- Apoptosis
+1088,Apoptosis -- Proliferation -- DNA_Repair
+1089,GSH -- VEGF
+1090,VEGF
+1091,Proliferation
+1092,GSH -- Proliferation -- VEGF
+1093,Proliferation -- Lactic_acid
+1094,Proliferation
+1095,GSH -- Proliferation
+1096,GSH -- VEGF
+1097,GSH -- VEGF
+1098,<nil>
+1099,GSH -- VEGF
+1100,GSH -- VEGF
+1101,Apoptosis -- VEGF
+1102,GSH -- Proliferation -- GLUT1 -- VEGF -- Lactic_acid -- COX412
+1103,GSH
+1104,<nil>
+1105,GSH
+1106,<nil>
+1107,Proliferation
+1108,GSH -- VEGF
+1109,GSH -- GLUT1 -- VEGF
+1110,GSH -- VEGF
+1111,GSH -- VEGF
+1112,GSH -- VEGF
+1113,<nil>
+1114,Proliferation -- VEGF
+1115,GSH -- Proliferation -- VEGF
+1116,Proliferation
+1117,GSH
+1118,GSH -- VEGF
+1119,Apoptosis
+1120,Proliferation
+1121,GSH -- Apoptosis
+1122,GSH -- VEGF
+1123,<nil>
+1124,GSH -- Proliferation -- VEGF
+1125,GSH -- Proliferation -- VEGF
+1126,GSH
+1127,GSH
+1128,VEGF
+1129,GSH -- Proliferation -- VEGF
+1130,GSH -- Lactic_acid -- DNA_Repair
+1131,GSH -- Proliferation -- GLUT1 -- VEGF
+1132,GSH -- VEGF
+1133,GSH -- VEGF
+1134,GSH -- VEGF
+1135,GSH -- VEGF
+1136,Proliferation
+1137,GSH
+1138,Apoptosis -- Proliferation -- DNA_Repair
+1139,GSH -- Proliferation -- GLUT1 -- VEGF
+1140,Apoptosis -- Proliferation
+1141,GSH -- VEGF
+1142,GSH -- VEGF
+1143,GSH -- VEGF
+1144,GSH -- Apoptosis -- Proliferation -- VEGF
+1145,GSH -- VEGF
+1146,VEGF
+1147,GSH -- Apoptosis -- Lactic_acid
+1148,<nil>
+1149,Proliferation
+1150,GSH -- Proliferation -- GLUT1 -- VEGF
+1151,GSH -- Proliferation
+1152,GSH -- Proliferation
+1153,GSH -- Proliferation -- VEGF
+1154,GSH -- Apoptosis -- Proliferation
+1155,GSH -- Proliferation -- VEGF
+1156,<nil>
+1157,Proliferation
+1158,GSH -- VEGF
+1159,GSH -- VEGF
+1160,Apoptosis -- Proliferation
+1161,GSH -- Apoptosis
+1162,GSH -- Proliferation
+1163,Proliferation -- DNA_Repair
+1164,GSH -- Apoptosis
+1165,Proliferation
+1166,GSH -- COX412
+1167,GSH -- Proliferation -- VEGF
+1168,GSH
+1169,Proliferation -- DNA_Repair
+1170,Apoptosis -- Proliferation
+1171,GSH
+1172,GSH -- VEGF
+1173,GSH
+1174,GSH -- Apoptosis
+1175,GSH -- VEGF
+1176,Apoptosis -- Proliferation -- DNA_Repair
+1177,<nil>
+1178,GSH -- GLUT1 -- VEGF
+1179,Proliferation
+1180,GSH -- VEGF
+1181,<nil>
+1182,Proliferation
+1183,Apoptosis -- VEGF
+1184,<nil>
+1185,GSH
+1186,GSH
+1187,Apoptosis -- Proliferation -- DNA_Repair
+1188,GSH -- VEGF
+1189,Proliferation
+1190,GSH
+1191,GSH -- VEGF
+1192,<nil>
+1193,<nil>
+1194,<nil>
+1195,Apoptosis -- Proliferation
+1196,Proliferation
+1197,GSH -- Proliferation -- GLUT1 -- VEGF
+1198,GSH -- Proliferation -- VEGF -- DNA_Repair
+1199,Apoptosis
+1200,Proliferation -- VEGF
+1201,<nil>
+1202,Proliferation -- VEGF
+1203,GSH -- Proliferation -- GLUT1 -- VEGF
+1204,GSH
+1205,GSH -- VEGF
+1206,Apoptosis
+1207,VEGF
+1208,GSH -- Apoptosis -- Proliferation -- DNA_Repair
+1209,GSH -- VEGF
+1210,GSH -- Proliferation -- VEGF -- DNA_Repair
+1211,GSH
+1212,GSH
+1213,GSH -- Lactic_acid
+1214,Proliferation
+1215,GSH -- Proliferation
+1219,GSH -- Proliferation -- GLUT1 -- VEGF
+1220,GSH -- VEGF

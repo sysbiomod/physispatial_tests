@@ -1,0 +1,51 @@
+python3 -B physispatial_tools/select_project.py --geometry sphere --population BM0
+Loaded sphere BM0 from sample_projects_intracellular/boolean/physispatial_sphere
+Compile: make -j2 ARCH=x86-64
+Run (original long horizon): ./physispatial_sphere config/PhysiCell_settings.xml
+g++ -march=x86-64 -O3 -fomit-frame-pointer -mfpmath=both -fopenmp -m64 -std=c++11 -g   -c ./BioFVM/BioFVM_vector.cpp 
+g++ -march=x86-64 -O3 -fomit-frame-pointer -mfpmath=both -fopenmp -m64 -std=c++11 -g   -c ./BioFVM/BioFVM_mesh.cpp 
+g++ -march=x86-64 -O3 -fomit-frame-pointer -mfpmath=both -fopenmp -m64 -std=c++11 -g   -I./BioFVM -c ./custom_modules/historical_BioFVM_microenvironment.cpp -o BioFVM_microenvironment.o 
+g++ -march=x86-64 -O3 -fomit-frame-pointer -mfpmath=both -fopenmp -m64 -std=c++11 -g   -I./BioFVM -c ./custom_modules/historical_BioFVM_solvers.cpp -o BioFVM_solvers.o 
+g++ -march=x86-64 -O3 -fomit-frame-pointer -mfpmath=both -fopenmp -m64 -std=c++11 -g   -c ./BioFVM/BioFVM_matlab.cpp
+g++ -march=x86-64 -O3 -fomit-frame-pointer -mfpmath=both -fopenmp -m64 -std=c++11 -g   -c ./BioFVM/BioFVM_utilities.cpp 
+g++ -march=x86-64 -O3 -fomit-frame-pointer -mfpmath=both -fopenmp -m64 -std=c++11 -g   -c ./BioFVM/BioFVM_basic_agent.cpp 
+g++ -march=x86-64 -O3 -fomit-frame-pointer -mfpmath=both -fopenmp -m64 -std=c++11 -g   -c ./BioFVM/BioFVM_MultiCellDS.cpp
+g++ -march=x86-64 -O3 -fomit-frame-pointer -mfpmath=both -fopenmp -m64 -std=c++11 -g   -c ./BioFVM/BioFVM_agent_container.cpp 
+g++ -march=x86-64 -O3 -fomit-frame-pointer -mfpmath=both -fopenmp -m64 -std=c++11 -g   -c ./BioFVM/pugixml.cpp
+g++ -march=x86-64 -O3 -fomit-frame-pointer -mfpmath=both -fopenmp -m64 -std=c++11 -g   -c ./core/PhysiCell_phenotype.cpp
+g++ -march=x86-64 -O3 -fomit-frame-pointer -mfpmath=both -fopenmp -m64 -std=c++11 -g   -c ./core/PhysiCell_cell_container.cpp 
+g++ -march=x86-64 -O3 -fomit-frame-pointer -mfpmath=both -fopenmp -m64 -std=c++11 -g   -c ./core/PhysiCell_standard_models.cpp 
+g++ -march=x86-64 -O3 -fomit-frame-pointer -mfpmath=both -fopenmp -m64 -std=c++11 -g   -DADDON_PHYSIBOSS -I/home/amadrid/Escritorio/PHD/PhysiBoSS_PhysiSpatial_UnitTests/addons/PhysiBoSS/MaBoSS/engine/include -DMAXNODES=256 -c ./core/PhysiCell_cell.cpp 
+g++ -march=x86-64 -O3 -fomit-frame-pointer -mfpmath=both -fopenmp -m64 -std=c++11 -g   -c ./core/PhysiCell_custom.cpp 
+g++ -march=x86-64 -O3 -fomit-frame-pointer -mfpmath=both -fopenmp -m64 -std=c++11 -g   -c ./core/PhysiCell_utilities.cpp 
+g++ -march=x86-64 -O3 -fomit-frame-pointer -mfpmath=both -fopenmp -m64 -std=c++11 -g   -c ./core/PhysiCell_constants.cpp 
+g++ -march=x86-64 -O3 -fomit-frame-pointer -mfpmath=both -fopenmp -m64 -std=c++11 -g   -c ./core/PhysiCell_basic_signaling.cpp 	
+g++ -march=x86-64 -O3 -fomit-frame-pointer -mfpmath=both -fopenmp -m64 -std=c++11 -g   -c ./core/PhysiCell_signal_behavior.cpp 
+g++ -march=x86-64 -O3 -fomit-frame-pointer -mfpmath=both -fopenmp -m64 -std=c++11 -g   -c ./core/PhysiCell_rules.cpp 
+g++ -march=x86-64 -O3 -fomit-frame-pointer -mfpmath=both -fopenmp -m64 -std=c++11 -g   -c ./modules/PhysiCell_SVG.cpp
+g++ -march=x86-64 -O3 -fomit-frame-pointer -mfpmath=both -fopenmp -m64 -std=c++11 -g   -c ./modules/PhysiCell_pathology.cpp
+g++ -march=x86-64 -O3 -fomit-frame-pointer -mfpmath=both -fopenmp -m64 -std=c++11 -g   -DADDON_PHYSIBOSS -I/home/amadrid/Escritorio/PHD/PhysiBoSS_PhysiSpatial_UnitTests/addons/PhysiBoSS/MaBoSS/engine/include -DMAXNODES=256 -c ./modules/PhysiCell_MultiCellDS.cpp
+g++ -march=x86-64 -O3 -fomit-frame-pointer -mfpmath=both -fopenmp -m64 -std=c++11 -g   -c ./modules/PhysiCell_various_outputs.cpp
+g++ -march=x86-64 -O3 -fomit-frame-pointer -mfpmath=both -fopenmp -m64 -std=c++11 -g   -c ./modules/PhysiCell_pugixml.cpp
+g++ -march=x86-64 -O3 -fomit-frame-pointer -mfpmath=both -fopenmp -m64 -std=c++11 -g   -c ./modules/PhysiCell_settings.cpp
+g++ -march=x86-64 -O3 -fomit-frame-pointer -mfpmath=both -fopenmp -m64 -std=c++11 -g   -I./modules -c ./custom_modules/historical_PhysiCell_geometry.cpp -o PhysiCell_geometry.o 
+./custom_modules/historical_PhysiCell_geometry.cpp: In function ‘bool PhysiCell::load_cells_from_pugixml(pugi::xml_node)’:
+./custom_modules/historical_PhysiCell_geometry.cpp:375:23: warning: ignoring return value of ‘int system(const char*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  375 |                 system("sleep 1");
+      |                 ~~~~~~^~~~~~~~~~~
+g++ -march=x86-64 -O3 -fomit-frame-pointer -mfpmath=both -fopenmp -m64 -std=c++11 -g   -DADDON_PHYSIBOSS -I/home/amadrid/Escritorio/PHD/PhysiBoSS_PhysiSpatial_UnitTests/addons/PhysiBoSS/MaBoSS/engine/include -DMAXNODES=256  -c ./custom_modules/custom.cpp
+g++ -march=x86-64 -O3 -fomit-frame-pointer -mfpmath=both -fopenmp -m64 -std=c++11 -g   -DADDON_PHYSIBOSS -I/home/amadrid/Escritorio/PHD/PhysiBoSS_PhysiSpatial_UnitTests/addons/PhysiBoSS/MaBoSS/engine/include -DMAXNODES=256  -c ./custom_modules/tnf_boolean_model_interface.cpp ./addons/PhysiBoSS/MaBoSS/engine/src/BooleanNetwork.h
+g++ -march=x86-64 -O3 -fomit-frame-pointer -mfpmath=both -fopenmp -m64 -std=c++11 -g   -DADDON_PHYSIBOSS -I/home/amadrid/Escritorio/PHD/PhysiBoSS_PhysiSpatial_UnitTests/addons/PhysiBoSS/MaBoSS/engine/include -DMAXNODES=256 -c ./addons/PhysiBoSS/src/maboss_network.cpp
+g++ -march=x86-64 -O3 -fomit-frame-pointer -mfpmath=both -fopenmp -m64 -std=c++11 -g   -DADDON_PHYSIBOSS -I/home/amadrid/Escritorio/PHD/PhysiBoSS_PhysiSpatial_UnitTests/addons/PhysiBoSS/MaBoSS/engine/include -DMAXNODES=256 -c ./addons/PhysiBoSS/src/maboss_intracellular.cpp
+g++ -march=x86-64 -O3 -fomit-frame-pointer -mfpmath=both -fopenmp -m64 -std=c++11 -g   -DADDON_PHYSIBOSS -I/home/amadrid/Escritorio/PHD/PhysiBoSS_PhysiSpatial_UnitTests/addons/PhysiBoSS/MaBoSS/engine/include -DMAXNODES=256 -o physispatial_sphere BioFVM_vector.o BioFVM_mesh.o BioFVM_microenvironment.o BioFVM_solvers.o BioFVM_matlab.o BioFVM_utilities.o BioFVM_basic_agent.o BioFVM_MultiCellDS.o BioFVM_agent_container.o   pugixml.o PhysiCell_phenotype.o PhysiCell_cell_container.o PhysiCell_standard_models.o PhysiCell_cell.o PhysiCell_custom.o PhysiCell_utilities.o PhysiCell_constants.o PhysiCell_basic_signaling.o PhysiCell_signal_behavior.o PhysiCell_rules.o PhysiCell_SVG.o PhysiCell_pathology.o PhysiCell_MultiCellDS.o PhysiCell_various_outputs.o PhysiCell_pugixml.o PhysiCell_settings.o PhysiCell_geometry.o custom.o tnf_boolean_model_interface.o maboss_network.o maboss_intracellular.o main.cpp -L/home/amadrid/Escritorio/PHD/PhysiBoSS_PhysiSpatial_UnitTests/addons/PhysiBoSS/MaBoSS/engine/lib -lMaBoSS_256n-static -ldl 
+main.cpp: In function ‘int main(int, char**)’:
+main.cpp:108:15: warning: ignoring return value of ‘int system(const char*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  108 |         system( copy_command );
+      |         ~~~~~~^~~~~~~~~~~~~~~~
+make name 
+make[1]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+make[1]: Entering directory '/home/amadrid/Escritorio/PHD/PhysiBoSS_PhysiSpatial_UnitTests'
+
+Executable name is physispatial_sphere
+
+make[1]: Leaving directory '/home/amadrid/Escritorio/PHD/PhysiBoSS_PhysiSpatial_UnitTests'

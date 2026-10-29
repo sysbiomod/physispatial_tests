@@ -1,0 +1,6 @@
+{
+  "16_independent_config_directories_correct_D_C_population_seeds": "PASS",
+  "existing_sweep_not_overwritten": "PASS",
+  "invalid_parameters_rejected": "PASS",
+  "preparation_does_not_submit_or_execute": "PASS"
+}

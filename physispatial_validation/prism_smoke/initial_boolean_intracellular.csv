@@ -1,0 +1,1217 @@
+ID,state
+0,Proliferation -- DNA_Repair
+1,GSH -- Apoptosis -- GLUT1 -- VEGF -- Lactic_acid -- COX412 -- DNA_Repair
+2,Lactic_acid
+3,Apoptosis -- Proliferation -- VEGF -- DNA_Repair
+4,Apoptosis -- VEGF -- DNA_Repair
+5,Apoptosis -- Proliferation -- Lactic_acid
+6,GSH -- Proliferation -- Lactic_acid -- DNA_Repair
+7,Apoptosis -- DNA_Repair
+8,GSH -- Apoptosis -- Proliferation -- GLUT1 -- COX412
+9,Proliferation -- COX412 -- DNA_Repair
+10,Proliferation -- VEGF
+11,Apoptosis -- GLUT1 -- Lactic_acid
+12,GSH -- GLUT1 -- VEGF -- Lactic_acid
+13,Apoptosis -- GLUT1 -- VEGF -- Lactic_acid
+14,<nil>
+15,Proliferation -- Lactic_acid -- COX412
+16,Apoptosis -- Lactic_acid -- DNA_Repair
+17,GSH -- GLUT1 -- VEGF -- Lactic_acid -- DNA_Repair
+18,GSH -- Apoptosis -- VEGF -- COX412 -- DNA_Repair
+19,Apoptosis -- GLUT1 -- Lactic_acid -- COX412 -- DNA_Repair
+20,GSH -- Proliferation -- GLUT1 -- VEGF -- Lactic_acid -- COX412
+21,GSH -- Apoptosis -- Proliferation -- VEGF -- Lactic_acid -- DNA_Repair
+22,Apoptosis -- Lactic_acid -- COX412 -- DNA_Repair
+23,GSH -- Proliferation -- COX412
+24,Apoptosis -- GLUT1 -- Lactic_acid
+25,GSH -- Apoptosis -- GLUT1 -- VEGF -- COX412 -- DNA_Repair
+26,GSH -- VEGF -- DNA_Repair
+27,Apoptosis -- Proliferation -- GLUT1 -- Lactic_acid -- DNA_Repair
+28,Lactic_acid -- DNA_Repair
+29,GSH -- Proliferation -- VEGF -- Lactic_acid -- COX412 -- DNA_Repair
+30,Proliferation -- GLUT1 -- Lactic_acid -- DNA_Repair
+31,GSH -- Lactic_acid
+32,GLUT1 -- VEGF -- Lactic_acid -- COX412 -- DNA_Repair
+33,VEGF -- Lactic_acid -- DNA_Repair
+34,Apoptosis -- Proliferation -- GLUT1 -- VEGF -- Lactic_acid -- COX412 -- DNA_Repair
+35,VEGF -- DNA_Repair
+36,Apoptosis -- GLUT1
+37,Proliferation -- COX412
+38,Apoptosis -- Proliferation -- Lactic_acid -- DNA_Repair
+39,Proliferation -- VEGF -- COX412 -- DNA_Repair
+40,Apoptosis -- GLUT1 -- Lactic_acid -- COX412
+41,GLUT1 -- VEGF -- COX412 -- DNA_Repair
+42,<nil>
+43,VEGF -- DNA_Repair
+44,Lactic_acid -- COX412
+45,VEGF -- COX412
+46,Apoptosis -- Proliferation -- GLUT1
+47,Proliferation -- DNA_Repair
+48,GSH -- Lactic_acid -- COX412
+49,Proliferation -- Lactic_acid -- COX412 -- DNA_Repair
+50,Apoptosis -- Proliferation -- VEGF -- DNA_Repair
+51,Lactic_acid -- COX412
+52,GLUT1 -- Lactic_acid -- COX412
+53,Apoptosis -- Lactic_acid -- COX412
+54,GSH -- Apoptosis -- GLUT1 -- Lactic_acid -- COX412
+55,GLUT1 -- COX412 -- DNA_Repair
+56,GLUT1 -- VEGF
+57,Apoptosis -- Proliferation -- Lactic_acid -- COX412
+58,GSH -- VEGF -- Lactic_acid -- COX412 -- DNA_Repair
+59,COX412
+60,Apoptosis -- GLUT1 -- VEGF -- Lactic_acid -- COX412 -- DNA_Repair
+61,Apoptosis -- Proliferation -- VEGF -- Lactic_acid -- COX412 -- DNA_Repair
+62,Apoptosis -- GLUT1 -- VEGF -- COX412 -- DNA_Repair
+63,Apoptosis -- Proliferation -- GLUT1
+64,GSH -- Apoptosis -- COX412 -- DNA_Repair
+65,GSH -- Apoptosis -- Proliferation -- GLUT1 -- VEGF -- Lactic_acid -- COX412
+66,GSH -- GLUT1 -- VEGF -- Lactic_acid -- COX412 -- DNA_Repair
+67,Proliferation -- Lactic_acid
+68,COX412
+69,Apoptosis -- Proliferation -- Lactic_acid -- COX412 -- DNA_Repair
+70,GSH -- Proliferation -- Lactic_acid -- COX412
+71,GSH -- Apoptosis -- GLUT1 -- VEGF -- Lactic_acid
+72,Lactic_acid -- DNA_Repair
+73,Proliferation -- GLUT1 -- Lactic_acid -- COX412 -- DNA_Repair
+74,GSH -- VEGF -- DNA_Repair
+75,Apoptosis -- Proliferation -- VEGF -- DNA_Repair
+76,GLUT1 -- VEGF -- COX412 -- DNA_Repair
+77,GSH -- COX412
+78,GSH -- Apoptosis
+79,GSH -- Apoptosis -- Proliferation -- DNA_Repair
+80,GLUT1 -- Lactic_acid -- COX412
+81,GSH -- Lactic_acid
+82,Lactic_acid -- COX412
+83,Apoptosis -- Proliferation -- GLUT1 -- COX412
+84,Apoptosis -- GLUT1 -- Lactic_acid -- COX412 -- DNA_Repair
+85,GSH -- Apoptosis -- COX412 -- DNA_Repair
+86,Proliferation -- COX412
+87,VEGF -- COX412 -- DNA_Repair
+88,Apoptosis -- Proliferation -- Lactic_acid -- COX412
+89,Proliferation -- GLUT1 -- COX412
+90,Apoptosis -- VEGF -- COX412
+91,Apoptosis -- Lactic_acid -- DNA_Repair
+92,VEGF -- Lactic_acid -- COX412
+93,Proliferation -- GLUT1 -- Lactic_acid -- COX412
+94,Proliferation -- GLUT1 -- VEGF -- Lactic_acid -- COX412
+95,Proliferation -- GLUT1 -- Lactic_acid
+96,Proliferation -- COX412 -- DNA_Repair
+97,Apoptosis -- GLUT1 -- VEGF
+98,DNA_Repair
+99,Proliferation -- COX412 -- DNA_Repair
+100,Proliferation -- GLUT1
+101,GSH -- Apoptosis -- VEGF -- Lactic_acid -- DNA_Repair
+102,GLUT1 -- VEGF -- Lactic_acid -- COX412
+103,GSH -- Apoptosis -- COX412
+104,Apoptosis -- GLUT1 -- VEGF -- DNA_Repair
+105,GSH -- Apoptosis -- Proliferation -- VEGF -- Lactic_acid -- COX412 -- DNA_Repair
+106,GSH -- Apoptosis -- Proliferation -- GLUT1 -- VEGF
+107,Apoptosis -- GLUT1 -- VEGF -- Lactic_acid
+108,Apoptosis -- Lactic_acid
+109,GSH -- Apoptosis -- GLUT1 -- VEGF -- Lactic_acid -- DNA_Repair
+110,GSH -- Apoptosis -- Proliferation -- COX412
+111,Proliferation -- Lactic_acid -- COX412 -- DNA_Repair
+112,Proliferation -- GLUT1 -- VEGF -- Lactic_acid -- DNA_Repair
+113,DNA_Repair
+114,GSH -- Apoptosis -- GLUT1
+115,Apoptosis -- GLUT1 -- Lactic_acid -- COX412
+116,GLUT1 -- Lactic_acid
+117,GSH -- VEGF -- COX412
+118,Apoptosis -- Proliferation -- COX412 -- DNA_Repair
+119,Proliferation -- Lactic_acid -- COX412
+120,GSH -- Proliferation -- VEGF -- Lactic_acid -- COX412 -- DNA_Repair
+121,Apoptosis -- Proliferation -- Lactic_acid -- COX412 -- DNA_Repair
+122,GSH -- GLUT1 -- VEGF -- COX412 -- DNA_Repair
+123,Apoptosis
+124,Proliferation -- VEGF -- Lactic_acid -- DNA_Repair
+125,GSH -- GLUT1 -- COX412 -- DNA_Repair
+126,GSH -- Apoptosis -- Proliferation -- GLUT1
+127,Proliferation -- DNA_Repair
+128,GSH -- GLUT1 -- COX412
+129,GLUT1 -- COX412
+130,GSH -- GLUT1 -- VEGF -- Lactic_acid
+131,Lactic_acid -- DNA_Repair
+132,Apoptosis -- Proliferation -- VEGF -- Lactic_acid
+133,Proliferation -- Lactic_acid -- COX412 -- DNA_Repair
+134,GSH -- Apoptosis -- Lactic_acid -- DNA_Repair
+135,GSH -- Apoptosis -- Lactic_acid
+136,Apoptosis -- Proliferation -- Lactic_acid
+137,Apoptosis -- Proliferation -- Lactic_acid -- DNA_Repair
+138,VEGF -- COX412 -- DNA_Repair
+139,Proliferation -- GLUT1 -- VEGF
+140,GSH -- GLUT1 -- Lactic_acid -- COX412
+141,Proliferation -- GLUT1 -- VEGF -- DNA_Repair
+142,GSH -- Apoptosis -- Lactic_acid -- COX412
+143,GLUT1 -- DNA_Repair
+144,Apoptosis -- Lactic_acid -- DNA_Repair
+145,GSH -- Proliferation
+146,GSH -- Proliferation -- GLUT1 -- DNA_Repair
+147,GLUT1 -- Lactic_acid
+148,Apoptosis -- Proliferation -- Lactic_acid
+149,Proliferation -- Lactic_acid -- COX412 -- DNA_Repair
+150,GLUT1 -- VEGF
+151,GSH -- Apoptosis -- Proliferation -- VEGF -- COX412
+152,Proliferation -- GLUT1
+153,GLUT1 -- DNA_Repair
+154,Apoptosis -- Proliferation -- VEGF -- Lactic_acid -- COX412
+155,Apoptosis -- Proliferation -- Lactic_acid -- COX412 -- DNA_Repair
+156,Proliferation -- GLUT1 -- DNA_Repair
+157,VEGF -- Lactic_acid -- DNA_Repair
+158,GSH -- Proliferation -- GLUT1 -- VEGF -- DNA_Repair
+159,Proliferation -- GLUT1 -- Lactic_acid -- COX412 -- DNA_Repair
+160,Apoptosis -- Proliferation -- GLUT1 -- VEGF -- Lactic_acid -- COX412
+161,Apoptosis -- Proliferation -- GLUT1 -- VEGF
+162,VEGF -- DNA_Repair
+163,Lactic_acid
+164,GLUT1
+165,COX412 -- DNA_Repair
+166,DNA_Repair
+167,GSH -- Proliferation -- DNA_Repair
+168,Apoptosis -- GLUT1 -- Lactic_acid -- COX412
+169,COX412
+170,<nil>
+171,GSH -- Lactic_acid -- DNA_Repair
+172,Lactic_acid
+173,Apoptosis -- GLUT1 -- VEGF -- Lactic_acid -- COX412 -- DNA_Repair
+174,Proliferation -- GLUT1 -- VEGF -- Lactic_acid -- DNA_Repair
+175,Proliferation -- GLUT1
+176,GSH -- DNA_Repair
+177,GLUT1 -- Lactic_acid
+178,GSH -- GLUT1 -- VEGF
+179,GSH -- Apoptosis -- GLUT1 -- COX412 -- DNA_Repair
+180,Proliferation -- GLUT1 -- Lactic_acid -- DNA_Repair
+181,Apoptosis -- Proliferation -- GLUT1 -- VEGF -- Lactic_acid -- COX412
+182,VEGF -- Lactic_acid -- DNA_Repair
+183,Proliferation -- COX412
+184,Proliferation -- GLUT1 -- VEGF -- Lactic_acid -- DNA_Repair
+185,GLUT1
+186,Proliferation -- GLUT1 -- VEGF -- Lactic_acid
+187,Apoptosis -- VEGF -- Lactic_acid -- DNA_Repair
+188,GSH -- Apoptosis -- Proliferation -- COX412
+189,GSH -- VEGF -- Lactic_acid
+190,GSH -- GLUT1 -- COX412 -- DNA_Repair
+191,Proliferation -- GLUT1 -- Lactic_acid -- COX412
+192,GSH -- Apoptosis -- Proliferation
+193,Apoptosis -- COX412 -- DNA_Repair
+194,Proliferation -- GLUT1 -- VEGF -- Lactic_acid -- COX412 -- DNA_Repair
+195,COX412
+196,GSH -- Apoptosis -- Proliferation -- GLUT1 -- VEGF
+197,GSH -- Proliferation -- VEGF -- Lactic_acid -- COX412
+198,GSH -- Apoptosis -- Proliferation -- GLUT1
+199,Apoptosis -- GLUT1 -- Lactic_acid
+200,GSH -- Proliferation -- GLUT1 -- VEGF
+201,COX412
+202,GLUT1 -- VEGF -- Lactic_acid -- COX412
+203,Lactic_acid -- DNA_Repair
+204,Apoptosis -- Proliferation -- Lactic_acid -- DNA_Repair
+205,DNA_Repair
+206,GSH -- Apoptosis -- GLUT1 -- VEGF -- Lactic_acid -- DNA_Repair
+207,GLUT1 -- COX412 -- DNA_Repair
+208,GSH -- GLUT1 -- VEGF -- Lactic_acid -- COX412
+209,Apoptosis -- Proliferation -- COX412
+210,GSH -- Apoptosis -- GLUT1 -- VEGF -- Lactic_acid -- COX412
+211,GSH -- Proliferation -- VEGF -- COX412
+212,Apoptosis -- VEGF -- COX412
+213,Proliferation -- Lactic_acid
+214,GSH -- Proliferation -- COX412 -- DNA_Repair
+215,GSH -- VEGF -- Lactic_acid
+216,Lactic_acid -- COX412
+217,GSH -- Lactic_acid -- COX412
+218,COX412
+219,Apoptosis -- GLUT1 -- Lactic_acid -- DNA_Repair
+220,Apoptosis -- GLUT1 -- VEGF
+221,GSH -- GLUT1 -- COX412 -- DNA_Repair
+222,Apoptosis -- Proliferation -- Lactic_acid -- COX412 -- DNA_Repair
+223,Apoptosis -- Proliferation -- GLUT1 -- VEGF -- COX412
+224,GSH -- GLUT1 -- VEGF -- Lactic_acid
+225,GLUT1 -- Lactic_acid -- COX412
+226,Apoptosis -- VEGF
+227,GLUT1 -- Lactic_acid -- DNA_Repair
+228,GSH -- Apoptosis -- VEGF -- COX412 -- DNA_Repair
+229,Apoptosis -- GLUT1
+230,Proliferation -- Lactic_acid -- COX412 -- DNA_Repair
+231,COX412 -- DNA_Repair
+232,GLUT1 -- COX412
+233,Proliferation -- VEGF -- Lactic_acid
+234,Apoptosis -- Proliferation -- VEGF -- COX412 -- DNA_Repair
+235,GSH -- Apoptosis -- COX412 -- DNA_Repair
+236,GSH -- Apoptosis -- Proliferation -- GLUT1
+237,Apoptosis -- Proliferation -- GLUT1 -- Lactic_acid -- COX412
+238,Apoptosis -- Proliferation -- GLUT1
+239,GSH -- Apoptosis -- Proliferation -- GLUT1 -- VEGF -- Lactic_acid
+240,GSH -- Apoptosis -- Proliferation -- GLUT1 -- Lactic_acid
+241,Proliferation -- COX412 -- DNA_Repair
+242,GSH -- Apoptosis -- Proliferation -- GLUT1 -- VEGF
+243,Proliferation -- GLUT1 -- VEGF
+244,Apoptosis -- Proliferation -- GLUT1 -- COX412
+245,Apoptosis -- Proliferation -- VEGF -- Lactic_acid -- COX412 -- DNA_Repair
+246,Proliferation -- GLUT1 -- Lactic_acid -- COX412
+247,Apoptosis -- Lactic_acid -- DNA_Repair
+248,Apoptosis -- Lactic_acid -- COX412
+249,Apoptosis -- Lactic_acid -- COX412 -- DNA_Repair
+250,Apoptosis -- VEGF -- COX412 -- DNA_Repair
+251,GSH -- Proliferation -- GLUT1 -- VEGF -- Lactic_acid -- DNA_Repair
+252,VEGF -- Lactic_acid
+253,Apoptosis -- Proliferation -- GLUT1 -- VEGF -- Lactic_acid -- COX412 -- DNA_Repair
+254,GSH -- Proliferation -- GLUT1 -- Lactic_acid -- COX412 -- DNA_Repair
+255,Apoptosis -- Proliferation -- COX412 -- DNA_Repair
+256,Apoptosis -- Proliferation -- GLUT1 -- Lactic_acid -- COX412 -- DNA_Repair
+257,Lactic_acid
+258,GSH -- Proliferation -- Lactic_acid -- COX412
+259,Proliferation -- COX412
+260,Apoptosis -- Proliferation -- GLUT1 -- VEGF -- COX412 -- DNA_Repair
+261,GLUT1 -- VEGF
+262,GSH -- Apoptosis -- VEGF -- DNA_Repair
+263,Apoptosis -- Proliferation -- GLUT1 -- COX412 -- DNA_Repair
+264,VEGF -- Lactic_acid -- COX412
+265,GLUT1 -- Lactic_acid -- COX412 -- DNA_Repair
+266,GSH -- Apoptosis -- Proliferation -- Lactic_acid -- DNA_Repair
+267,Proliferation -- COX412 -- DNA_Repair
+268,Proliferation -- VEGF -- Lactic_acid
+269,GSH -- Apoptosis -- Proliferation -- GLUT1 -- Lactic_acid -- COX412 -- DNA_Repair
+270,Apoptosis -- Proliferation -- GLUT1 -- VEGF -- Lactic_acid
+271,GSH -- Proliferation -- Lactic_acid
+272,GSH -- Proliferation
+273,Lactic_acid -- DNA_Repair
+274,GSH -- Proliferation -- DNA_Repair
+275,Lactic_acid -- DNA_Repair
+276,GSH -- Apoptosis -- Proliferation -- GLUT1 -- Lactic_acid
+277,COX412
+278,Proliferation -- Lactic_acid
+279,GLUT1 -- Lactic_acid -- COX412
+280,Apoptosis -- Proliferation
+281,Apoptosis -- Proliferation -- GLUT1 -- Lactic_acid -- COX412
+282,Apoptosis -- Proliferation -- GLUT1 -- Lactic_acid -- COX412
+283,Apoptosis -- Lactic_acid -- COX412
+284,GSH
+285,GLUT1 -- DNA_Repair
+286,Apoptosis -- Proliferation
+287,Apoptosis -- Proliferation -- VEGF -- COX412
+288,GSH -- Apoptosis -- Proliferation
+289,Apoptosis -- VEGF -- Lactic_acid
+290,Apoptosis -- Proliferation
+291,Apoptosis -- Proliferation -- VEGF -- Lactic_acid -- DNA_Repair
+292,Apoptosis -- VEGF -- DNA_Repair
+293,Proliferation -- VEGF -- Lactic_acid -- DNA_Repair
+294,Apoptosis -- Proliferation -- VEGF -- Lactic_acid
+295,Apoptosis -- Proliferation -- GLUT1 -- COX412
+296,Apoptosis -- GLUT1 -- DNA_Repair
+297,GSH -- Apoptosis -- GLUT1 -- VEGF -- COX412 -- DNA_Repair
+298,GLUT1 -- Lactic_acid -- DNA_Repair
+299,Apoptosis -- Proliferation -- COX412 -- DNA_Repair
+300,GSH -- Apoptosis -- Proliferation -- GLUT1 -- Lactic_acid -- DNA_Repair
+301,Proliferation -- Lactic_acid -- COX412 -- DNA_Repair
+302,Apoptosis -- GLUT1 -- Lactic_acid -- DNA_Repair
+303,GLUT1 -- VEGF -- Lactic_acid -- COX412
+304,GLUT1 -- Lactic_acid
+305,GSH -- COX412
+306,GSH -- Apoptosis -- VEGF -- COX412
+307,Apoptosis -- Proliferation -- COX412
+308,GLUT1 -- VEGF -- COX412 -- DNA_Repair
+309,Apoptosis -- Proliferation -- GLUT1 -- Lactic_acid -- DNA_Repair
+310,Apoptosis -- Lactic_acid -- COX412
+311,GSH -- Apoptosis -- COX412 -- DNA_Repair
+312,Apoptosis -- Proliferation -- GLUT1 -- COX412
+313,Proliferation -- VEGF -- COX412
+314,Apoptosis -- GLUT1 -- VEGF -- COX412
+315,Proliferation -- COX412
+316,Apoptosis -- Proliferation -- GLUT1 -- VEGF -- DNA_Repair
+317,GSH -- Apoptosis -- VEGF -- Lactic_acid -- COX412 -- DNA_Repair
+318,Apoptosis
+319,Apoptosis -- GLUT1 -- Lactic_acid
+320,Proliferation -- GLUT1 -- VEGF
+321,Apoptosis -- GLUT1 -- Lactic_acid -- DNA_Repair
+322,GSH -- Proliferation -- GLUT1 -- COX412
+323,Proliferation -- Lactic_acid -- DNA_Repair
+324,Proliferation -- DNA_Repair
+325,GSH -- Proliferation -- VEGF -- COX412
+326,GSH -- Apoptosis -- Proliferation -- VEGF
+327,GSH -- Apoptosis
+328,GSH -- Lactic_acid
+329,Proliferation -- GLUT1 -- VEGF -- Lactic_acid
+330,Apoptosis -- GLUT1
+331,Proliferation -- VEGF -- Lactic_acid -- DNA_Repair
+332,Proliferation -- GLUT1 -- VEGF -- Lactic_acid -- COX412 -- DNA_Repair
+333,Apoptosis -- Lactic_acid -- COX412
+334,Proliferation -- GLUT1 -- VEGF -- COX412
+335,GSH -- GLUT1 -- COX412
+336,GSH -- VEGF -- COX412 -- DNA_Repair
+337,GSH -- Proliferation -- GLUT1 -- Lactic_acid -- DNA_Repair
+338,Proliferation -- Lactic_acid -- COX412 -- DNA_Repair
+339,Proliferation -- GLUT1 -- VEGF -- COX412
+340,Apoptosis -- Proliferation -- GLUT1 -- COX412 -- DNA_Repair
+341,Lactic_acid -- COX412
+342,GSH -- Apoptosis -- Proliferation -- GLUT1 -- VEGF -- COX412
+343,COX412 -- DNA_Repair
+344,Proliferation -- VEGF -- DNA_Repair
+345,Proliferation -- GLUT1 -- DNA_Repair
+346,Apoptosis -- GLUT1
+347,Apoptosis -- Proliferation -- DNA_Repair
+348,Lactic_acid -- COX412
+349,GSH -- Apoptosis -- COX412
+350,Apoptosis -- Proliferation -- GLUT1 -- VEGF -- DNA_Repair
+351,GSH -- Proliferation -- GLUT1 -- COX412 -- DNA_Repair
+352,Apoptosis -- VEGF -- Lactic_acid
+353,GSH -- Apoptosis -- Proliferation -- GLUT1 -- Lactic_acid -- COX412
+354,GSH -- Apoptosis -- GLUT1 -- Lactic_acid -- COX412 -- DNA_Repair
+355,Apoptosis -- GLUT1 -- Lactic_acid -- COX412
+356,GSH -- Proliferation -- GLUT1 -- Lactic_acid -- COX412 -- DNA_Repair
+357,Apoptosis -- Proliferation -- GLUT1 -- VEGF -- Lactic_acid -- COX412 -- DNA_Repair
+358,Apoptosis -- Lactic_acid
+359,DNA_Repair
+360,GSH -- Apoptosis -- Proliferation -- GLUT1 -- VEGF -- Lactic_acid -- DNA_Repair
+361,Proliferation -- GLUT1 -- COX412
+362,GSH -- Apoptosis -- Proliferation -- DNA_Repair
+363,GSH -- Proliferation -- COX412
+364,Apoptosis -- DNA_Repair
+365,Proliferation -- VEGF -- Lactic_acid -- COX412
+366,GSH -- Proliferation -- GLUT1 -- VEGF -- COX412 -- DNA_Repair
+367,Apoptosis -- Proliferation -- Lactic_acid -- COX412
+368,Apoptosis -- GLUT1 -- Lactic_acid -- COX412 -- DNA_Repair
+369,GLUT1
+370,Apoptosis -- COX412 -- DNA_Repair
+371,GSH -- Apoptosis -- GLUT1 -- COX412 -- DNA_Repair
+372,GLUT1 -- Lactic_acid -- DNA_Repair
+373,GSH -- Proliferation -- VEGF -- Lactic_acid -- COX412
+374,Apoptosis -- VEGF -- COX412
+375,Apoptosis -- Proliferation -- GLUT1 -- Lactic_acid -- COX412 -- DNA_Repair
+376,Apoptosis -- Proliferation -- VEGF -- DNA_Repair
+377,Apoptosis -- COX412 -- DNA_Repair
+378,GLUT1 -- Lactic_acid -- DNA_Repair
+379,Apoptosis -- Proliferation -- VEGF
+380,GSH -- COX412 -- DNA_Repair
+381,VEGF -- Lactic_acid -- DNA_Repair
+382,GSH -- Apoptosis -- Proliferation -- Lactic_acid -- COX412 -- DNA_Repair
+383,Lactic_acid -- COX412
+384,Apoptosis -- Proliferation -- GLUT1 -- Lactic_acid
+385,Apoptosis -- Proliferation -- GLUT1 -- VEGF -- Lactic_acid
+386,Apoptosis -- Proliferation -- GLUT1 -- DNA_Repair
+387,GLUT1 -- Lactic_acid -- DNA_Repair
+388,GSH -- Proliferation -- Lactic_acid -- COX412
+389,GSH -- Proliferation -- COX412 -- DNA_Repair
+390,GSH -- Apoptosis -- GLUT1 -- COX412 -- DNA_Repair
+391,Apoptosis -- Proliferation -- GLUT1 -- Lactic_acid -- COX412 -- DNA_Repair
+392,Proliferation -- VEGF -- COX412 -- DNA_Repair
+393,VEGF -- Lactic_acid -- COX412
+394,GLUT1 -- Lactic_acid
+395,Apoptosis -- GLUT1 -- VEGF -- Lactic_acid -- COX412 -- DNA_Repair
+396,Apoptosis -- VEGF -- COX412
+397,Apoptosis -- Proliferation -- COX412
+398,Apoptosis -- VEGF -- Lactic_acid
+399,GSH -- Proliferation -- Lactic_acid -- DNA_Repair
+400,GSH -- GLUT1 -- Lactic_acid -- COX412
+401,GLUT1 -- VEGF -- Lactic_acid -- COX412
+402,Apoptosis -- GLUT1 -- VEGF -- Lactic_acid -- COX412 -- DNA_Repair
+403,<nil>
+404,GLUT1 -- Lactic_acid -- DNA_Repair
+405,Apoptosis -- Proliferation -- Lactic_acid -- COX412
+406,GSH -- Proliferation -- Lactic_acid -- COX412 -- DNA_Repair
+407,COX412
+408,Apoptosis -- GLUT1 -- COX412
+409,Apoptosis -- Proliferation -- VEGF -- Lactic_acid
+410,GSH -- Apoptosis -- Proliferation -- GLUT1 -- Lactic_acid -- COX412
+411,Apoptosis -- GLUT1 -- Lactic_acid -- COX412 -- DNA_Repair
+412,GSH -- Apoptosis -- Proliferation -- COX412
+413,GLUT1 -- Lactic_acid -- COX412 -- DNA_Repair
+414,GSH -- Apoptosis
+415,GSH -- Apoptosis -- VEGF -- COX412 -- DNA_Repair
+416,Lactic_acid -- COX412
+417,GLUT1 -- VEGF
+418,GSH -- Apoptosis -- Proliferation -- Lactic_acid -- COX412 -- DNA_Repair
+419,Apoptosis -- GLUT1 -- VEGF
+420,Proliferation -- COX412
+421,Proliferation -- GLUT1 -- VEGF -- Lactic_acid
+422,Apoptosis -- COX412
+423,GSH -- DNA_Repair
+424,Apoptosis -- GLUT1 -- VEGF
+425,Apoptosis -- GLUT1 -- VEGF
+426,GSH -- GLUT1 -- Lactic_acid -- COX412 -- DNA_Repair
+427,GLUT1 -- VEGF -- COX412 -- DNA_Repair
+428,GSH -- Lactic_acid -- COX412 -- DNA_Repair
+429,Proliferation -- Lactic_acid -- COX412 -- DNA_Repair
+430,Apoptosis -- VEGF
+431,GSH -- Proliferation -- GLUT1 -- Lactic_acid
+432,Proliferation -- VEGF -- DNA_Repair
+433,GSH -- Apoptosis -- Lactic_acid -- COX412
+434,Proliferation -- VEGF -- Lactic_acid
+435,GSH -- Apoptosis -- Proliferation -- VEGF -- Lactic_acid -- COX412 -- DNA_Repair
+436,Apoptosis -- Proliferation -- GLUT1 -- Lactic_acid -- DNA_Repair
+437,Lactic_acid -- COX412
+438,COX412 -- DNA_Repair
+439,GSH -- GLUT1 -- COX412 -- DNA_Repair
+440,Proliferation -- DNA_Repair
+441,GLUT1 -- VEGF -- Lactic_acid -- COX412 -- DNA_Repair
+442,GLUT1 -- COX412 -- DNA_Repair
+443,GLUT1 -- VEGF -- Lactic_acid -- DNA_Repair
+444,Apoptosis -- Proliferation -- GLUT1
+445,GSH -- Apoptosis -- COX412
+446,Apoptosis -- VEGF -- COX412
+447,Apoptosis -- Proliferation -- GLUT1 -- DNA_Repair
+448,Apoptosis -- GLUT1 -- Lactic_acid -- DNA_Repair
+449,Apoptosis -- Proliferation -- GLUT1 -- Lactic_acid
+450,VEGF -- DNA_Repair
+451,Apoptosis -- Proliferation -- VEGF -- Lactic_acid
+452,Proliferation -- GLUT1 -- COX412
+453,GSH -- Apoptosis -- Proliferation -- Lactic_acid -- DNA_Repair
+454,Apoptosis -- COX412
+455,GLUT1 -- VEGF
+456,Apoptosis -- Proliferation -- GLUT1 -- Lactic_acid
+457,Apoptosis -- COX412
+458,Apoptosis -- Proliferation -- COX412
+459,Proliferation -- GLUT1 -- Lactic_acid -- COX412
+460,Apoptosis -- Proliferation -- COX412
+461,GLUT1 -- COX412
+462,GSH
+463,Apoptosis -- Proliferation -- VEGF -- COX412 -- DNA_Repair
+464,Proliferation -- GLUT1 -- VEGF
+465,GSH -- COX412 -- DNA_Repair
+466,Apoptosis -- GLUT1 -- COX412 -- DNA_Repair
+467,GLUT1 -- VEGF -- Lactic_acid -- COX412 -- DNA_Repair
+468,Apoptosis -- GLUT1 -- VEGF
+469,Proliferation -- VEGF -- DNA_Repair
+470,Apoptosis -- Lactic_acid -- DNA_Repair
+471,Proliferation -- GLUT1 -- VEGF -- Lactic_acid -- DNA_Repair
+472,Apoptosis -- VEGF -- Lactic_acid -- DNA_Repair
+473,Proliferation -- GLUT1 -- Lactic_acid -- COX412 -- DNA_Repair
+474,Proliferation -- Lactic_acid
+475,GLUT1 -- VEGF -- Lactic_acid -- COX412 -- DNA_Repair
+476,GSH -- Proliferation -- Lactic_acid -- COX412
+477,GSH -- Apoptosis -- Proliferation -- GLUT1 -- VEGF -- Lactic_acid -- DNA_Repair
+478,GSH -- GLUT1 -- DNA_Repair
+479,Proliferation
+480,GSH -- Apoptosis -- Lactic_acid -- DNA_Repair
+481,Apoptosis -- COX412 -- DNA_Repair
+482,GSH -- Apoptosis -- Lactic_acid -- COX412 -- DNA_Repair
+483,Apoptosis -- Proliferation -- GLUT1 -- VEGF -- DNA_Repair
+484,Proliferation -- GLUT1 -- Lactic_acid -- COX412 -- DNA_Repair
+485,GSH -- Apoptosis -- GLUT1 -- Lactic_acid -- COX412 -- DNA_Repair
+486,Apoptosis -- Proliferation -- COX412
+487,Lactic_acid -- DNA_Repair
+488,GSH -- Proliferation -- GLUT1
+489,GSH -- Lactic_acid -- COX412
+490,Lactic_acid -- DNA_Repair
+491,COX412
+492,Apoptosis -- Proliferation -- Lactic_acid -- COX412
+493,GSH -- Apoptosis -- GLUT1 -- Lactic_acid -- COX412 -- DNA_Repair
+494,Proliferation -- COX412
+495,GSH -- VEGF -- DNA_Repair
+496,Proliferation -- GLUT1 -- VEGF -- Lactic_acid -- COX412 -- DNA_Repair
+497,Apoptosis -- DNA_Repair
+498,Apoptosis -- Lactic_acid -- COX412 -- DNA_Repair
+499,GSH
+500,Apoptosis -- Proliferation -- COX412
+501,Proliferation -- Lactic_acid -- COX412
+502,GLUT1 -- COX412
+503,Apoptosis -- Proliferation -- Lactic_acid -- DNA_Repair
+504,Apoptosis -- Proliferation -- COX412
+505,Apoptosis -- GLUT1 -- Lactic_acid -- COX412
+506,GSH -- Apoptosis -- Proliferation -- VEGF -- Lactic_acid
+507,GLUT1 -- VEGF -- Lactic_acid
+508,GLUT1 -- Lactic_acid -- DNA_Repair
+509,Apoptosis -- COX412
+510,GSH -- Apoptosis -- GLUT1 -- VEGF -- Lactic_acid
+511,GSH -- Proliferation -- GLUT1 -- Lactic_acid -- COX412
+512,GSH -- Apoptosis -- Lactic_acid -- COX412
+513,GLUT1 -- VEGF -- COX412 -- DNA_Repair
+514,GSH -- Proliferation -- GLUT1 -- COX412
+515,Apoptosis -- GLUT1 -- VEGF -- Lactic_acid
+516,GSH -- Lactic_acid -- COX412 -- DNA_Repair
+517,Apoptosis -- Proliferation -- GLUT1 -- COX412 -- DNA_Repair
+518,GSH -- Apoptosis -- Proliferation -- GLUT1 -- Lactic_acid -- DNA_Repair
+519,Apoptosis -- GLUT1 -- Lactic_acid -- COX412
+520,Apoptosis -- Proliferation -- DNA_Repair
+521,VEGF -- DNA_Repair
+522,GSH -- Proliferation -- Lactic_acid -- DNA_Repair
+523,Apoptosis -- VEGF -- Lactic_acid
+524,Lactic_acid -- COX412 -- DNA_Repair
+525,<nil>
+526,VEGF -- Lactic_acid -- COX412
+527,GSH -- Lactic_acid
+528,Apoptosis -- Lactic_acid -- DNA_Repair
+529,GSH -- Proliferation -- Lactic_acid -- COX412 -- DNA_Repair
+530,Proliferation -- GLUT1 -- VEGF -- Lactic_acid -- DNA_Repair
+531,Proliferation
+532,GLUT1 -- VEGF -- Lactic_acid -- COX412 -- DNA_Repair
+533,Apoptosis -- GLUT1
+534,GSH -- Apoptosis -- Proliferation -- DNA_Repair
+535,GSH -- VEGF -- Lactic_acid -- COX412
+536,Proliferation -- Lactic_acid -- COX412
+537,Proliferation -- VEGF -- COX412 -- DNA_Repair
+538,Apoptosis -- GLUT1 -- DNA_Repair
+539,GLUT1 -- Lactic_acid -- COX412
+540,GSH -- GLUT1 -- VEGF -- Lactic_acid -- COX412 -- DNA_Repair
+541,Apoptosis -- DNA_Repair
+542,Apoptosis -- COX412 -- DNA_Repair
+543,Proliferation -- Lactic_acid -- COX412 -- DNA_Repair
+544,GSH -- Apoptosis -- Proliferation -- GLUT1 -- COX412
+545,GSH -- Apoptosis -- Lactic_acid -- COX412 -- DNA_Repair
+546,GLUT1 -- VEGF -- Lactic_acid -- COX412 -- DNA_Repair
+547,GSH -- Apoptosis -- GLUT1 -- VEGF
+548,Proliferation -- COX412
+549,GLUT1
+550,Proliferation -- VEGF -- Lactic_acid -- COX412 -- DNA_Repair
+551,GSH -- Apoptosis -- Proliferation -- Lactic_acid -- DNA_Repair
+552,GLUT1 -- COX412
+553,Apoptosis -- VEGF
+554,Proliferation -- GLUT1 -- Lactic_acid
+555,Lactic_acid
+556,GSH -- Proliferation -- GLUT1 -- Lactic_acid -- DNA_Repair
+557,GSH -- GLUT1 -- VEGF -- COX412 -- DNA_Repair
+558,VEGF -- Lactic_acid -- COX412 -- DNA_Repair
+559,Apoptosis -- GLUT1 -- VEGF -- DNA_Repair
+560,Apoptosis -- VEGF -- Lactic_acid -- COX412
+561,GSH -- Lactic_acid
+562,Apoptosis -- Proliferation -- Lactic_acid -- COX412
+563,VEGF -- DNA_Repair
+564,Proliferation -- GLUT1 -- COX412
+565,GSH -- Apoptosis -- Proliferation -- GLUT1 -- VEGF -- COX412
+566,Apoptosis -- VEGF -- DNA_Repair
+567,Proliferation -- GLUT1 -- VEGF -- Lactic_acid -- COX412 -- DNA_Repair
+568,Proliferation -- Lactic_acid -- COX412
+569,Apoptosis -- COX412 -- DNA_Repair
+570,Apoptosis -- Proliferation -- GLUT1 -- Lactic_acid
+571,Proliferation
+572,Apoptosis -- Proliferation -- Lactic_acid -- DNA_Repair
+573,Apoptosis -- Proliferation -- DNA_Repair
+574,GSH -- Apoptosis -- Proliferation -- Lactic_acid -- COX412
+575,GSH -- Apoptosis -- GLUT1 -- COX412 -- DNA_Repair
+576,GLUT1 -- Lactic_acid -- COX412 -- DNA_Repair
+577,GLUT1 -- Lactic_acid -- COX412
+578,GSH -- GLUT1
+579,Apoptosis -- GLUT1
+580,Apoptosis -- Lactic_acid -- COX412
+581,Apoptosis -- Proliferation -- VEGF -- COX412
+582,Apoptosis -- Proliferation -- GLUT1 -- Lactic_acid -- DNA_Repair
+583,Apoptosis -- Proliferation -- GLUT1 -- COX412
+584,Apoptosis -- Proliferation -- DNA_Repair
+585,Apoptosis -- Proliferation -- Lactic_acid -- COX412 -- DNA_Repair
+586,Apoptosis -- Proliferation -- GLUT1 -- VEGF -- Lactic_acid -- DNA_Repair
+587,Apoptosis -- VEGF -- COX412 -- DNA_Repair
+588,Apoptosis -- VEGF -- COX412 -- DNA_Repair
+589,GLUT1 -- VEGF -- Lactic_acid -- DNA_Repair
+590,GSH -- Proliferation -- VEGF -- Lactic_acid -- COX412 -- DNA_Repair
+591,Apoptosis -- GLUT1 -- VEGF -- Lactic_acid
+592,GSH -- Proliferation -- DNA_Repair
+593,GSH -- Proliferation -- GLUT1 -- VEGF -- Lactic_acid -- DNA_Repair
+594,Proliferation -- GLUT1 -- COX412 -- DNA_Repair
+595,GSH
+596,Proliferation -- COX412 -- DNA_Repair
+597,GSH -- Apoptosis
+598,<nil>
+599,Apoptosis -- Proliferation -- VEGF -- Lactic_acid
+600,Apoptosis -- Proliferation -- GLUT1 -- Lactic_acid
+601,Lactic_acid -- COX412
+602,Apoptosis -- Proliferation -- VEGF -- Lactic_acid -- DNA_Repair
+603,GSH -- GLUT1
+604,GLUT1
+605,GLUT1 -- COX412 -- DNA_Repair
+606,GSH -- Proliferation -- VEGF -- Lactic_acid -- COX412 -- DNA_Repair
+607,Lactic_acid
+608,GSH -- Apoptosis -- GLUT1 -- VEGF
+609,VEGF -- DNA_Repair
+610,Proliferation -- GLUT1
+611,DNA_Repair
+612,Proliferation -- GLUT1 -- COX412 -- DNA_Repair
+613,GLUT1 -- VEGF -- DNA_Repair
+614,Apoptosis -- COX412
+615,Proliferation -- GLUT1 -- COX412 -- DNA_Repair
+616,Proliferation -- GLUT1 -- VEGF -- COX412
+617,Proliferation -- Lactic_acid -- COX412 -- DNA_Repair
+618,Apoptosis -- GLUT1 -- VEGF
+619,Apoptosis -- Proliferation -- VEGF -- Lactic_acid -- COX412 -- DNA_Repair
+620,Apoptosis -- COX412
+621,Proliferation -- VEGF -- COX412 -- DNA_Repair
+622,Apoptosis -- DNA_Repair
+623,Proliferation -- GLUT1 -- Lactic_acid -- DNA_Repair
+624,GSH -- Proliferation -- COX412 -- DNA_Repair
+625,Apoptosis -- GLUT1 -- Lactic_acid
+626,Proliferation -- GLUT1 -- DNA_Repair
+627,Proliferation -- GLUT1 -- COX412 -- DNA_Repair
+628,Proliferation -- COX412
+629,GSH -- Proliferation -- GLUT1
+630,GLUT1 -- VEGF -- Lactic_acid -- COX412 -- DNA_Repair
+631,GSH -- Apoptosis -- Proliferation -- GLUT1 -- Lactic_acid -- DNA_Repair
+632,Apoptosis -- Lactic_acid -- COX412
+633,GSH -- Apoptosis
+634,GSH -- Apoptosis -- Lactic_acid
+635,Apoptosis -- GLUT1 -- Lactic_acid
+636,GSH
+637,GLUT1 -- COX412 -- DNA_Repair
+638,Lactic_acid -- COX412
+639,GSH -- Apoptosis -- Proliferation -- GLUT1 -- COX412
+640,Apoptosis -- Proliferation -- COX412
+641,GSH
+642,Apoptosis -- Proliferation -- DNA_Repair
+643,Proliferation -- Lactic_acid -- COX412
+644,Lactic_acid -- COX412
+645,Proliferation -- GLUT1 -- VEGF -- Lactic_acid
+646,GSH -- GLUT1 -- COX412
+647,GSH -- Apoptosis -- VEGF -- Lactic_acid -- COX412
+648,GLUT1 -- VEGF -- COX412 -- DNA_Repair
+649,GSH -- Apoptosis -- Lactic_acid
+650,Apoptosis -- VEGF -- COX412 -- DNA_Repair
+651,Apoptosis -- GLUT1 -- VEGF -- COX412
+652,Apoptosis -- Proliferation -- GLUT1
+653,GSH -- Apoptosis -- Proliferation -- COX412
+654,Proliferation -- COX412 -- DNA_Repair
+655,GSH -- Apoptosis -- Proliferation -- Lactic_acid
+656,GSH -- Apoptosis -- VEGF -- DNA_Repair
+657,GSH -- VEGF -- Lactic_acid -- COX412 -- DNA_Repair
+658,Proliferation -- DNA_Repair
+659,Proliferation -- Lactic_acid
+660,GLUT1 -- Lactic_acid
+661,GSH -- GLUT1 -- COX412
+662,GSH -- Apoptosis -- GLUT1 -- VEGF -- COX412
+663,Apoptosis -- Lactic_acid
+664,Proliferation -- GLUT1 -- VEGF -- COX412
+665,GSH -- Apoptosis -- Proliferation -- GLUT1 -- COX412
+666,GLUT1 -- VEGF -- Lactic_acid -- DNA_Repair
+667,GLUT1 -- VEGF -- DNA_Repair
+668,Apoptosis -- Proliferation -- GLUT1 -- DNA_Repair
+669,GSH -- Apoptosis -- Proliferation -- GLUT1
+670,DNA_Repair
+671,VEGF -- COX412 -- DNA_Repair
+672,Lactic_acid -- COX412
+673,Proliferation -- GLUT1 -- VEGF -- Lactic_acid -- COX412
+674,GSH -- Proliferation -- GLUT1 -- Lactic_acid -- DNA_Repair
+675,GSH -- Apoptosis -- Lactic_acid -- COX412
+676,Apoptosis -- Proliferation -- VEGF -- Lactic_acid
+677,GSH -- Proliferation -- COX412 -- DNA_Repair
+678,Apoptosis -- Proliferation -- Lactic_acid -- DNA_Repair
+679,GSH -- GLUT1 -- Lactic_acid -- COX412
+680,COX412
+681,Proliferation -- GLUT1 -- VEGF -- Lactic_acid -- COX412 -- DNA_Repair
+682,GSH -- Proliferation -- Lactic_acid -- COX412 -- DNA_Repair
+683,GSH -- Proliferation -- VEGF -- COX412 -- DNA_Repair
+684,Proliferation -- GLUT1 -- Lactic_acid -- COX412 -- DNA_Repair
+685,Apoptosis -- GLUT1 -- VEGF -- COX412 -- DNA_Repair
+686,GLUT1 -- VEGF -- Lactic_acid -- COX412 -- DNA_Repair
+687,Apoptosis -- GLUT1 -- COX412 -- DNA_Repair
+688,GSH -- VEGF -- Lactic_acid
+689,Apoptosis -- Lactic_acid -- COX412
+690,Apoptosis -- Proliferation -- VEGF -- Lactic_acid
+691,Apoptosis -- COX412
+692,Apoptosis -- COX412
+693,Apoptosis -- Proliferation -- GLUT1 -- VEGF -- COX412 -- DNA_Repair
+694,GSH -- Proliferation -- DNA_Repair
+695,GSH -- GLUT1 -- VEGF -- Lactic_acid -- DNA_Repair
+696,GLUT1 -- VEGF -- Lactic_acid -- DNA_Repair
+697,GSH -- Proliferation -- DNA_Repair
+698,GSH -- GLUT1 -- VEGF -- Lactic_acid
+699,GSH -- VEGF -- DNA_Repair
+700,Apoptosis -- Proliferation -- COX412
+701,Apoptosis -- VEGF -- Lactic_acid -- COX412
+702,Proliferation -- GLUT1 -- COX412 -- DNA_Repair
+703,Apoptosis -- Proliferation -- GLUT1
+704,Apoptosis -- VEGF -- Lactic_acid
+705,Apoptosis -- VEGF -- Lactic_acid -- COX412
+706,Proliferation
+707,GSH -- Apoptosis -- Proliferation -- Lactic_acid -- COX412
+708,GSH -- Proliferation
+709,GSH -- Lactic_acid
+710,GSH -- Apoptosis -- COX412 -- DNA_Repair
+711,Lactic_acid -- COX412
+712,GSH -- Apoptosis -- COX412 -- DNA_Repair
+713,Apoptosis -- Proliferation -- Lactic_acid
+714,Apoptosis -- Proliferation -- VEGF -- COX412 -- DNA_Repair
+715,Apoptosis -- Proliferation -- GLUT1 -- Lactic_acid -- COX412 -- DNA_Repair
+716,Apoptosis -- Lactic_acid -- COX412
+717,GSH -- Apoptosis -- Proliferation -- GLUT1 -- VEGF -- COX412
+718,VEGF -- COX412 -- DNA_Repair
+719,GSH
+720,GSH -- VEGF
+721,Apoptosis -- Proliferation -- Lactic_acid -- COX412 -- DNA_Repair
+722,GSH -- Proliferation -- GLUT1 -- VEGF -- Lactic_acid
+723,Proliferation -- VEGF -- Lactic_acid
+724,GSH -- Apoptosis -- Proliferation -- GLUT1 -- VEGF -- Lactic_acid -- DNA_Repair
+725,Proliferation -- GLUT1 -- COX412 -- DNA_Repair
+726,GLUT1 -- VEGF -- Lactic_acid -- COX412 -- DNA_Repair
+727,Apoptosis -- Lactic_acid -- COX412
+728,GSH -- Apoptosis -- COX412
+729,Apoptosis -- VEGF -- Lactic_acid -- COX412 -- DNA_Repair
+730,Apoptosis -- Proliferation -- COX412
+731,GSH -- Apoptosis -- COX412 -- DNA_Repair
+732,GSH -- Proliferation -- VEGF -- Lactic_acid -- COX412 -- DNA_Repair
+733,DNA_Repair
+734,GSH -- Apoptosis -- Proliferation -- GLUT1 -- VEGF -- COX412
+735,Apoptosis -- Lactic_acid -- COX412 -- DNA_Repair
+736,GSH -- Proliferation -- Lactic_acid -- COX412
+737,Proliferation -- VEGF -- DNA_Repair
+738,Proliferation -- VEGF -- Lactic_acid -- COX412
+739,GSH -- Proliferation -- Lactic_acid -- DNA_Repair
+740,Proliferation -- GLUT1 -- DNA_Repair
+741,Apoptosis -- Proliferation
+742,GSH -- Apoptosis -- GLUT1 -- Lactic_acid -- COX412
+743,Apoptosis -- GLUT1 -- Lactic_acid -- DNA_Repair
+744,Apoptosis -- Proliferation
+745,COX412
+746,Apoptosis -- GLUT1 -- VEGF
+747,Apoptosis -- Proliferation -- DNA_Repair
+748,GSH -- Apoptosis -- Proliferation
+749,Apoptosis -- Proliferation
+750,Apoptosis -- Proliferation
+751,GSH -- GLUT1 -- COX412 -- DNA_Repair
+752,Apoptosis -- Proliferation -- Lactic_acid -- COX412 -- DNA_Repair
+753,Proliferation -- COX412
+754,Proliferation -- GLUT1 -- VEGF -- Lactic_acid -- COX412 -- DNA_Repair
+755,Apoptosis -- Proliferation -- VEGF -- Lactic_acid -- COX412
+756,COX412
+757,Proliferation -- COX412 -- DNA_Repair
+758,Lactic_acid -- COX412
+759,Apoptosis -- COX412
+760,Apoptosis -- Proliferation -- GLUT1 -- Lactic_acid -- COX412 -- DNA_Repair
+761,GSH -- Apoptosis -- Proliferation -- GLUT1 -- Lactic_acid -- DNA_Repair
+762,VEGF -- Lactic_acid -- COX412
+763,GSH -- Apoptosis -- Proliferation -- GLUT1 -- COX412
+764,VEGF -- Lactic_acid -- COX412
+765,GSH -- Proliferation -- VEGF
+766,GSH -- Apoptosis -- VEGF -- Lactic_acid -- DNA_Repair
+767,GSH -- Proliferation -- VEGF -- Lactic_acid -- COX412
+768,Apoptosis -- GLUT1 -- DNA_Repair
+769,Apoptosis -- Proliferation -- Lactic_acid -- COX412
+770,Apoptosis -- Proliferation -- GLUT1 -- COX412
+771,COX412 -- DNA_Repair
+772,GSH -- Apoptosis -- COX412 -- DNA_Repair
+773,Proliferation -- VEGF -- COX412
+774,Proliferation -- GLUT1 -- COX412
+775,Apoptosis -- COX412 -- DNA_Repair
+776,Apoptosis -- Proliferation -- GLUT1
+777,GSH -- Apoptosis -- COX412 -- DNA_Repair
+778,GSH -- Apoptosis -- VEGF -- COX412
+779,VEGF
+780,Apoptosis -- Proliferation -- DNA_Repair
+781,GSH -- Apoptosis -- GLUT1 -- DNA_Repair
+782,Proliferation -- Lactic_acid -- COX412
+783,GSH -- Apoptosis -- Proliferation -- GLUT1 -- VEGF -- DNA_Repair
+784,GSH -- Lactic_acid -- COX412 -- DNA_Repair
+785,Apoptosis -- Lactic_acid -- COX412
+786,Apoptosis -- Lactic_acid
+787,Apoptosis -- Lactic_acid -- COX412 -- DNA_Repair
+788,GSH -- Proliferation -- GLUT1 -- VEGF -- Lactic_acid -- COX412 -- DNA_Repair
+789,Apoptosis -- VEGF -- Lactic_acid
+790,Apoptosis
+791,Apoptosis -- DNA_Repair
+792,Apoptosis -- Proliferation -- GLUT1
+793,GLUT1 -- VEGF -- DNA_Repair
+794,Lactic_acid
+795,Proliferation -- VEGF -- Lactic_acid -- DNA_Repair
+796,VEGF -- Lactic_acid -- COX412
+797,Apoptosis -- GLUT1 -- COX412
+798,Proliferation -- VEGF -- COX412 -- DNA_Repair
+799,Proliferation -- VEGF -- Lactic_acid -- DNA_Repair
+800,Apoptosis -- Proliferation -- Lactic_acid -- DNA_Repair
+801,Apoptosis -- Proliferation -- GLUT1 -- VEGF -- Lactic_acid -- DNA_Repair
+802,VEGF -- Lactic_acid -- COX412
+803,GSH -- Apoptosis -- Proliferation -- GLUT1 -- VEGF
+804,GLUT1 -- COX412
+805,Apoptosis -- GLUT1 -- COX412 -- DNA_Repair
+806,Apoptosis -- GLUT1 -- COX412
+807,VEGF -- DNA_Repair
+808,Proliferation -- GLUT1 -- VEGF -- Lactic_acid -- COX412
+809,Lactic_acid
+810,GSH -- Proliferation -- Lactic_acid -- DNA_Repair
+811,Apoptosis -- Lactic_acid -- COX412
+812,GSH -- Apoptosis -- Proliferation -- Lactic_acid -- COX412
+813,GSH -- Apoptosis -- Proliferation -- GLUT1 -- DNA_Repair
+814,GSH -- Apoptosis -- Proliferation -- GLUT1 -- VEGF -- Lactic_acid -- DNA_Repair
+815,GSH -- Apoptosis -- Proliferation -- COX412
+816,Lactic_acid -- COX412
+817,GLUT1 -- COX412
+818,Apoptosis -- Lactic_acid -- DNA_Repair
+819,GSH -- Apoptosis -- Proliferation -- GLUT1 -- Lactic_acid -- COX412 -- DNA_Repair
+820,Proliferation -- Lactic_acid -- COX412 -- DNA_Repair
+821,GSH -- GLUT1 -- Lactic_acid -- COX412 -- DNA_Repair
+822,Apoptosis -- Proliferation -- Lactic_acid -- COX412 -- DNA_Repair
+823,Apoptosis -- GLUT1 -- Lactic_acid -- DNA_Repair
+824,Apoptosis -- Proliferation -- GLUT1 -- Lactic_acid
+825,GSH -- Apoptosis -- Proliferation -- VEGF -- COX412
+826,GLUT1 -- VEGF -- Lactic_acid
+827,VEGF -- COX412
+828,Proliferation
+829,Apoptosis -- VEGF -- Lactic_acid
+830,VEGF -- COX412 -- DNA_Repair
+831,GSH -- Lactic_acid -- COX412 -- DNA_Repair
+832,Apoptosis -- Proliferation
+833,Apoptosis -- Proliferation -- VEGF -- Lactic_acid -- COX412 -- DNA_Repair
+834,GSH -- Proliferation -- VEGF -- Lactic_acid -- COX412 -- DNA_Repair
+835,Apoptosis -- Proliferation -- GLUT1 -- VEGF -- Lactic_acid -- COX412
+836,GSH -- GLUT1 -- COX412 -- DNA_Repair
+837,Apoptosis -- GLUT1 -- DNA_Repair
+838,GSH -- GLUT1 -- COX412 -- DNA_Repair
+839,GSH -- Lactic_acid -- DNA_Repair
+840,Proliferation -- COX412
+841,Apoptosis -- Proliferation -- COX412
+842,Proliferation -- GLUT1 -- VEGF -- Lactic_acid -- DNA_Repair
+843,Apoptosis -- Proliferation -- GLUT1 -- COX412 -- DNA_Repair
+844,GSH -- Apoptosis -- COX412
+845,Proliferation -- GLUT1 -- VEGF -- COX412
+846,Apoptosis -- VEGF
+847,Proliferation -- VEGF -- Lactic_acid -- DNA_Repair
+848,GSH -- Apoptosis -- Lactic_acid
+849,Apoptosis -- Proliferation -- COX412
+850,Apoptosis -- GLUT1 -- COX412
+851,GLUT1 -- VEGF -- Lactic_acid
+852,GSH -- Apoptosis -- Proliferation -- VEGF -- Lactic_acid -- COX412
+853,GLUT1 -- Lactic_acid -- DNA_Repair
+854,GLUT1 -- VEGF -- Lactic_acid -- DNA_Repair
+855,Apoptosis -- VEGF
+856,GSH -- Apoptosis -- VEGF -- COX412
+857,Proliferation -- GLUT1 -- Lactic_acid -- COX412
+858,Apoptosis -- Proliferation -- GLUT1 -- COX412 -- DNA_Repair
+859,GSH -- Apoptosis -- GLUT1 -- VEGF -- Lactic_acid -- DNA_Repair
+860,COX412 -- DNA_Repair
+861,Apoptosis -- Proliferation
+862,Apoptosis -- COX412 -- DNA_Repair
+863,Proliferation -- GLUT1 -- DNA_Repair
+864,Apoptosis -- COX412
+865,GSH -- Apoptosis -- Proliferation -- GLUT1 -- VEGF -- COX412 -- DNA_Repair
+866,Apoptosis
+867,GSH -- Apoptosis -- VEGF -- DNA_Repair
+868,VEGF -- COX412
+869,Proliferation -- Lactic_acid -- COX412
+870,GSH -- Proliferation -- GLUT1 -- VEGF -- DNA_Repair
+871,GSH -- Proliferation -- GLUT1 -- Lactic_acid
+872,GSH -- Apoptosis -- Proliferation -- VEGF -- Lactic_acid -- COX412
+873,GLUT1 -- VEGF -- DNA_Repair
+874,GSH -- Proliferation
+875,Apoptosis -- Proliferation -- Lactic_acid -- DNA_Repair
+876,VEGF -- Lactic_acid -- COX412
+877,Apoptosis -- Proliferation -- Lactic_acid -- DNA_Repair
+878,GSH -- VEGF -- DNA_Repair
+879,GSH -- Lactic_acid -- COX412 -- DNA_Repair
+880,Apoptosis -- COX412
+881,GSH -- Apoptosis -- GLUT1 -- Lactic_acid
+882,GSH -- Apoptosis -- Proliferation -- DNA_Repair
+883,Proliferation -- Lactic_acid -- COX412
+884,Apoptosis -- Lactic_acid
+885,GSH -- Apoptosis -- Proliferation
+886,GSH
+887,Apoptosis -- Proliferation -- GLUT1 -- Lactic_acid -- COX412
+888,GSH -- Proliferation -- GLUT1 -- Lactic_acid -- COX412
+889,Proliferation
+890,Apoptosis -- COX412
+891,COX412 -- DNA_Repair
+892,Apoptosis -- VEGF -- COX412 -- DNA_Repair
+893,Apoptosis -- Proliferation
+894,Apoptosis -- Lactic_acid -- DNA_Repair
+895,Apoptosis -- Proliferation -- VEGF
+896,Lactic_acid -- COX412 -- DNA_Repair
+897,GSH -- Apoptosis -- Proliferation -- COX412 -- DNA_Repair
+898,GSH -- VEGF -- DNA_Repair
+899,Apoptosis -- Proliferation -- Lactic_acid -- COX412 -- DNA_Repair
+900,GSH -- Apoptosis -- VEGF -- Lactic_acid -- DNA_Repair
+901,Apoptosis -- Proliferation -- COX412 -- DNA_Repair
+902,GSH -- Proliferation -- GLUT1 -- VEGF
+903,<nil>
+904,GLUT1 -- COX412 -- DNA_Repair
+905,Proliferation
+906,Apoptosis -- Proliferation -- GLUT1 -- COX412
+907,Apoptosis -- GLUT1 -- Lactic_acid -- COX412 -- DNA_Repair
+908,GSH -- Apoptosis -- DNA_Repair
+909,GSH -- Apoptosis -- GLUT1
+910,GSH -- VEGF -- DNA_Repair
+911,GSH -- Apoptosis -- COX412 -- DNA_Repair
+912,GSH -- Apoptosis -- VEGF -- Lactic_acid -- DNA_Repair
+913,Apoptosis -- Proliferation -- GLUT1 -- COX412
+914,GSH -- Apoptosis -- GLUT1 -- Lactic_acid -- DNA_Repair
+915,Apoptosis -- Lactic_acid -- COX412 -- DNA_Repair
+916,Apoptosis -- Lactic_acid -- DNA_Repair
+917,Lactic_acid -- COX412 -- DNA_Repair
+918,VEGF -- Lactic_acid
+919,Apoptosis -- GLUT1 -- VEGF -- Lactic_acid -- COX412 -- DNA_Repair
+920,Apoptosis -- Proliferation -- GLUT1 -- VEGF
+921,DNA_Repair
+922,Proliferation -- Lactic_acid
+923,GSH -- Apoptosis -- COX412 -- DNA_Repair
+924,GSH -- VEGF -- DNA_Repair
+925,GLUT1 -- VEGF -- DNA_Repair
+926,Proliferation -- GLUT1 -- Lactic_acid -- DNA_Repair
+927,Proliferation -- GLUT1
+928,GSH -- GLUT1 -- Lactic_acid -- DNA_Repair
+929,Apoptosis -- Lactic_acid
+930,VEGF -- Lactic_acid
+931,Apoptosis -- GLUT1 -- VEGF -- Lactic_acid -- COX412 -- DNA_Repair
+932,Proliferation -- GLUT1 -- Lactic_acid -- DNA_Repair
+933,Apoptosis -- GLUT1 -- Lactic_acid -- COX412
+934,VEGF -- COX412 -- DNA_Repair
+935,GSH -- Apoptosis
+936,Apoptosis -- Lactic_acid -- COX412
+937,GSH -- Apoptosis -- GLUT1 -- VEGF -- Lactic_acid -- COX412 -- DNA_Repair
+938,GSH -- COX412
+939,Apoptosis -- GLUT1 -- COX412
+940,GSH -- Apoptosis -- VEGF
+941,Proliferation -- GLUT1 -- Lactic_acid -- COX412
+942,Apoptosis
+943,GLUT1 -- VEGF -- COX412 -- DNA_Repair
+944,Apoptosis -- Proliferation -- VEGF -- DNA_Repair
+945,VEGF -- Lactic_acid -- COX412
+946,Proliferation -- Lactic_acid -- DNA_Repair
+947,GLUT1 -- DNA_Repair
+948,Proliferation -- VEGF -- COX412 -- DNA_Repair
+949,VEGF -- Lactic_acid -- DNA_Repair
+950,GSH -- Apoptosis -- Proliferation -- COX412 -- DNA_Repair
+951,Apoptosis -- VEGF -- COX412 -- DNA_Repair
+952,Proliferation -- GLUT1 -- Lactic_acid -- DNA_Repair
+953,Apoptosis -- VEGF -- Lactic_acid
+954,Apoptosis -- Proliferation -- GLUT1 -- Lactic_acid
+955,GSH -- Apoptosis -- GLUT1 -- VEGF
+956,GSH -- Proliferation -- VEGF -- Lactic_acid
+957,GSH -- Lactic_acid -- COX412
+958,GSH -- Apoptosis -- Lactic_acid
+959,Apoptosis -- Proliferation -- Lactic_acid -- COX412
+960,<nil>
+961,Proliferation -- VEGF -- Lactic_acid
+962,GLUT1 -- Lactic_acid -- COX412 -- DNA_Repair
+963,Proliferation -- Lactic_acid
+964,Proliferation -- GLUT1 -- COX412 -- DNA_Repair
+965,Apoptosis -- Proliferation -- Lactic_acid
+966,Proliferation -- GLUT1 -- VEGF -- COX412
+967,GSH -- Apoptosis -- Proliferation -- Lactic_acid
+968,Proliferation
+969,GSH -- VEGF -- COX412
+970,GLUT1 -- Lactic_acid -- DNA_Repair
+971,Apoptosis -- Lactic_acid -- COX412
+972,Proliferation -- GLUT1 -- Lactic_acid -- COX412 -- DNA_Repair
+973,GSH -- Apoptosis -- Proliferation -- GLUT1 -- Lactic_acid -- DNA_Repair
+974,Proliferation -- GLUT1 -- Lactic_acid -- DNA_Repair
+975,Apoptosis -- Proliferation -- COX412 -- DNA_Repair
+976,GSH -- Apoptosis -- Proliferation -- GLUT1 -- COX412 -- DNA_Repair
+977,Lactic_acid -- DNA_Repair
+978,GSH -- Lactic_acid
+979,GSH -- Proliferation -- COX412
+980,Apoptosis -- VEGF -- DNA_Repair
+981,GSH -- Apoptosis -- Proliferation -- Lactic_acid -- COX412 -- DNA_Repair
+982,Proliferation -- GLUT1 -- VEGF -- Lactic_acid
+983,GSH -- Apoptosis -- Proliferation -- GLUT1 -- Lactic_acid -- COX412 -- DNA_Repair
+984,VEGF -- Lactic_acid -- COX412
+985,Apoptosis -- GLUT1
+986,GSH -- VEGF -- COX412 -- DNA_Repair
+987,Proliferation -- Lactic_acid
+988,GSH -- Apoptosis -- VEGF -- Lactic_acid -- DNA_Repair
+989,GSH -- Proliferation -- VEGF -- Lactic_acid
+990,GSH -- Apoptosis -- Proliferation -- Lactic_acid -- COX412 -- DNA_Repair
+991,COX412
+992,Apoptosis -- Proliferation -- GLUT1 -- Lactic_acid -- DNA_Repair
+993,GSH -- Proliferation -- GLUT1 -- Lactic_acid
+994,GSH -- Apoptosis -- Lactic_acid -- DNA_Repair
+995,GSH -- VEGF -- Lactic_acid -- DNA_Repair
+996,GSH -- Apoptosis -- Proliferation -- Lactic_acid -- DNA_Repair
+997,Apoptosis -- Proliferation -- VEGF -- COX412
+998,GLUT1 -- VEGF -- Lactic_acid -- DNA_Repair
+999,Proliferation -- VEGF
+1000,Proliferation -- GLUT1 -- Lactic_acid -- COX412
+1001,GSH -- GLUT1 -- VEGF -- Lactic_acid
+1002,Apoptosis -- Proliferation -- COX412
+1003,Apoptosis -- Proliferation -- GLUT1 -- Lactic_acid -- COX412 -- DNA_Repair
+1004,GSH -- GLUT1 -- DNA_Repair
+1005,GSH -- GLUT1
+1006,Proliferation -- GLUT1 -- VEGF -- Lactic_acid -- COX412
+1007,Apoptosis -- Proliferation -- GLUT1 -- Lactic_acid -- COX412
+1008,Proliferation -- VEGF -- COX412
+1009,Apoptosis -- Lactic_acid -- COX412 -- DNA_Repair
+1010,Lactic_acid -- COX412 -- DNA_Repair
+1011,GSH -- Apoptosis -- GLUT1 -- Lactic_acid
+1012,Proliferation -- GLUT1 -- VEGF -- DNA_Repair
+1013,Proliferation -- GLUT1 -- VEGF -- Lactic_acid -- COX412
+1014,GLUT1 -- VEGF -- Lactic_acid
+1015,Proliferation -- GLUT1 -- VEGF -- Lactic_acid
+1016,GLUT1 -- DNA_Repair
+1017,GLUT1 -- DNA_Repair
+1018,Apoptosis -- VEGF -- Lactic_acid
+1019,Proliferation -- GLUT1 -- VEGF -- DNA_Repair
+1020,GLUT1 -- VEGF -- Lactic_acid
+1021,GLUT1
+1022,GSH -- Apoptosis -- Proliferation -- GLUT1 -- Lactic_acid -- COX412 -- DNA_Repair
+1023,GSH -- Lactic_acid -- DNA_Repair
+1024,GSH -- GLUT1 -- VEGF -- COX412
+1025,VEGF -- Lactic_acid -- DNA_Repair
+1026,Proliferation -- Lactic_acid -- DNA_Repair
+1027,GLUT1 -- VEGF
+1028,Apoptosis -- Lactic_acid
+1029,GSH -- Apoptosis -- Proliferation -- DNA_Repair
+1030,Proliferation -- Lactic_acid
+1031,GLUT1 -- COX412 -- DNA_Repair
+1032,Proliferation -- GLUT1 -- VEGF -- Lactic_acid -- COX412
+1033,Apoptosis -- Proliferation -- VEGF -- DNA_Repair
+1034,Apoptosis -- VEGF
+1035,Proliferation -- GLUT1 -- VEGF -- Lactic_acid
+1036,Proliferation -- GLUT1 -- COX412
+1037,<nil>
+1038,VEGF
+1039,Lactic_acid -- COX412
+1040,Apoptosis -- Proliferation
+1041,Proliferation -- DNA_Repair
+1042,GLUT1 -- COX412
+1043,GSH -- Proliferation -- DNA_Repair
+1044,Apoptosis -- GLUT1 -- Lactic_acid
+1045,DNA_Repair
+1046,Apoptosis -- Proliferation -- GLUT1 -- Lactic_acid -- COX412 -- DNA_Repair
+1047,Apoptosis -- Proliferation -- GLUT1 -- COX412 -- DNA_Repair
+1048,Proliferation -- GLUT1 -- COX412
+1049,Apoptosis -- GLUT1 -- COX412 -- DNA_Repair
+1050,Proliferation -- VEGF -- DNA_Repair
+1051,Lactic_acid
+1052,GSH -- Apoptosis -- Proliferation -- COX412 -- DNA_Repair
+1053,GSH -- Apoptosis -- Proliferation
+1054,GSH -- Proliferation -- Lactic_acid -- DNA_Repair
+1055,Proliferation -- VEGF -- Lactic_acid
+1056,Apoptosis -- Proliferation -- VEGF -- Lactic_acid -- DNA_Repair
+1057,GSH -- Apoptosis -- GLUT1 -- VEGF -- DNA_Repair
+1058,GSH -- Proliferation -- GLUT1 -- Lactic_acid -- COX412
+1059,Apoptosis -- Proliferation -- GLUT1 -- VEGF
+1060,Apoptosis -- Proliferation -- Lactic_acid
+1061,GSH -- Proliferation -- GLUT1 -- VEGF -- DNA_Repair
+1062,Proliferation -- Lactic_acid
+1063,GSH -- Proliferation -- VEGF -- DNA_Repair
+1064,Apoptosis -- Proliferation -- VEGF -- Lactic_acid -- COX412
+1065,GSH -- Proliferation -- GLUT1 -- VEGF -- COX412 -- DNA_Repair
+1066,Apoptosis -- VEGF -- COX412 -- DNA_Repair
+1067,Apoptosis -- Proliferation -- Lactic_acid
+1068,Apoptosis -- Proliferation -- GLUT1 -- VEGF -- COX412
+1069,Proliferation -- VEGF -- Lactic_acid -- DNA_Repair
+1070,<nil>
+1071,COX412 -- DNA_Repair
+1072,GSH -- VEGF
+1073,GSH -- Apoptosis -- Proliferation -- GLUT1 -- Lactic_acid -- DNA_Repair
+1074,GSH -- Apoptosis -- GLUT1 -- VEGF -- DNA_Repair
+1075,GSH -- Apoptosis -- Proliferation -- VEGF -- Lactic_acid
+1076,GSH -- Apoptosis -- VEGF
+1077,Apoptosis -- Proliferation -- VEGF -- COX412
+1078,Apoptosis -- Proliferation -- GLUT1 -- Lactic_acid
+1079,Lactic_acid -- DNA_Repair
+1080,GSH -- Proliferation -- VEGF -- Lactic_acid
+1081,Proliferation -- VEGF -- Lactic_acid -- COX412 -- DNA_Repair
+1082,Proliferation -- GLUT1 -- Lactic_acid
+1083,Apoptosis -- Proliferation -- VEGF -- Lactic_acid
+1084,GSH -- VEGF -- DNA_Repair
+1085,GSH -- Proliferation
+1086,GLUT1 -- Lactic_acid -- COX412 -- DNA_Repair
+1087,GSH -- Apoptosis -- Proliferation -- VEGF -- Lactic_acid -- COX412 -- DNA_Repair
+1088,Apoptosis -- Proliferation -- VEGF -- DNA_Repair
+1089,Apoptosis -- Proliferation -- GLUT1 -- VEGF -- Lactic_acid -- COX412
+1090,GSH -- Apoptosis -- Proliferation -- GLUT1 -- VEGF -- Lactic_acid -- DNA_Repair
+1091,GSH -- Proliferation -- VEGF -- Lactic_acid -- COX412
+1092,VEGF -- Lactic_acid -- DNA_Repair
+1093,Proliferation -- GLUT1 -- VEGF -- Lactic_acid -- DNA_Repair
+1094,GLUT1 -- VEGF
+1095,Apoptosis -- VEGF -- Lactic_acid -- DNA_Repair
+1096,GLUT1 -- VEGF
+1097,GSH -- Lactic_acid -- COX412
+1098,Apoptosis -- Proliferation -- DNA_Repair
+1099,GLUT1
+1100,VEGF -- COX412
+1101,Apoptosis -- DNA_Repair
+1102,Apoptosis -- Proliferation -- GLUT1 -- Lactic_acid -- DNA_Repair
+1103,Apoptosis -- Proliferation -- DNA_Repair
+1104,Proliferation -- GLUT1 -- Lactic_acid
+1105,GSH -- Apoptosis -- Proliferation -- Lactic_acid
+1106,Proliferation -- GLUT1 -- VEGF -- Lactic_acid
+1107,GSH -- Proliferation -- DNA_Repair
+1108,GLUT1 -- COX412
+1109,DNA_Repair
+1110,Apoptosis -- Proliferation -- VEGF
+1111,GLUT1 -- Lactic_acid -- COX412
+1112,Apoptosis -- Proliferation -- VEGF -- COX412 -- DNA_Repair
+1113,Proliferation -- Lactic_acid
+1114,VEGF -- DNA_Repair
+1115,VEGF -- DNA_Repair
+1116,Proliferation -- GLUT1 -- Lactic_acid
+1117,GSH -- Proliferation -- Lactic_acid -- DNA_Repair
+1118,Apoptosis -- GLUT1 -- COX412 -- DNA_Repair
+1119,GSH -- Apoptosis -- Proliferation -- Lactic_acid -- COX412
+1120,GSH -- Apoptosis -- GLUT1 -- VEGF -- COX412
+1121,GSH -- Apoptosis -- Proliferation -- DNA_Repair
+1122,Apoptosis -- Proliferation -- COX412 -- DNA_Repair
+1123,Apoptosis -- Lactic_acid -- DNA_Repair
+1124,Proliferation -- COX412
+1125,Apoptosis -- GLUT1 -- Lactic_acid -- COX412
+1126,VEGF -- COX412 -- DNA_Repair
+1127,Apoptosis -- Proliferation -- GLUT1 -- Lactic_acid -- DNA_Repair
+1128,GLUT1 -- Lactic_acid -- DNA_Repair
+1129,Proliferation -- GLUT1 -- Lactic_acid -- DNA_Repair
+1130,GSH -- Apoptosis -- Proliferation -- VEGF -- Lactic_acid
+1131,GSH -- Apoptosis -- VEGF -- Lactic_acid
+1132,Proliferation -- GLUT1 -- DNA_Repair
+1133,Apoptosis -- Proliferation -- COX412 -- DNA_Repair
+1134,GLUT1 -- COX412
+1135,Apoptosis -- Proliferation -- GLUT1 -- VEGF -- DNA_Repair
+1136,VEGF -- DNA_Repair
+1137,GLUT1 -- Lactic_acid -- DNA_Repair
+1138,Apoptosis -- GLUT1 -- COX412 -- DNA_Repair
+1139,GSH -- Proliferation -- Lactic_acid -- COX412
+1140,Apoptosis -- VEGF
+1141,GSH -- Apoptosis -- Proliferation -- VEGF -- Lactic_acid -- COX412 -- DNA_Repair
+1142,GSH -- DNA_Repair
+1143,Apoptosis -- VEGF -- Lactic_acid
+1144,Proliferation -- Lactic_acid -- COX412 -- DNA_Repair
+1145,Apoptosis -- Proliferation -- VEGF -- Lactic_acid
+1146,GSH -- GLUT1 -- VEGF -- Lactic_acid -- COX412
+1147,GSH -- GLUT1 -- VEGF -- Lactic_acid -- COX412
+1148,Apoptosis -- COX412 -- DNA_Repair
+1149,Proliferation -- GLUT1 -- VEGF
+1150,Apoptosis
+1151,Apoptosis -- GLUT1 -- VEGF
+1152,Proliferation -- Lactic_acid -- COX412
+1153,Proliferation -- Lactic_acid -- DNA_Repair
+1154,GSH -- Apoptosis -- GLUT1 -- VEGF -- Lactic_acid -- DNA_Repair
+1155,Apoptosis -- DNA_Repair
+1156,Proliferation -- VEGF -- DNA_Repair
+1157,Proliferation -- Lactic_acid -- COX412
+1158,Apoptosis -- Lactic_acid -- DNA_Repair
+1159,GSH -- Proliferation
+1160,Proliferation -- VEGF -- DNA_Repair
+1161,GSH -- Apoptosis -- Proliferation -- GLUT1
+1162,GSH -- Apoptosis -- Proliferation -- GLUT1 -- Lactic_acid -- COX412
+1163,Apoptosis
+1164,Proliferation -- COX412
+1165,Apoptosis -- Lactic_acid -- COX412
+1166,GSH -- Lactic_acid -- COX412
+1167,Proliferation -- GLUT1 -- VEGF -- Lactic_acid
+1168,GSH -- Apoptosis -- GLUT1 -- Lactic_acid
+1169,Apoptosis -- Proliferation -- GLUT1 -- Lactic_acid -- DNA_Repair
+1170,GLUT1 -- VEGF -- Lactic_acid
+1171,Proliferation
+1172,Apoptosis -- Lactic_acid
+1173,GSH -- Apoptosis -- Proliferation -- GLUT1 -- Lactic_acid -- COX412
+1174,Apoptosis -- Lactic_acid
+1175,Lactic_acid -- COX412
+1176,GSH -- Proliferation -- GLUT1
+1177,GLUT1 -- VEGF
+1178,Apoptosis -- Proliferation -- VEGF -- Lactic_acid -- COX412
+1179,Apoptosis -- Proliferation -- COX412
+1180,Apoptosis -- GLUT1 -- DNA_Repair
+1181,GSH -- Apoptosis -- COX412 -- DNA_Repair
+1182,GSH -- Proliferation
+1183,Apoptosis -- COX412 -- DNA_Repair
+1184,Proliferation -- GLUT1 -- Lactic_acid -- COX412
+1185,Apoptosis -- VEGF
+1186,Apoptosis -- Proliferation -- Lactic_acid
+1187,Proliferation -- GLUT1 -- Lactic_acid -- COX412 -- DNA_Repair
+1188,Lactic_acid -- COX412 -- DNA_Repair
+1189,Apoptosis -- VEGF -- Lactic_acid -- COX412 -- DNA_Repair
+1190,GSH -- GLUT1 -- VEGF -- COX412 -- DNA_Repair
+1191,Proliferation -- Lactic_acid -- COX412
+1192,Apoptosis -- GLUT1 -- COX412
+1193,GLUT1 -- VEGF -- COX412 -- DNA_Repair
+1194,Proliferation -- COX412 -- DNA_Repair
+1195,VEGF -- Lactic_acid -- COX412 -- DNA_Repair
+1196,GSH -- Apoptosis -- VEGF -- Lactic_acid -- DNA_Repair
+1197,Lactic_acid
+1198,GSH -- Apoptosis -- GLUT1 -- COX412 -- DNA_Repair
+1199,Proliferation -- VEGF -- Lactic_acid
+1200,Proliferation -- Lactic_acid
+1201,COX412 -- DNA_Repair
+1202,GLUT1 -- COX412
+1203,GLUT1 -- Lactic_acid -- COX412 -- DNA_Repair
+1204,GSH -- Proliferation -- DNA_Repair
+1205,Apoptosis -- GLUT1 -- Lactic_acid
+1206,Proliferation -- GLUT1 -- VEGF -- COX412
+1207,Apoptosis -- Proliferation -- VEGF
+1208,GSH -- Apoptosis -- GLUT1 -- Lactic_acid -- COX412
+1209,VEGF -- Lactic_acid -- COX412 -- DNA_Repair
+1210,Lactic_acid -- COX412 -- DNA_Repair
+1211,Proliferation -- VEGF -- COX412
+1212,GSH -- Apoptosis -- Proliferation -- GLUT1 -- VEGF -- Lactic_acid -- COX412
+1213,COX412 -- DNA_Repair
+1214,GSH -- VEGF -- COX412 -- DNA_Repair
+1215,GSH -- Apoptosis -- Proliferation -- GLUT1 -- VEGF -- Lactic_acid -- COX412 -- DNA_Repair

@@ -1,0 +1,23 @@
+{
+  "success": true,
+  "n_checks": 17,
+  "checks": {
+    "upstream_core_modules_BioFVM_PhysiBoSS_adapter_unchanged": "PASS",
+    "prism_standard_sample_structure": "PASS",
+    "prism_BM0_preserved_physics_models_and_parameter_interface": "PASS",
+    "prism_BM1_preserved_physics_models_and_parameter_interface": "PASS",
+    "prism_BM2_preserved_physics_models_and_parameter_interface": "PASS",
+    "cylinder_standard_sample_structure": "PASS",
+    "cylinder_BM0_preserved_physics_models_and_parameter_interface": "PASS",
+    "cylinder_BM1_preserved_physics_models_and_parameter_interface": "PASS",
+    "cylinder_BM2_preserved_physics_models_and_parameter_interface": "PASS",
+    "sphere_standard_sample_structure": "PASS",
+    "sphere_BM0_preserved_physics_models_and_parameter_interface": "PASS",
+    "sphere_BM1_preserved_physics_models_and_parameter_interface": "PASS",
+    "sphere_BM2_preserved_physics_models_and_parameter_interface": "PASS",
+    "duplicate_run_directory_rejected": "PASS",
+    "original_default_make_targets_preserved_verbatim_with_include_append": "PASS",
+    "three_make_targets_available": "PASS",
+    "BM_identity_is_original_CFG_not_celltype0_filename": "PASS"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "geometry": "prism",
+  "population": "BM0",
+  "source_fingerprint": "77f830b5a92652dc9711ed169cdfc579b7ead857a17b839a68e0b1647ce3c7a0",
+  "compiler": "g++ (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0",
+  "architecture": "x86-64",
+  "MAXNODES": 256,
+  "executable_sha256": "be2185b1da6b0fa677ea9f1f9cb216e4ef39cfa89d2a84ffda31ca9358f1e568"
+}

@@ -1,0 +1,7 @@
+{
+  "python": "3.12.7",
+  "gcc": "g++ (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0",
+  "make": "GNU Make 4.3",
+  "architecture": "x86-64",
+  "MAXNODES": 256
+}

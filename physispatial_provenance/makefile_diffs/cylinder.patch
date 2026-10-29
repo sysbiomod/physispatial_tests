@@ -1,0 +1,56 @@
+--- original/cylinder/Makefile
++++ integrated/cylinder/Makefile
+@@ -1,5 +1,5 @@
+ VERSION := $(shell grep . VERSION.txt | cut -f1 -d:)
+-PROGRAM_NAME := project
++PROGRAM_NAME := physispatial_cylinder
+ 
+ CC := g++
+ # CC := g++-mp-7 # typical macports compiler name
+@@ -155,11 +155,11 @@
+ BioFVM_mesh.o: ./BioFVM/BioFVM_mesh.cpp
+ 	$(COMPILE_COMMAND) -c ./BioFVM/BioFVM_mesh.cpp 
+ 
+-BioFVM_microenvironment.o: ./BioFVM/BioFVM_microenvironment.cpp
+-	$(COMPILE_COMMAND) -c ./BioFVM/BioFVM_microenvironment.cpp 
+-
+-BioFVM_solvers.o: ./BioFVM/BioFVM_solvers.cpp
+-	$(COMPILE_COMMAND) -c ./BioFVM/BioFVM_solvers.cpp 
++BioFVM_microenvironment.o: ./custom_modules/historical_BioFVM_microenvironment.cpp
++	$(COMPILE_COMMAND) -I./BioFVM -c ./custom_modules/historical_BioFVM_microenvironment.cpp -o BioFVM_microenvironment.o 
++
++BioFVM_solvers.o: ./custom_modules/historical_BioFVM_solvers.cpp
++	$(COMPILE_COMMAND) -I./BioFVM -c ./custom_modules/historical_BioFVM_solvers.cpp -o BioFVM_solvers.o 
+ 
+ BioFVM_utilities.o: ./BioFVM/BioFVM_utilities.cpp
+ 	$(COMPILE_COMMAND) -c ./BioFVM/BioFVM_utilities.cpp 
+@@ -199,8 +199,8 @@
+ PhysiCell_basic_signaling.o: ./core/PhysiCell_basic_signaling.cpp
+ 	$(COMPILE_COMMAND) -c ./core/PhysiCell_basic_signaling.cpp 	
+ 	
+-PhysiCell_geometry.o: ./modules/PhysiCell_geometry.cpp
+-	$(COMPILE_COMMAND) -c ./modules/PhysiCell_geometry.cpp 
++PhysiCell_geometry.o: ./custom_modules/historical_PhysiCell_geometry.cpp
++	$(COMPILE_COMMAND) -I./modules -c ./custom_modules/historical_PhysiCell_geometry.cpp -o PhysiCell_geometry.o 
+ 	
+ # user-defined PhysiCell modules
+ 
+@@ -370,3 +370,18 @@
+ list-user-projects:
+ 	@echo "user projects::"
+ 	@cd ./user_projects && ls -dt1 * | grep . | sed 's!empty.txt!!'
++
++# PhysiSpatial: offline, bundled MaBoSS build; does not call the download helper.
++MABOSS_STATIC := $(MABOSS_DIR)/lib/libMaBoSS_$(MABOSS_MAX_NODES)n-static.a
++all static: $(MABOSS_STATIC)
++$(MABOSS_STATIC):
++	touch $(MABOSS_DIR)/src/depend.mk
++	$(MAKE) -C $(MABOSS_DIR)/src -f Makefile.maboss MAXNODES=$(MABOSS_MAX_NODES) CXX=$(CC) init
++	$(MAKE) -C $(MABOSS_DIR)/src -f Makefile.maboss MAXNODES=$(MABOSS_MAX_NODES) CXX=$(CC) libMaBoSS_$(MABOSS_MAX_NODES)n-static.a
++	mkdir -p $(MABOSS_DIR)/lib
++	cp $(MABOSS_DIR)/src/libMaBoSS_$(MABOSS_MAX_NODES)n-static.a $@
++
++-include physispatial_tools/projects.mk
++
++# Historical-source objects must never leak into a subsequently loaded upstream sample.
++reset: clean

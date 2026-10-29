@@ -1,0 +1,22 @@
+[
+  {
+    "snapshot": "initial",
+    "n_cells": 1216,
+    "same_shape": true,
+    "bitwise_except_deprecated_uninitialized_field": true,
+    "max_abs_difference_except_deprecated": 0.0,
+    "excluded_field": "total_attack_time",
+    "old_mat_sha256": "5290bc2e79358807aa114b71c1573484572b4f9adf631184a9528a53e8bec885",
+    "new_mat_sha256": "755f372dadba2f4b79e8f70d3d21a826874e3188f00b6179bfc51d19ad543cc5"
+  },
+  {
+    "snapshot": "final",
+    "n_cells": 1218,
+    "same_shape": true,
+    "bitwise_except_deprecated_uninitialized_field": true,
+    "max_abs_difference_except_deprecated": 0.0,
+    "excluded_field": "total_attack_time",
+    "old_mat_sha256": "fc35f07a574aeb1c54eef41361d2dd73ccbacd1c58845de827cd1a92ce716aee",
+    "new_mat_sha256": "4825b80e1ac90e0e8511228c8a7b1fdb7e927f36fa5a6fd713cf4cc5e7a5cef3"
+  }
+]

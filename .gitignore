@@ -1,68 +1,46 @@
-# Prerequisites
-*.d
-
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Linker files
-*.ilk
-
-# Debugger Files
-*.pdb
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-*.so.*
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
+# --- Upstream PhysiCell/PhysiBoSS (anchored to the root so that sample
+# --- projects such as sample_projects/biorobots are NOT ignored) ---
+*.asv
+._.DS_Store
+.DS_Store
 *.exe
-*.out
-*.app
+*.o
+/addons/libRoadrunner/roadrunner/
+/addons/libRoadrunner/roadrunner-win64-vs14-cp35m.zip
+/addons/PhysiBoSS/libMaBoSS-*.tar.gz
+/biorobots
+/cancer_immune_3D
+/heterogeneity
+/interaction_demo
+/project
+/config/PhysiCell_settings-backup.xml
+/initial.svg
+/Makefile-backup
+pmb_debug.log
+studio_debug.log
+/user_projects/*
+!/user_projects/empty.txt
+.vscode
+*.tar.gz
 
-# Build directories
-build/
-Build/
-build-*/
+# --- PhysiSpatial: bundled MaBoSS SOURCE is tracked; build products are not ---
+/addons/PhysiBoSS/MaBoSS/engine/lib/
+/addons/PhysiBoSS/MaBoSS/engine/src/*.o
+/addons/PhysiBoSS/MaBoSS/engine/src/*.a
+/addons/PhysiBoSS/MaBoSS/engine/src/*.so
+/addons/PhysiBoSS/MaBoSS/engine/src/depend.mk
+/addons/PhysiBoSS/MaBoSS/engine/src/MaBoSS_256n
+/addons/PhysiBoSS/MaBoSS/engine/src/PopMaBoSS_256n
+/addons/PhysiBoSS/MaBoSS/engine/src/lex.*.cc
+/addons/PhysiBoSS/MaBoSS/engine/src/*Grammar.tab.*
+/addons/PhysiBoSS/MaBoSS/engine/src/*Grammar.output
 
-# CMake generated files
-CMakeFiles/
-CMakeCache.txt
-cmake_install.cmake
-Makefile
-install_manifest.txt
-compile_commands.json
-
-# Temporary files
-*.tmp
-*.log
-*.bak
-*.swp
-
-# vcpkg
-vcpkg_installed/
-
-# debug information files
-*.dwo
-
-# test output & cache
-Testing/
-.cache/
+# Executables and per-user working/run directories
+/physispatial_prism
+/physispatial_cylinder
+/physispatial_sphere
+/physispatial_work/
+/physispatial_runs/
+/output_*/
+__pycache__/
+*.pyc
