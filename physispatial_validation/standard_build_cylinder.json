@@ -1,0 +1,9 @@
+{
+  "geometry": "cylinder",
+  "population": "BM0",
+  "source_fingerprint": "78c1a29e3ce399a5005af5badc6e85e10e190ac668bea44e666268569091d252",
+  "compiler": "g++ (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0",
+  "architecture": "x86-64",
+  "MAXNODES": 256,
+  "executable_sha256": "fbefb4ee52d1cee39a886e9e4d2365871de469bce1348198e9b70cb974fa0a5f"
+}

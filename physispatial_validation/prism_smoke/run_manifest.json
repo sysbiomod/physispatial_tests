@@ -1,0 +1,84 @@
+{
+  "geometry": "prism",
+  "population": "BM0",
+  "source_profile": "original_D500",
+  "state": "FINISHED",
+  "diffusion": 500.0,
+  "concentration": 1e-07,
+  "seed": 0,
+  "threads": 1,
+  "max_time": 0.02,
+  "smoke": true,
+  "concentration_units": "original numeric convention; unresolved unit labels; no conversion",
+  "diffusion_units": "micron^2/min",
+  "changed_XML_elements": {
+    "PhysiCell_settings/overall[0]/max_time[0]": {
+      "before": {
+        "text": "300000",
+        "attributes": {
+          "units": "min"
+        }
+      },
+      "after": {
+        "text": "0.02",
+        "attributes": {
+          "units": "min"
+        }
+      }
+    },
+    "PhysiCell_settings/parallel[0]/omp_num_threads[0]": {
+      "before": {
+        "text": "112",
+        "attributes": {}
+      },
+      "after": {
+        "text": "1",
+        "attributes": {}
+      }
+    },
+    "PhysiCell_settings/save[0]/folder[0]": {
+      "before": {
+        "text": "output_0",
+        "attributes": {}
+      },
+      "after": {
+        "text": "output",
+        "attributes": {}
+      }
+    },
+    "PhysiCell_settings/user_parameters[0]/drug_conc[0]": {
+      "before": {
+        "text": "1e-09",
+        "attributes": {
+          "type": "double",
+          "units": "",
+          "description": ""
+        }
+      },
+      "after": {
+        "text": "9.9999999999999995e-08",
+        "attributes": {
+          "type": "double",
+          "units": "",
+          "description": ""
+        }
+      }
+    }
+  },
+  "input_sha256": {
+    "./config/BM0/Fumia2013_META_only_RNA_visium_norm_0.bnd": "5ae7d6a5bc760368d6403e839f6dc346b7846f3b8745922e94d978c441e8e2e9",
+    "./config/BM0/Fumia2013_META_only_RNA_visium_norm_0.cfg": "192a4ff54d438a67baefd78e2966e7ed9ebc40f2525a94448427b59e7d79812f",
+    "./config/BM0/Fumia2013_META_only_RNA_visium_norm_1.bnd": "5ae7d6a5bc760368d6403e839f6dc346b7846f3b8745922e94d978c441e8e2e9",
+    "./config/BM0/Fumia2013_META_only_RNA_visium_norm_1.cfg": "652356977335f802147684bc73ecb5d261889457291c8ec073f86ff80cf67037",
+    "./config/BM0/Fumia2013_META_only_RNA_visium_norm_2.bnd": "5ae7d6a5bc760368d6403e839f6dc346b7846f3b8745922e94d978c441e8e2e9",
+    "./config/BM0/Fumia2013_META_only_RNA_visium_norm_2.cfg": "de48e423aed046e928dc135fa57d6110918b4268132e85e8679365d9a9e2f09b",
+    "./config/BM0/ecm_prisma.tsv": "42dc37bf8c24358dd99ca578aa131676ac8391518c6c30b3a4997eefa5bd88b7",
+    "./config/BM0/prisma_wall_drug_2.tsv": "3e144dcb09da80c8cbc97b0875af7ab11f9177f6a7e2ec933f1d629145ba8ee9",
+    "config/BM0/cells_prisma.csv": "30a23d04159304f064d5f08d64f359fe012c04706093c1c1807afe99fcc8da44"
+  },
+  "run_xml_sha256": "3b6b8caa5283d24a0cce2fa946d295b544d35ac3a3953ccee6214bc2aff6f7ab",
+  "executable_sha256": "be2185b1da6b0fa677ea9f1f9cb216e4ef39cfa89d2a84ffda31ca9358f1e568",
+  "returncode": 0,
+  "final_time": 0.03,
+  "wall_seconds": 14.26821817399832
+}

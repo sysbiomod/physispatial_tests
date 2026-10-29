@@ -1,0 +1,56 @@
+name: PhysiSpatial unit tests
+
+# Compiles the three PhysiSpatial projects (prism, cylinder, sphere), runs the
+# static/interface checks and a full-tissue Prism smoke run.
+# Cylinder (~8 GB RAM) and Sphere (~40 GB RAM) smoke runs do not fit on a
+# standard GitHub runner; run them locally or on Garnatxa (see README.md).
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install toolchain
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y build-essential flex bison python3
+
+      - name: Check environment
+        run: bash physispatial_tools/check_environment.sh
+
+      - name: Build prism, cylinder and sphere
+        run: |
+          for g in prism cylinder sphere; do
+            make physispatial-$g
+            make -j"$(nproc)" ARCH=x86-64
+            test -x physispatial_$g
+          done
+
+      - name: Static and interface checks
+        run: |
+          python3 -B physispatial_tools/validate_integration.py
+          python3 -B physispatial_tools/test_sweeps.py
+
+      - name: Prism full-tissue smoke run
+        run: |
+          python3 -B physispatial_tools/run.py --geometry prism --population BM0 \
+            --seed 0 --threads 2 --smoke-minutes 0.02 --timeout 600 --name ci_prism
+          grep -q '"state": "FINISHED"' physispatial_runs/ci_prism/run_manifest.json
+
+      - name: Upload smoke logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: prism-smoke
+          path: |
+            physispatial_runs/*/run_manifest.json
+            physispatial_runs/*/simulation.log
+          if-no-files-found: ignore

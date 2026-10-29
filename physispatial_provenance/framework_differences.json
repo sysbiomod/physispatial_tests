@@ -1,0 +1,51 @@
+[
+  {
+    "geometry": "prism",
+    "upstream_path": "modules/PhysiCell_geometry.cpp",
+    "upstream_sha256": "99d2cabefb7a6829a366bb94e6f9dc88c56ac86a7b0d4d51a3d561f6169f8d5a",
+    "historical_sha256": "34c9957eb115e93444be44a3472478e38c5157903a1cb65c9ce753d2cf31aeb2",
+    "compiled_from": "sample_projects_intracellular/boolean/physispatial_prism/custom_modules/historical_PhysiCell_geometry.cpp"
+  },
+  {
+    "geometry": "cylinder",
+    "upstream_path": "BioFVM/BioFVM_microenvironment.cpp",
+    "upstream_sha256": "5aa6a473ab2a55179d806a5c8ff27d868ec1793417e33470a82b11a9e4839cbb",
+    "historical_sha256": "8f524ff4e3966d1b2c24dffbe8b9017ec20809fa10c44a0b680ba046bdcaf832",
+    "compiled_from": "sample_projects_intracellular/boolean/physispatial_cylinder/custom_modules/historical_BioFVM_microenvironment.cpp"
+  },
+  {
+    "geometry": "cylinder",
+    "upstream_path": "BioFVM/BioFVM_solvers.cpp",
+    "upstream_sha256": "9193a5d18202308b0f1c62753ca1fb16b6eeadee712de9d0350ecdf1f755d56a",
+    "historical_sha256": "9106accd8fc8aba6068b89c768145d6fd049f8c78678d03835321b5ab898d969",
+    "compiled_from": "sample_projects_intracellular/boolean/physispatial_cylinder/custom_modules/historical_BioFVM_solvers.cpp"
+  },
+  {
+    "geometry": "cylinder",
+    "upstream_path": "modules/PhysiCell_geometry.cpp",
+    "upstream_sha256": "99d2cabefb7a6829a366bb94e6f9dc88c56ac86a7b0d4d51a3d561f6169f8d5a",
+    "historical_sha256": "34c9957eb115e93444be44a3472478e38c5157903a1cb65c9ce753d2cf31aeb2",
+    "compiled_from": "sample_projects_intracellular/boolean/physispatial_cylinder/custom_modules/historical_PhysiCell_geometry.cpp"
+  },
+  {
+    "geometry": "sphere",
+    "upstream_path": "BioFVM/BioFVM_microenvironment.cpp",
+    "upstream_sha256": "5aa6a473ab2a55179d806a5c8ff27d868ec1793417e33470a82b11a9e4839cbb",
+    "historical_sha256": "8f524ff4e3966d1b2c24dffbe8b9017ec20809fa10c44a0b680ba046bdcaf832",
+    "compiled_from": "sample_projects_intracellular/boolean/physispatial_sphere/custom_modules/historical_BioFVM_microenvironment.cpp"
+  },
+  {
+    "geometry": "sphere",
+    "upstream_path": "BioFVM/BioFVM_solvers.cpp",
+    "upstream_sha256": "9193a5d18202308b0f1c62753ca1fb16b6eeadee712de9d0350ecdf1f755d56a",
+    "historical_sha256": "9106accd8fc8aba6068b89c768145d6fd049f8c78678d03835321b5ab898d969",
+    "compiled_from": "sample_projects_intracellular/boolean/physispatial_sphere/custom_modules/historical_BioFVM_solvers.cpp"
+  },
+  {
+    "geometry": "sphere",
+    "upstream_path": "modules/PhysiCell_geometry.cpp",
+    "upstream_sha256": "99d2cabefb7a6829a366bb94e6f9dc88c56ac86a7b0d4d51a3d561f6169f8d5a",
+    "historical_sha256": "34c9957eb115e93444be44a3472478e38c5157903a1cb65c9ce753d2cf31aeb2",
+    "compiled_from": "sample_projects_intracellular/boolean/physispatial_sphere/custom_modules/historical_PhysiCell_geometry.cpp"
+  }
+]

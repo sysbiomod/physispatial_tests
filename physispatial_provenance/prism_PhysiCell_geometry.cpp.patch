@@ -1,0 +1,13 @@
+--- upstream/modules/PhysiCell_geometry.cpp
++++ prism/modules/PhysiCell_geometry.cpp
+@@ -323,8 +323,8 @@
+ 		Cell_Definition* pCD = find_cell_definition( my_type );
+ 		if( pCD != NULL )
+ 		{
+-			std::cout << "Creating " << pCD->name << " (type=" << pCD->type << ") at " 
+-			<< position << std::endl; 
++			//std::cout << "Creating " << pCD->name << " (type=" << pCD->type << ") at " 
++			//<< position << std::endl; 
+ 			Cell* pCell = create_cell( *pCD ); 
+ 			pCell->assign_position( position ); 
+ 		}

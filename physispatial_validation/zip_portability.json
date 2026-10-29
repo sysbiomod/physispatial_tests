@@ -1,0 +1,9 @@
+{
+  "success": true,
+  "zip_test_passed": true,
+  "all_upstream_files_present": true,
+  "extracted_distribution_static_and_sweep_tests_passed": true,
+  "previous_repository_required_for_runtime": false,
+  "original_MN5_paths_required_for_runtime": false,
+  "packaged_files": 1123
+}

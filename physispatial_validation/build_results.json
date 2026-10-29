@@ -1,0 +1,26 @@
+[
+  {
+    "geometry": "prism",
+    "population": "BM0",
+    "success": true,
+    "wall_seconds": 47.89386237999861,
+    "executable_sha256": "be2185b1da6b0fa677ea9f1f9cb216e4ef39cfa89d2a84ffda31ca9358f1e568",
+    "binary": "physispatial_work/executables/prism_BM0_77f830b5a92652dc/physispatial_prism"
+  },
+  {
+    "geometry": "cylinder",
+    "population": "BM0",
+    "success": true,
+    "wall_seconds": 49.5762011859988,
+    "executable_sha256": "fbefb4ee52d1cee39a886e9e4d2365871de469bce1348198e9b70cb974fa0a5f",
+    "binary": "physispatial_work/executables/cylinder_BM0_78c1a29e3ce399a5/physispatial_cylinder"
+  },
+  {
+    "geometry": "sphere",
+    "population": "BM0",
+    "success": true,
+    "wall_seconds": 50.022284597998805,
+    "executable_sha256": "189981c617799653b633490e68eee5176a54f8572e3df98878d7e7b5217aa70a",
+    "binary": "physispatial_work/executables/sphere_BM0_c21411f6373aaba8/physispatial_sphere"
+  }
+]

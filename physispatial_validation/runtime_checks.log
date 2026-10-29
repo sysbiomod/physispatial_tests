@@ -1,0 +1,11 @@
+Built and source-tested prism
+Built and source-tested cylinder
+Built and source-tested sphere
+Traceback (most recent call last):
+  File "/home/amadrid/Escritorio/PHD/PhysiBoSS_PhysiSpatial_UnitTests/physispatial_tools/runtime_checks.py", line 68, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/amadrid/Escritorio/PHD/PhysiBoSS_PhysiSpatial_UnitTests/physispatial_tools/runtime_checks.py", line 56, in main
+    assert data.shape[1]==1216 and np.isfinite(data[pos:pos+3]).all()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

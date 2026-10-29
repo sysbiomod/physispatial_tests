@@ -1,0 +1,12 @@
+rm -f *.o
+rm -f physispatial_sphere*
+rm -f *.cpp 
+cp ./sample_projects/Makefile-default Makefile 
+rm -f ./custom_modules/*
+touch ./custom_modules/empty.txt 
+touch ALL_CITATIONS.txt 
+touch ./core/PhysiCell_cell.cpp
+rm ALL_CITATIONS.txt 
+cp ./config/PhysiCell_settings-backup.xml ./config/PhysiCell_settings.xml 
+rm -fr ./config/cells.csv ./config/cell_rules.csv
+rm -rf ./scripts

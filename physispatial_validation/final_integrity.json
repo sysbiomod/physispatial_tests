@@ -1,0 +1,19 @@
+{
+  "success": true,
+  "upstream_files_retained": 748,
+  "original_upstream_files_changed": [
+    ".gitignore",
+    "Makefile",
+    "README.md",
+    "sample_projects/Makefile-default"
+  ],
+  "core_modules_BioFVM_adapter_unchanged": true,
+  "local_predecessor_files_unchanged": 2725,
+  "remote_original_files_unchanged": 2217,
+  "sources_reconstructed": false,
+  "new_expensive_simulations": false,
+  "slurm_jobs_submitted": 0,
+  "source_probes": 18,
+  "full_prism_smoke": true,
+  "full_cylinder_sphere_pending": true
+}

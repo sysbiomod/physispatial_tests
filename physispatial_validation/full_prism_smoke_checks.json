@@ -1,0 +1,16 @@
+[
+  {
+    "snapshot": "initial",
+    "n_cells": 1216,
+    "time_min": 0.0,
+    "position_finite": true,
+    "cell_ids_unique": true
+  },
+  {
+    "snapshot": "final",
+    "n_cells": 1218,
+    "time_min": 0.03,
+    "position_finite": true,
+    "cell_ids_unique": true
+  }
+]

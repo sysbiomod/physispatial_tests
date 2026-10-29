@@ -1,0 +1,449 @@
+{
+  "prism/BM0": {
+    "original_source": "/gpfs/projects/bsc08/bsc08180/UNITS_TESTS_NEW_VERSION/Prisma/BM0/D500/PhysiCell-master-newest_lowmemory_newintracelullar_v2",
+    "framework_id": "393283b1be2d8005",
+    "main_sha256": "ff6a4094a039112ad82c31775326cc4530442ac881e1f1973590653f93b5a09b",
+    "original_xml_sha256": "bcb7690d251d803e53a25df17d5bfc5a422c3bcce744ff029056a3a476efce66",
+    "portable_xml_sha256": "96fae3b97cc5012570bf8b9f47bc801e265bd62033491eb6ba6a094fd451a065",
+    "path_adaptations": [
+      [
+        "./config/Fumia2013_META_only_RNA_visium_norm_0.bnd",
+        "./config/BM0/Fumia2013_META_only_RNA_visium_norm_0.bnd"
+      ],
+      [
+        "./config/Fumia2013_META_only_RNA_visium_norm_1.bnd",
+        "./config/BM0/Fumia2013_META_only_RNA_visium_norm_1.bnd"
+      ],
+      [
+        "./config/Fumia2013_META_only_RNA_visium_norm_2.bnd",
+        "./config/BM0/Fumia2013_META_only_RNA_visium_norm_2.bnd"
+      ],
+      [
+        "./config/Fumia2013_META_only_RNA_visium_norm_0.cfg",
+        "./config/BM0/Fumia2013_META_only_RNA_visium_norm_0.cfg"
+      ],
+      [
+        "./config/Fumia2013_META_only_RNA_visium_norm_1.cfg",
+        "./config/BM0/Fumia2013_META_only_RNA_visium_norm_1.cfg"
+      ],
+      [
+        "./config/Fumia2013_META_only_RNA_visium_norm_2.cfg",
+        "./config/BM0/Fumia2013_META_only_RNA_visium_norm_2.cfg"
+      ],
+      [
+        "./config/prisma_wall_drug_2.tsv",
+        "./config/BM0/prisma_wall_drug_2.tsv"
+      ],
+      [
+        "./config/ecm_prisma.tsv",
+        "./config/BM0/ecm_prisma.tsv"
+      ]
+    ],
+    "default_D": 500.0,
+    "default_C": 1e-09,
+    "boolean_files": {
+      "Fumia2013_META_only_RNA_visium_norm_0.cfg": "192a4ff54d438a67baefd78e2966e7ed9ebc40f2525a94448427b59e7d79812f",
+      "Fumia2013_META_only_RNA_visium_norm_0.bnd": "5ae7d6a5bc760368d6403e839f6dc346b7846f3b8745922e94d978c441e8e2e9",
+      "Fumia2013_META_only_RNA_visium_norm_1.bnd": "5ae7d6a5bc760368d6403e839f6dc346b7846f3b8745922e94d978c441e8e2e9",
+      "Fumia2013_META_only_RNA_visium_norm_1.cfg": "652356977335f802147684bc73ecb5d261889457291c8ec073f86ff80cf67037",
+      "Fumia2013_META_only_RNA_visium_norm_2.cfg": "de48e423aed046e928dc135fa57d6110918b4268132e85e8679365d9a9e2f09b",
+      "Fumia2013_META_only_RNA_visium_norm_2.bnd": "5ae7d6a5bc760368d6403e839f6dc346b7846f3b8745922e94d978c441e8e2e9"
+    }
+  },
+  "prism/BM1": {
+    "original_source": "/gpfs/projects/bsc08/bsc08180/UNITS_TESTS_NEW_VERSION/Prisma/BM1/D500/PhysiCell-master-newest_lowmemory_newintracelullar_v2",
+    "framework_id": "393283b1be2d8005",
+    "main_sha256": "83f50510c2a57fa5d29772c0b1f58d89876a91a1f4798b8b0107b6b55b99efa6",
+    "original_xml_sha256": "bcb7690d251d803e53a25df17d5bfc5a422c3bcce744ff029056a3a476efce66",
+    "portable_xml_sha256": "b7a0a0779fad0d6ba87dda4887124469e0d4ceb0975601850ca7354f02b5b282",
+    "path_adaptations": [
+      [
+        "./config/Fumia2013_META_only_RNA_visium_norm_0.bnd",
+        "./config/BM1/Fumia2013_META_only_RNA_visium_norm_0.bnd"
+      ],
+      [
+        "./config/Fumia2013_META_only_RNA_visium_norm_1.bnd",
+        "./config/BM1/Fumia2013_META_only_RNA_visium_norm_1.bnd"
+      ],
+      [
+        "./config/Fumia2013_META_only_RNA_visium_norm_2.bnd",
+        "./config/BM1/Fumia2013_META_only_RNA_visium_norm_2.bnd"
+      ],
+      [
+        "./config/Fumia2013_META_only_RNA_visium_norm_0.cfg",
+        "./config/BM1/Fumia2013_META_only_RNA_visium_norm_0.cfg"
+      ],
+      [
+        "./config/Fumia2013_META_only_RNA_visium_norm_1.cfg",
+        "./config/BM1/Fumia2013_META_only_RNA_visium_norm_1.cfg"
+      ],
+      [
+        "./config/Fumia2013_META_only_RNA_visium_norm_2.cfg",
+        "./config/BM1/Fumia2013_META_only_RNA_visium_norm_2.cfg"
+      ],
+      [
+        "./config/prisma_wall_drug_2.tsv",
+        "./config/BM1/prisma_wall_drug_2.tsv"
+      ],
+      [
+        "./config/ecm_prisma.tsv",
+        "./config/BM1/ecm_prisma.tsv"
+      ]
+    ],
+    "default_D": 500.0,
+    "default_C": 1e-09,
+    "boolean_files": {
+      "Fumia2013_META_only_RNA_visium_norm_0.cfg": "914cb61dab590b7c0e6771cffebaaba23d3ee42d82b5317ef2cb1cb8189f8eba",
+      "Fumia2013_META_only_RNA_visium_norm_0.bnd": "5ae7d6a5bc760368d6403e839f6dc346b7846f3b8745922e94d978c441e8e2e9",
+      "Fumia2013_META_only_RNA_visium_norm_1.bnd": "5ae7d6a5bc760368d6403e839f6dc346b7846f3b8745922e94d978c441e8e2e9",
+      "Fumia2013_META_only_RNA_visium_norm_1.cfg": "192a4ff54d438a67baefd78e2966e7ed9ebc40f2525a94448427b59e7d79812f",
+      "Fumia2013_META_only_RNA_visium_norm_2.cfg": "de48e423aed046e928dc135fa57d6110918b4268132e85e8679365d9a9e2f09b",
+      "Fumia2013_META_only_RNA_visium_norm_2.bnd": "5ae7d6a5bc760368d6403e839f6dc346b7846f3b8745922e94d978c441e8e2e9"
+    }
+  },
+  "prism/BM2": {
+    "original_source": "/gpfs/projects/bsc08/bsc08180/UNITS_TESTS_NEW_VERSION/Prisma/BM2/D500/PhysiCell-master-newest_lowmemory_newintracelullar_v2",
+    "framework_id": "393283b1be2d8005",
+    "main_sha256": "83f50510c2a57fa5d29772c0b1f58d89876a91a1f4798b8b0107b6b55b99efa6",
+    "original_xml_sha256": "bcb7690d251d803e53a25df17d5bfc5a422c3bcce744ff029056a3a476efce66",
+    "portable_xml_sha256": "2d71cef3dde880d470b9a3221dff72149ca6c33d9703d3acc282e7aae6a3de48",
+    "path_adaptations": [
+      [
+        "./config/Fumia2013_META_only_RNA_visium_norm_0.bnd",
+        "./config/BM2/Fumia2013_META_only_RNA_visium_norm_0.bnd"
+      ],
+      [
+        "./config/Fumia2013_META_only_RNA_visium_norm_1.bnd",
+        "./config/BM2/Fumia2013_META_only_RNA_visium_norm_1.bnd"
+      ],
+      [
+        "./config/Fumia2013_META_only_RNA_visium_norm_2.bnd",
+        "./config/BM2/Fumia2013_META_only_RNA_visium_norm_2.bnd"
+      ],
+      [
+        "./config/Fumia2013_META_only_RNA_visium_norm_0.cfg",
+        "./config/BM2/Fumia2013_META_only_RNA_visium_norm_0.cfg"
+      ],
+      [
+        "./config/Fumia2013_META_only_RNA_visium_norm_1.cfg",
+        "./config/BM2/Fumia2013_META_only_RNA_visium_norm_1.cfg"
+      ],
+      [
+        "./config/Fumia2013_META_only_RNA_visium_norm_2.cfg",
+        "./config/BM2/Fumia2013_META_only_RNA_visium_norm_2.cfg"
+      ],
+      [
+        "./config/prisma_wall_drug_2.tsv",
+        "./config/BM2/prisma_wall_drug_2.tsv"
+      ],
+      [
+        "./config/ecm_prisma.tsv",
+        "./config/BM2/ecm_prisma.tsv"
+      ]
+    ],
+    "default_D": 500.0,
+    "default_C": 1e-09,
+    "boolean_files": {
+      "Fumia2013_META_only_RNA_visium_norm_0.cfg": "de48e423aed046e928dc135fa57d6110918b4268132e85e8679365d9a9e2f09b",
+      "Fumia2013_META_only_RNA_visium_norm_0.bnd": "5ae7d6a5bc760368d6403e839f6dc346b7846f3b8745922e94d978c441e8e2e9",
+      "Fumia2013_META_only_RNA_visium_norm_1.bnd": "5ae7d6a5bc760368d6403e839f6dc346b7846f3b8745922e94d978c441e8e2e9",
+      "Fumia2013_META_only_RNA_visium_norm_1.cfg": "192a4ff54d438a67baefd78e2966e7ed9ebc40f2525a94448427b59e7d79812f",
+      "Fumia2013_META_only_RNA_visium_norm_2.cfg": "652356977335f802147684bc73ecb5d261889457291c8ec073f86ff80cf67037",
+      "Fumia2013_META_only_RNA_visium_norm_2.bnd": "5ae7d6a5bc760368d6403e839f6dc346b7846f3b8745922e94d978c441e8e2e9"
+    }
+  },
+  "cylinder/BM0": {
+    "original_source": "/gpfs/projects/bsc08/bsc08180/UNITS_TESTS_NEW_VERSION/Cilindro/BM0/D500/PhysiBoss",
+    "framework_id": "41f348acd1fbc384",
+    "main_sha256": "83f50510c2a57fa5d29772c0b1f58d89876a91a1f4798b8b0107b6b55b99efa6",
+    "original_xml_sha256": "63c6e62735292ca7bc1bb733387732cf09857e7db06639643b4c7dd2d56301c2",
+    "portable_xml_sha256": "fa72535b595bb102c9ba51904ec1dfabbfa595fa54ea4b6bb17b5407015ad4b4",
+    "path_adaptations": [
+      [
+        "./config/Fumia2013_META_only_RNA_visium_norm_0.bnd",
+        "./config/BM0/Fumia2013_META_only_RNA_visium_norm_0.bnd"
+      ],
+      [
+        "./config/Fumia2013_META_only_RNA_visium_norm_1.bnd",
+        "./config/BM0/Fumia2013_META_only_RNA_visium_norm_1.bnd"
+      ],
+      [
+        "./config/Fumia2013_META_only_RNA_visium_norm_2.bnd",
+        "./config/BM0/Fumia2013_META_only_RNA_visium_norm_2.bnd"
+      ],
+      [
+        "./config/Fumia2013_META_only_RNA_visium_norm_0.cfg",
+        "./config/BM0/Fumia2013_META_only_RNA_visium_norm_0.cfg"
+      ],
+      [
+        "./config/Fumia2013_META_only_RNA_visium_norm_1.cfg",
+        "./config/BM0/Fumia2013_META_only_RNA_visium_norm_1.cfg"
+      ],
+      [
+        "./config/Fumia2013_META_only_RNA_visium_norm_2.cfg",
+        "./config/BM0/Fumia2013_META_only_RNA_visium_norm_2.cfg"
+      ],
+      [
+        "./config/cilindro_endo_doble.tsv",
+        "./config/BM0/cilindro_endo_doble.tsv"
+      ],
+      [
+        "./config/ecm_2_walls_cilindro.tsv",
+        "./config/BM0/ecm_2_walls_cilindro.tsv"
+      ]
+    ],
+    "default_D": 500.0,
+    "default_C": 6e-07,
+    "boolean_files": {
+      "Fumia2013_META_only_RNA_visium_norm_0.cfg": "192a4ff54d438a67baefd78e2966e7ed9ebc40f2525a94448427b59e7d79812f",
+      "Fumia2013_META_only_RNA_visium_norm_0.bnd": "5ae7d6a5bc760368d6403e839f6dc346b7846f3b8745922e94d978c441e8e2e9",
+      "Fumia2013_META_only_RNA_visium_norm_1.bnd": "5ae7d6a5bc760368d6403e839f6dc346b7846f3b8745922e94d978c441e8e2e9",
+      "Fumia2013_META_only_RNA_visium_norm_1.cfg": "652356977335f802147684bc73ecb5d261889457291c8ec073f86ff80cf67037",
+      "Fumia2013_META_only_RNA_visium_norm_2.cfg": "de48e423aed046e928dc135fa57d6110918b4268132e85e8679365d9a9e2f09b",
+      "Fumia2013_META_only_RNA_visium_norm_2.bnd": "5ae7d6a5bc760368d6403e839f6dc346b7846f3b8745922e94d978c441e8e2e9"
+    }
+  },
+  "cylinder/BM1": {
+    "original_source": "/gpfs/projects/bsc08/bsc08180/UNITS_TESTS_NEW_VERSION/Cilindro/BM1/D500/PhysiBoss",
+    "framework_id": "41f348acd1fbc384",
+    "main_sha256": "83f50510c2a57fa5d29772c0b1f58d89876a91a1f4798b8b0107b6b55b99efa6",
+    "original_xml_sha256": "dc58353cdfc93ffe0e0b71ef625f2448b7ed8b346c61eda4b6ef8af7784753f4",
+    "portable_xml_sha256": "33fbf40939045b5c6ffafad5457251eef9dcd3c4d7e93332bbef081520242282",
+    "path_adaptations": [
+      [
+        "./config/Fumia2013_META_only_RNA_visium_norm_0.bnd",
+        "./config/BM1/Fumia2013_META_only_RNA_visium_norm_0.bnd"
+      ],
+      [
+        "./config/Fumia2013_META_only_RNA_visium_norm_1.bnd",
+        "./config/BM1/Fumia2013_META_only_RNA_visium_norm_1.bnd"
+      ],
+      [
+        "./config/Fumia2013_META_only_RNA_visium_norm_2.bnd",
+        "./config/BM1/Fumia2013_META_only_RNA_visium_norm_2.bnd"
+      ],
+      [
+        "./config/Fumia2013_META_only_RNA_visium_norm_0.cfg",
+        "./config/BM1/Fumia2013_META_only_RNA_visium_norm_0.cfg"
+      ],
+      [
+        "./config/Fumia2013_META_only_RNA_visium_norm_1.cfg",
+        "./config/BM1/Fumia2013_META_only_RNA_visium_norm_1.cfg"
+      ],
+      [
+        "./config/Fumia2013_META_only_RNA_visium_norm_2.cfg",
+        "./config/BM1/Fumia2013_META_only_RNA_visium_norm_2.cfg"
+      ],
+      [
+        "./config/cilindro_endo_doble.tsv",
+        "./config/BM1/cilindro_endo_doble.tsv"
+      ],
+      [
+        "./config/ecm_2_walls_cilindro.tsv",
+        "./config/BM1/ecm_2_walls_cilindro.tsv"
+      ]
+    ],
+    "default_D": 500.0,
+    "default_C": 2.5e-08,
+    "boolean_files": {
+      "Fumia2013_META_only_RNA_visium_norm_0.cfg": "914cb61dab590b7c0e6771cffebaaba23d3ee42d82b5317ef2cb1cb8189f8eba",
+      "Fumia2013_META_only_RNA_visium_norm_0.bnd": "5ae7d6a5bc760368d6403e839f6dc346b7846f3b8745922e94d978c441e8e2e9",
+      "Fumia2013_META_only_RNA_visium_norm_1.bnd": "5ae7d6a5bc760368d6403e839f6dc346b7846f3b8745922e94d978c441e8e2e9",
+      "Fumia2013_META_only_RNA_visium_norm_1.cfg": "192a4ff54d438a67baefd78e2966e7ed9ebc40f2525a94448427b59e7d79812f",
+      "Fumia2013_META_only_RNA_visium_norm_2.cfg": "de48e423aed046e928dc135fa57d6110918b4268132e85e8679365d9a9e2f09b",
+      "Fumia2013_META_only_RNA_visium_norm_2.bnd": "5ae7d6a5bc760368d6403e839f6dc346b7846f3b8745922e94d978c441e8e2e9"
+    }
+  },
+  "cylinder/BM2": {
+    "original_source": "/gpfs/projects/bsc08/bsc08180/UNITS_TESTS_NEW_VERSION/Cilindro/BM2/D500/PhysiBoss",
+    "framework_id": "41f348acd1fbc384",
+    "main_sha256": "83f50510c2a57fa5d29772c0b1f58d89876a91a1f4798b8b0107b6b55b99efa6",
+    "original_xml_sha256": "420b85dbbacbd7fbdcd4e3541f969cd549a411fa4487cffa51b8f7271e6393d9",
+    "portable_xml_sha256": "57f1f6ac740c50bb5183c23b9c5c8332d95ce489e3f35bcbce8abff5eb6102ad",
+    "path_adaptations": [
+      [
+        "./config/Fumia2013_META_only_RNA_visium_norm_0.bnd",
+        "./config/BM2/Fumia2013_META_only_RNA_visium_norm_0.bnd"
+      ],
+      [
+        "./config/Fumia2013_META_only_RNA_visium_norm_1.bnd",
+        "./config/BM2/Fumia2013_META_only_RNA_visium_norm_1.bnd"
+      ],
+      [
+        "./config/Fumia2013_META_only_RNA_visium_norm_2.bnd",
+        "./config/BM2/Fumia2013_META_only_RNA_visium_norm_2.bnd"
+      ],
+      [
+        "./config/Fumia2013_META_only_RNA_visium_norm_0.cfg",
+        "./config/BM2/Fumia2013_META_only_RNA_visium_norm_0.cfg"
+      ],
+      [
+        "./config/Fumia2013_META_only_RNA_visium_norm_1.cfg",
+        "./config/BM2/Fumia2013_META_only_RNA_visium_norm_1.cfg"
+      ],
+      [
+        "./config/Fumia2013_META_only_RNA_visium_norm_2.cfg",
+        "./config/BM2/Fumia2013_META_only_RNA_visium_norm_2.cfg"
+      ],
+      [
+        "./config/cilindro_endo_doble.tsv",
+        "./config/BM2/cilindro_endo_doble.tsv"
+      ],
+      [
+        "./config/ecm_2_walls_cilindro.tsv",
+        "./config/BM2/ecm_2_walls_cilindro.tsv"
+      ]
+    ],
+    "default_D": 500.0,
+    "default_C": 5e-08,
+    "boolean_files": {
+      "Fumia2013_META_only_RNA_visium_norm_0.cfg": "de48e423aed046e928dc135fa57d6110918b4268132e85e8679365d9a9e2f09b",
+      "Fumia2013_META_only_RNA_visium_norm_0.bnd": "5ae7d6a5bc760368d6403e839f6dc346b7846f3b8745922e94d978c441e8e2e9",
+      "Fumia2013_META_only_RNA_visium_norm_1.bnd": "5ae7d6a5bc760368d6403e839f6dc346b7846f3b8745922e94d978c441e8e2e9",
+      "Fumia2013_META_only_RNA_visium_norm_1.cfg": "192a4ff54d438a67baefd78e2966e7ed9ebc40f2525a94448427b59e7d79812f",
+      "Fumia2013_META_only_RNA_visium_norm_2.cfg": "652356977335f802147684bc73ecb5d261889457291c8ec073f86ff80cf67037",
+      "Fumia2013_META_only_RNA_visium_norm_2.bnd": "5ae7d6a5bc760368d6403e839f6dc346b7846f3b8745922e94d978c441e8e2e9"
+    }
+  },
+  "sphere/BM0": {
+    "original_source": "/gpfs/projects/bsc08/bsc08180/UNITS_TESTS_NEW_VERSION/Esfera/BM0/D500/PhysiCell-master-newest_lowmemory_newintracelullar_v2",
+    "framework_id": "41f348acd1fbc384",
+    "main_sha256": "a1b7cdb49416d6f1ea317d3df78a1e62d77dfc9fa90e0f445062a1c9ad395754",
+    "original_xml_sha256": "8acf9a5c4816ba5ee405c0dbaa003ed169e37e6108a89e1ba6cd1e017abbb6ae",
+    "portable_xml_sha256": "b56c4d1b278d8aa82538bf81ff6e2c1c8f10a95be2b8d5ce1218f0470bbca1ce",
+    "path_adaptations": [
+      [
+        "./config/Fumia2013_META_only_RNA_visium_norm_0.bnd",
+        "./config/BM0/Fumia2013_META_only_RNA_visium_norm_0.bnd"
+      ],
+      [
+        "./config/Fumia2013_META_only_RNA_visium_norm_1.bnd",
+        "./config/BM0/Fumia2013_META_only_RNA_visium_norm_1.bnd"
+      ],
+      [
+        "./config/Fumia2013_META_only_RNA_visium_norm_2.bnd",
+        "./config/BM0/Fumia2013_META_only_RNA_visium_norm_2.bnd"
+      ],
+      [
+        "./config/Fumia2013_META_only_RNA_visium_norm_0.cfg",
+        "./config/BM0/Fumia2013_META_only_RNA_visium_norm_0.cfg"
+      ],
+      [
+        "./config/Fumia2013_META_only_RNA_visium_norm_1.cfg",
+        "./config/BM0/Fumia2013_META_only_RNA_visium_norm_1.cfg"
+      ],
+      [
+        "./config/Fumia2013_META_only_RNA_visium_norm_2.cfg",
+        "./config/BM0/Fumia2013_META_only_RNA_visium_norm_2.cfg"
+      ],
+      [
+        "./config/cilindro_enndo.tsv",
+        "./config/BM0/cilindro_enndo.tsv"
+      ]
+    ],
+    "default_D": 500.0,
+    "default_C": 0.005,
+    "boolean_files": {
+      "Fumia2013_META_only_RNA_visium_norm_0.cfg": "192a4ff54d438a67baefd78e2966e7ed9ebc40f2525a94448427b59e7d79812f",
+      "Fumia2013_META_only_RNA_visium_norm_0.bnd": "5ae7d6a5bc760368d6403e839f6dc346b7846f3b8745922e94d978c441e8e2e9",
+      "Fumia2013_META_only_RNA_visium_norm_1.bnd": "5ae7d6a5bc760368d6403e839f6dc346b7846f3b8745922e94d978c441e8e2e9",
+      "Fumia2013_META_only_RNA_visium_norm_1.cfg": "652356977335f802147684bc73ecb5d261889457291c8ec073f86ff80cf67037",
+      "Fumia2013_META_only_RNA_visium_norm_2.cfg": "de48e423aed046e928dc135fa57d6110918b4268132e85e8679365d9a9e2f09b",
+      "Fumia2013_META_only_RNA_visium_norm_2.bnd": "5ae7d6a5bc760368d6403e839f6dc346b7846f3b8745922e94d978c441e8e2e9"
+    }
+  },
+  "sphere/BM1": {
+    "original_source": "/gpfs/projects/bsc08/bsc08180/UNITS_TESTS_NEW_VERSION/Esfera/BM1/D500/PhysiCell-master-newest_lowmemory_newintracelullar_v2",
+    "framework_id": "41f348acd1fbc384",
+    "main_sha256": "a1b7cdb49416d6f1ea317d3df78a1e62d77dfc9fa90e0f445062a1c9ad395754",
+    "original_xml_sha256": "636ffb32fab701af865538acdbc837fba87082ff91078b4c2b80c420efbe10fb",
+    "portable_xml_sha256": "6ea9fe53ab8ab865208435732d2116848bf84271a539618fcf29a86e03194c63",
+    "path_adaptations": [
+      [
+        "./config/Fumia2013_META_only_RNA_visium_norm_0.bnd",
+        "./config/BM1/Fumia2013_META_only_RNA_visium_norm_0.bnd"
+      ],
+      [
+        "./config/Fumia2013_META_only_RNA_visium_norm_1.bnd",
+        "./config/BM1/Fumia2013_META_only_RNA_visium_norm_1.bnd"
+      ],
+      [
+        "./config/Fumia2013_META_only_RNA_visium_norm_2.bnd",
+        "./config/BM1/Fumia2013_META_only_RNA_visium_norm_2.bnd"
+      ],
+      [
+        "./config/Fumia2013_META_only_RNA_visium_norm_0.cfg",
+        "./config/BM1/Fumia2013_META_only_RNA_visium_norm_0.cfg"
+      ],
+      [
+        "./config/Fumia2013_META_only_RNA_visium_norm_1.cfg",
+        "./config/BM1/Fumia2013_META_only_RNA_visium_norm_1.cfg"
+      ],
+      [
+        "./config/Fumia2013_META_only_RNA_visium_norm_2.cfg",
+        "./config/BM1/Fumia2013_META_only_RNA_visium_norm_2.cfg"
+      ],
+      [
+        "./config/cilindro_enndo.tsv",
+        "./config/BM1/cilindro_enndo.tsv"
+      ]
+    ],
+    "default_D": 500.0,
+    "default_C": 0.0001,
+    "boolean_files": {
+      "Fumia2013_META_only_RNA_visium_norm_0.cfg": "914cb61dab590b7c0e6771cffebaaba23d3ee42d82b5317ef2cb1cb8189f8eba",
+      "Fumia2013_META_only_RNA_visium_norm_0.bnd": "5ae7d6a5bc760368d6403e839f6dc346b7846f3b8745922e94d978c441e8e2e9",
+      "Fumia2013_META_only_RNA_visium_norm_1.bnd": "5ae7d6a5bc760368d6403e839f6dc346b7846f3b8745922e94d978c441e8e2e9",
+      "Fumia2013_META_only_RNA_visium_norm_1.cfg": "192a4ff54d438a67baefd78e2966e7ed9ebc40f2525a94448427b59e7d79812f",
+      "Fumia2013_META_only_RNA_visium_norm_2.cfg": "de48e423aed046e928dc135fa57d6110918b4268132e85e8679365d9a9e2f09b",
+      "Fumia2013_META_only_RNA_visium_norm_2.bnd": "5ae7d6a5bc760368d6403e839f6dc346b7846f3b8745922e94d978c441e8e2e9"
+    }
+  },
+  "sphere/BM2": {
+    "original_source": "/gpfs/projects/bsc08/bsc08180/UNITS_TESTS_NEW_VERSION/Esfera/BM2/D500/PhysiCell-master-newest_lowmemory_newintracelullar_v2",
+    "framework_id": "41f348acd1fbc384",
+    "main_sha256": "a1b7cdb49416d6f1ea317d3df78a1e62d77dfc9fa90e0f445062a1c9ad395754",
+    "original_xml_sha256": "6053b3c6e89da06dea535eabc72a3980bde8fbe483c04b26cc5f0b4407260d81",
+    "portable_xml_sha256": "33e3f11b9fee3555a9fd260ca32cf86bf016b8b85ed0fa73f5083dc8c5272a28",
+    "path_adaptations": [
+      [
+        "./config/Fumia2013_META_only_RNA_visium_norm_0.bnd",
+        "./config/BM2/Fumia2013_META_only_RNA_visium_norm_0.bnd"
+      ],
+      [
+        "./config/Fumia2013_META_only_RNA_visium_norm_1.bnd",
+        "./config/BM2/Fumia2013_META_only_RNA_visium_norm_1.bnd"
+      ],
+      [
+        "./config/Fumia2013_META_only_RNA_visium_norm_2.bnd",
+        "./config/BM2/Fumia2013_META_only_RNA_visium_norm_2.bnd"
+      ],
+      [
+        "./config/Fumia2013_META_only_RNA_visium_norm_0.cfg",
+        "./config/BM2/Fumia2013_META_only_RNA_visium_norm_0.cfg"
+      ],
+      [
+        "./config/Fumia2013_META_only_RNA_visium_norm_1.cfg",
+        "./config/BM2/Fumia2013_META_only_RNA_visium_norm_1.cfg"
+      ],
+      [
+        "./config/Fumia2013_META_only_RNA_visium_norm_2.cfg",
+        "./config/BM2/Fumia2013_META_only_RNA_visium_norm_2.cfg"
+      ],
+      [
+        "./config/cilindro_enndo.tsv",
+        "./config/BM2/cilindro_enndo.tsv"
+      ]
+    ],
+    "default_D": 500.0,
+    "default_C": 0.001,
+    "boolean_files": {
+      "Fumia2013_META_only_RNA_visium_norm_0.cfg": "de48e423aed046e928dc135fa57d6110918b4268132e85e8679365d9a9e2f09b",
+      "Fumia2013_META_only_RNA_visium_norm_0.bnd": "5ae7d6a5bc760368d6403e839f6dc346b7846f3b8745922e94d978c441e8e2e9",
+      "Fumia2013_META_only_RNA_visium_norm_1.bnd": "5ae7d6a5bc760368d6403e839f6dc346b7846f3b8745922e94d978c441e8e2e9",
+      "Fumia2013_META_only_RNA_visium_norm_1.cfg": "192a4ff54d438a67baefd78e2966e7ed9ebc40f2525a94448427b59e7d79812f",
+      "Fumia2013_META_only_RNA_visium_norm_2.cfg": "652356977335f802147684bc73ecb5d261889457291c8ec073f86ff80cf67037",
+      "Fumia2013_META_only_RNA_visium_norm_2.bnd": "5ae7d6a5bc760368d6403e839f6dc346b7846f3b8745922e94d978c441e8e2e9"
+    }
+  }
+}
