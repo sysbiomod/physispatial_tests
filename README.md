@@ -7,6 +7,7 @@ Este repositorio contiene la distribución completa que preparó Alejandro Madri
 - Documentación técnica original de Alejandro (en inglés): [PHYSISPATIAL_README.md](PHYSISPATIAL_README.md)
 - Qué se validó y qué no: [VALIDATION_REPORT.md](VALIDATION_REPORT.md)
 - Procedencia exacta de cada fichero: [CODE_PROVENANCE.md](CODE_PROVENANCE.md)
+- Problemas conocidos y tareas pendientes: [PROBLEMAS_PENDIENTES.md](PROBLEMAS_PENDIENTES.md)
 - README de cada proyecto: [prisma](sample_projects_intracellular/boolean/physispatial_prism/README.md), [cilindro](sample_projects_intracellular/boolean/physispatial_cylinder/README.md), [esfera](sample_projects_intracellular/boolean/physispatial_sphere/README.md)
 
 ## Estado comprobado (29-10-2026)
