@@ -17,9 +17,9 @@ Comprobado desde una copia limpia del ZIP de Alejandro en Ubuntu 24.04 (WSL2), G
 | --- | --- | --- | --- |
 | Compila (`make physispatial-<geo>` + `make`) | ✅ | ✅ | ✅ |
 | Smoke run con el tejido completo (0,02 min simulados), BM0 | ✅ 1.216 células | ✅ 10.752 células | ✅ 50.232 células |
-| Smoke run, otra población | ✅ BM1 | ✅ BM2 | ✅ BM1 |
-| Memoria máxima (RSS) del smoke BM0 | ~1 GB | ~8,3 GB | ~39 GB |
-| Tiempo de pared del smoke BM0 (8 hilos) | ~8 s | ~1 min | ~5 min |
+| Smoke run, otra población | ✅ BM1 | ✅ BM2 | ✅ BM1 (31.651 células) |
+| Memoria máxima (RSS) | ~1 GB | ~8,3 GB | ~39 GB (BM0), ~25 GB (BM1/BM2) |
+| Tiempo de pared del smoke (8 hilos) | ~8 s | ~1 min | ~5 min (BM0), ~3 min (BM1) |
 
 Además pasan las comprobaciones de Alejandro: `validate_integration.py` (17 comprobaciones) y `test_sweeps.py` (4 comprobaciones).
 
@@ -137,7 +137,8 @@ GitHub Actions ([.github/workflows/physispatial.yml](.github/workflows/physispat
 - **Rafa compila, no modifica C++.** Si hace falta un observable nuevo que no salga de las salidas, lo escribe Jorge.
 - No borres ni renombres ficheros de `config/BM*`: los `norm_0.cfg` tienen contenidos distintos en cada población aunque se llamen igual. La población se elige con `POPULATION=` o `--population`.
 - `make reset` vuelve al Makefile por defecto de PhysiBoSS y mantiene los tres objetivos `physispatial-*`. `make clean` borra objetos y el ejecutable.
-- `physispatial_runs/`, `physispatial_work/`, `output_*/` y los ejecutables están en `.gitignore`: no se suben al repositorio.
+- `physispatial_runs/`, `physispatial_work/`, `output_*/`, los ejecutables y los ficheros que copia la carga de un proyecto (`main.cpp`, `custom_modules/`, `config/BM*`) están en `.gitignore`: no se suben al repositorio.
+- Cargar un proyecto modifica dos ficheros versionados, `Makefile` y `config/PhysiCell_settings.xml`. Es lo normal en PhysiCell; antes de hacer commit, devuélvelos a su estado con `git restore Makefile config/PhysiCell_settings.xml`. Para trabajo propio (envoltorio, resúmenes, cuadernos), usa tu propio repositorio (p. ej. `physiboss-abc`) y deja este como el simulador de referencia.
 - Los ficheros biológicos de entrada (modelos booleanos, posiciones, fuentes) proceden de experimentos no publicados. Antes de hacer público el repositorio hay que confirmarlo con los autores (ver [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)).
 
 ## Licencia

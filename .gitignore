@@ -32,8 +32,20 @@ studio_debug.log
 /addons/PhysiBoSS/MaBoSS/engine/src/MaBoSS_256n
 /addons/PhysiBoSS/MaBoSS/engine/src/PopMaBoSS_256n
 /addons/PhysiBoSS/MaBoSS/engine/src/lex.*.cc
+/addons/PhysiBoSS/MaBoSS/engine/src/*Grammar.cc
 /addons/PhysiBoSS/MaBoSS/engine/src/*Grammar.tab.*
 /addons/PhysiBoSS/MaBoSS/engine/src/*Grammar.output
+/addons/PhysiBoSS/MaBoSS/engine/src/*.gch
+/addons/PhysiBoSS/MaBoSS/engine/src/maboss-config.h
+
+# Files copied to the root by `make physispatial-<geometry>` (the active
+# project). The root Makefile and config/PhysiCell_settings.xml are tracked
+# upstream files: run `make reset` before committing so they are not changed.
+/main.cpp
+/custom_modules/*
+!/custom_modules/empty.txt
+/config/*
+!/config/PhysiCell_settings.xml
 
 # Executables and per-user working/run directories
 /physispatial_prism
