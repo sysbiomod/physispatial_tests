@@ -56,3 +56,10 @@ studio_debug.log
 /output_*/
 __pycache__/
 *.pyc
+
+# TNFalpha RNG seeding fix validation: keep scripts/evidence/summaries,
+# not the scratch simulation outputs they produce.
+/physispatial_validation/tnfalpha_rng/runs/
+/physispatial_validation/tnfalpha_rng/check6_runs/
+/physispatial_validation/tnfalpha_rng/check6_batch.log
+/physispatial_validation/tnfalpha_rng/check4_runs/

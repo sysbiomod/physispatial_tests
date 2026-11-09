@@ -47,6 +47,10 @@ double Hill_response_function_2( double s, double half_max , double hill_power )
 
 void anti_node_mapping_function( Cell* pCell, std::string drug_name, std::string target_node, double drug_half_max, double drug_Hill_coeff);
 
+// Seeds the TNFalpha activation draw's own RNG stream, independent of the PhysiCell/MaBoSS
+// generator seeded from random_seed (see custom.cpp and README.md "Random seeds").
+void set_tnf_rng_seed( unsigned long long seed );
+
 
 // drug transport model
 

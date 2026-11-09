@@ -1,0 +1,308 @@
+{
+  "run_a": "/home/jorge-linux/GitHub/physispatial_tests/physispatial_validation/tnfalpha_rng/check4_runs/1t_s42_a",
+  "run_b": "/home/jorge-linux/GitHub/physispatial_tests/physispatial_validation/tnfalpha_rng/check4_runs/1t_s42_b",
+  "n_compared": 50,
+  "n_identical": 50,
+  "files": [
+    {
+      "file": "PhysiCell_settings.xml",
+      "identical": true,
+      "note": "identical (excl. wall-clock runtime)",
+      "max_abs_diff": null
+    },
+    {
+      "file": "cell_rules.csv",
+      "identical": true,
+      "note": "identical (excl. wall-clock runtime)",
+      "max_abs_diff": null
+    },
+    {
+      "file": "detailed_rules.txt",
+      "identical": true,
+      "note": "identical (excl. wall-clock runtime)",
+      "max_abs_diff": null
+    },
+    {
+      "file": "dictionaries.txt",
+      "identical": true,
+      "note": "identical (excl. wall-clock runtime)",
+      "max_abs_diff": null
+    },
+    {
+      "file": "final.svg",
+      "identical": true,
+      "note": "identical (excl. wall-clock runtime)",
+      "max_abs_diff": null
+    },
+    {
+      "file": "final.xml",
+      "identical": true,
+      "note": "identical (excl. wall-clock runtime)",
+      "max_abs_diff": null
+    },
+    {
+      "file": "final_attached_cells_graph.txt",
+      "identical": true,
+      "note": "identical (excl. wall-clock runtime)",
+      "max_abs_diff": null
+    },
+    {
+      "file": "final_boolean_intracellular.csv",
+      "identical": true,
+      "note": "identical (excl. wall-clock runtime)",
+      "max_abs_diff": null
+    },
+    {
+      "file": "final_cell_neighbor_graph.txt",
+      "identical": true,
+      "note": "identical (excl. wall-clock runtime)",
+      "max_abs_diff": null
+    },
+    {
+      "file": "final_cells.mat",
+      "identical": true,
+      "note": "bitwise identical (excl. total_attack_time)",
+      "max_abs_diff": 0.0
+    },
+    {
+      "file": "final_microenvironment0.mat",
+      "identical": true,
+      "note": "identical (excl. wall-clock runtime)",
+      "max_abs_diff": null
+    },
+    {
+      "file": "final_spring_attached_cells_graph.txt",
+      "identical": true,
+      "note": "identical (excl. wall-clock runtime)",
+      "max_abs_diff": null
+    },
+    {
+      "file": "initial.svg",
+      "identical": true,
+      "note": "identical (excl. wall-clock runtime)",
+      "max_abs_diff": null
+    },
+    {
+      "file": "initial.xml",
+      "identical": true,
+      "note": "identical (excl. wall-clock runtime)",
+      "max_abs_diff": null
+    },
+    {
+      "file": "initial_attached_cells_graph.txt",
+      "identical": true,
+      "note": "identical (excl. wall-clock runtime)",
+      "max_abs_diff": null
+    },
+    {
+      "file": "initial_boolean_intracellular.csv",
+      "identical": true,
+      "note": "identical (excl. wall-clock runtime)",
+      "max_abs_diff": null
+    },
+    {
+      "file": "initial_cell_neighbor_graph.txt",
+      "identical": true,
+      "note": "identical (excl. wall-clock runtime)",
+      "max_abs_diff": null
+    },
+    {
+      "file": "initial_cells.mat",
+      "identical": true,
+      "note": "bitwise identical (excl. total_attack_time)",
+      "max_abs_diff": 0.0
+    },
+    {
+      "file": "initial_mesh0.mat",
+      "identical": true,
+      "note": "identical (excl. wall-clock runtime)",
+      "max_abs_diff": null
+    },
+    {
+      "file": "initial_microenvironment0.mat",
+      "identical": true,
+      "note": "identical (excl. wall-clock runtime)",
+      "max_abs_diff": null
+    },
+    {
+      "file": "initial_spring_attached_cells_graph.txt",
+      "identical": true,
+      "note": "identical (excl. wall-clock runtime)",
+      "max_abs_diff": null
+    },
+    {
+      "file": "output00000000.xml",
+      "identical": true,
+      "note": "identical (excl. wall-clock runtime)",
+      "max_abs_diff": null
+    },
+    {
+      "file": "output00000000_attached_cells_graph.txt",
+      "identical": true,
+      "note": "identical (excl. wall-clock runtime)",
+      "max_abs_diff": null
+    },
+    {
+      "file": "output00000000_boolean_intracellular.csv",
+      "identical": true,
+      "note": "identical (excl. wall-clock runtime)",
+      "max_abs_diff": null
+    },
+    {
+      "file": "output00000000_cell_neighbor_graph.txt",
+      "identical": true,
+      "note": "identical (excl. wall-clock runtime)",
+      "max_abs_diff": null
+    },
+    {
+      "file": "output00000000_cells.mat",
+      "identical": true,
+      "note": "bitwise identical (excl. total_attack_time)",
+      "max_abs_diff": 0.0
+    },
+    {
+      "file": "output00000000_microenvironment0.mat",
+      "identical": true,
+      "note": "identical (excl. wall-clock runtime)",
+      "max_abs_diff": null
+    },
+    {
+      "file": "output00000000_spring_attached_cells_graph.txt",
+      "identical": true,
+      "note": "identical (excl. wall-clock runtime)",
+      "max_abs_diff": null
+    },
+    {
+      "file": "output00000001.xml",
+      "identical": true,
+      "note": "identical (excl. wall-clock runtime)",
+      "max_abs_diff": null
+    },
+    {
+      "file": "output00000001_attached_cells_graph.txt",
+      "identical": true,
+      "note": "identical (excl. wall-clock runtime)",
+      "max_abs_diff": null
+    },
+    {
+      "file": "output00000001_boolean_intracellular.csv",
+      "identical": true,
+      "note": "identical (excl. wall-clock runtime)",
+      "max_abs_diff": null
+    },
+    {
+      "file": "output00000001_cell_neighbor_graph.txt",
+      "identical": true,
+      "note": "identical (excl. wall-clock runtime)",
+      "max_abs_diff": null
+    },
+    {
+      "file": "output00000001_cells.mat",
+      "identical": true,
+      "note": "bitwise identical (excl. total_attack_time)",
+      "max_abs_diff": 0.0
+    },
+    {
+      "file": "output00000001_microenvironment0.mat",
+      "identical": true,
+      "note": "identical (excl. wall-clock runtime)",
+      "max_abs_diff": null
+    },
+    {
+      "file": "output00000001_spring_attached_cells_graph.txt",
+      "identical": true,
+      "note": "identical (excl. wall-clock runtime)",
+      "max_abs_diff": null
+    },
+    {
+      "file": "output00000002.xml",
+      "identical": true,
+      "note": "identical (excl. wall-clock runtime)",
+      "max_abs_diff": null
+    },
+    {
+      "file": "output00000002_attached_cells_graph.txt",
+      "identical": true,
+      "note": "identical (excl. wall-clock runtime)",
+      "max_abs_diff": null
+    },
+    {
+      "file": "output00000002_boolean_intracellular.csv",
+      "identical": true,
+      "note": "identical (excl. wall-clock runtime)",
+      "max_abs_diff": null
+    },
+    {
+      "file": "output00000002_cell_neighbor_graph.txt",
+      "identical": true,
+      "note": "identical (excl. wall-clock runtime)",
+      "max_abs_diff": null
+    },
+    {
+      "file": "output00000002_cells.mat",
+      "identical": true,
+      "note": "bitwise identical (excl. total_attack_time)",
+      "max_abs_diff": 0.0
+    },
+    {
+      "file": "output00000002_microenvironment0.mat",
+      "identical": true,
+      "note": "identical (excl. wall-clock runtime)",
+      "max_abs_diff": null
+    },
+    {
+      "file": "output00000002_spring_attached_cells_graph.txt",
+      "identical": true,
+      "note": "identical (excl. wall-clock runtime)",
+      "max_abs_diff": null
+    },
+    {
+      "file": "output00000003.xml",
+      "identical": true,
+      "note": "identical (excl. wall-clock runtime)",
+      "max_abs_diff": null
+    },
+    {
+      "file": "output00000003_attached_cells_graph.txt",
+      "identical": true,
+      "note": "identical (excl. wall-clock runtime)",
+      "max_abs_diff": null
+    },
+    {
+      "file": "output00000003_boolean_intracellular.csv",
+      "identical": true,
+      "note": "identical (excl. wall-clock runtime)",
+      "max_abs_diff": null
+    },
+    {
+      "file": "output00000003_cell_neighbor_graph.txt",
+      "identical": true,
+      "note": "identical (excl. wall-clock runtime)",
+      "max_abs_diff": null
+    },
+    {
+      "file": "output00000003_cells.mat",
+      "identical": true,
+      "note": "bitwise identical (excl. total_attack_time)",
+      "max_abs_diff": 0.0
+    },
+    {
+      "file": "output00000003_microenvironment0.mat",
+      "identical": true,
+      "note": "identical (excl. wall-clock runtime)",
+      "max_abs_diff": null
+    },
+    {
+      "file": "output00000003_spring_attached_cells_graph.txt",
+      "identical": true,
+      "note": "identical (excl. wall-clock runtime)",
+      "max_abs_diff": null
+    },
+    {
+      "file": "rules.txt",
+      "identical": true,
+      "note": "identical (excl. wall-clock runtime)",
+      "max_abs_diff": null
+    }
+  ]
+}

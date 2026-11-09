@@ -22,7 +22,53 @@
 
 #include "./tnf_boolean_model_interface.h"
 
-using namespace PhysiCell; 
+#include <cstdint>
+#include <cstring>
+#include <random>
+
+using namespace PhysiCell;
+
+
+// --- TNFalpha activation draw: dedicated, thread-safe, seeded RNG stream ---
+//
+// BioFVM's uniform_random() (used here previously) draws from a single global
+// std::mt19937_64 that is never seeded and is shared, unsynchronized, across
+// OpenMP threads: with one thread every run drew the same sequence regardless
+// of random_seed, and with several threads the same seed did not reproduce the
+// same run. The draw below instead derives a fresh, local uniform value from a
+// deterministic hash of (tnf_rng_seed, cell ID, target node, simulated time),
+// none of which depend on which thread executes the call or on the thread
+// count, so it needs no shared mutable state and no locking.
+static uint64_t tnf_rng_seed = 0;
+
+void set_tnf_rng_seed( unsigned long long seed )
+{ tnf_rng_seed = (uint64_t) seed; }
+
+// splitmix64 (public domain, https://prng.di.unimi.it/splitmix64.c), used here
+// only as a bit mixer to combine the draw's inputs into one engine seed.
+static inline uint64_t tnf_splitmix64( uint64_t& state )
+{
+	uint64_t z = ( state += 0x9E3779B97F4A7C15ULL );
+	z = ( z ^ ( z >> 30 ) ) * 0xBF58476D1CE4E5B9ULL;
+	z = ( z ^ ( z >> 27 ) ) * 0x94D049BB133111EBULL;
+	return z ^ ( z >> 31 );
+}
+
+static double tnf_uniform_random( int cell_ID, const std::string& target_node, double sim_time )
+{
+	uint64_t time_bits;
+	std::memcpy( &time_bits, &sim_time, sizeof(double) );
+
+	uint64_t state = tnf_rng_seed;
+	state ^= tnf_splitmix64(state) ^ (uint64_t) cell_ID;
+	state ^= tnf_splitmix64(state) ^ time_bits;
+	for( char c : target_node )
+	{ state ^= tnf_splitmix64(state) ^ (uint64_t) (unsigned char) c; }
+
+	std::mt19937_64 engine( tnf_splitmix64(state) );
+	std::uniform_real_distribution<double> distribution(0.0,1.0);
+	return distribution(engine);
+}
 
 
 double Hill_response_function_2( double s, double half_max , double hill_power )
@@ -161,7 +207,7 @@ void anti_node_mapping_function( Cell* pCell, std::string drug_name, std::string
     //std::cout << "For drug " << drug_name << " uniform_random value " << uniform_random() << " target inactivation prob " << target_inactivate_p << std::endl;
 
     if (target_node != "none"){
-        if ( uniform_random() <  target_inactivate_p ){ // Added normalization by maximum rand value
+        if ( tnf_uniform_random( pCell->ID, target_node, PhysiCell_globals.current_time ) <  target_inactivate_p ){ // Added normalization by maximum rand value
             pCell->phenotype.intracellular->set_boolean_variable_value(target_node, 1);
             bool nodo = pCell->phenotype.intracellular->get_boolean_variable_value("TNFalpha");
             //std::cout << nodo << "jj" <<std::endl;
