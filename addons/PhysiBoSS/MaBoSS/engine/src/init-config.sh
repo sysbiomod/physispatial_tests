@@ -59,6 +59,3 @@ EOF
 fi
 
 rm -f $tmpfile ${CONFIG_NAME}*.o
-
-
-

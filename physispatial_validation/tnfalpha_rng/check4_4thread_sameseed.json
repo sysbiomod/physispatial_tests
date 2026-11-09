@@ -61,7 +61,7 @@
     {
       "file": "final_cells.mat",
       "identical": false,
-      "note": "shape mismatch (126, 1235) vs (126, 1236)",
+      "note": "shape mismatch (126, 1238) vs (126, 1239)",
       "max_abs_diff": null
     },
     {
@@ -199,7 +199,7 @@
     {
       "file": "output00000001_cells.mat",
       "identical": false,
-      "note": "shape mismatch (126, 1228) vs (126, 1224)",
+      "note": "shape mismatch (126, 1224) vs (126, 1223)",
       "max_abs_diff": null
     },
     {
@@ -241,7 +241,7 @@
     {
       "file": "output00000002_cells.mat",
       "identical": false,
-      "note": "shape mismatch (126, 1230) vs (126, 1233)",
+      "note": "shape mismatch (126, 1231) vs (126, 1230)",
       "max_abs_diff": null
     },
     {
@@ -283,7 +283,7 @@
     {
       "file": "output00000003_cells.mat",
       "identical": false,
-      "note": "shape mismatch (126, 1234) vs (126, 1235)",
+      "note": "shape mismatch (126, 1236) vs (126, 1238)",
       "max_abs_diff": null
     },
     {
