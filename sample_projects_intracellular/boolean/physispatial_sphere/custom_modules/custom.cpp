@@ -74,6 +74,13 @@ void create_cell_types( void )
 	{
 		SeedRandom(parameters.ints("random_seed"));
 	}
+
+	// Seed the TNFalpha activation draw's own RNG stream (see tnf_boolean_model_interface.cpp
+	// and README.md "Random seeds"). Derives from random_seed.
+	unsigned long long tnf_seed = 0;
+	if (parameters.ints.find_index("random_seed") != -1)
+	{ tnf_seed = (unsigned long long) parameters.ints("random_seed"); }
+	set_tnf_rng_seed(tnf_seed);
 	
 	/* 
 	   Put any modifications to default cell definition here if you 
