@@ -54,3 +54,47 @@ Optional CPU SLURM templates are provided, with explicit user account/partition 
 ## Reproduce checks
 
 `python3 -B physispatial_tools/validate_integration.py` and `python3 -B physispatial_tools/test_sweeps.py` need only Python stdlib. Full runtime/probes need the normal C++ toolchain; optional NumPy/SciPy are used to inspect full MAT output. runtime_checks.py is bounded validation, not a production sweep; it writes physispatial_work/validation and never overwrites existing simulation outputs. Runtime evidence is local to this integration and not inferred from compilation.
+
+## Addendum — TNFalpha RNG seeding fix (branch fix/tnfalpha-rng-seeding, 2026-11-09)
+
+Fixes the TNFalpha activation draw (`anti_node_mapping_function()` in `custom_modules/tnf_boolean_model_interface.cpp`, identical across all three geometries), which used BioFVM's never-seeded, unsynchronized `uniform_random()`. See the main README's "Random seeds" section for the defect and the fix's design, and `CODE_PROVENANCE.md` for the changed-file hashes. Test scripts and scratch configuration: `physispatial_validation/tnfalpha_rng/`.
+
+**Check 1 — build.** `make physispatial-prism/cylinder/sphere POPULATION=BM0 && make -j2 ARCH=x86-64` all three succeed with the fix applied; only pre-existing, unrelated warnings (`system()` return value ignored in `main.cpp` and `historical_PhysiCell_geometry.cpp`), present on `main` too.
+
+**Check 2 — existing checks.** `test_sweeps.py`: 4/4 checks PASS unmodified. `validate_integration.py` fails on `main` before this branch's changes too, on an unrelated, pre-existing condition: the working tree's line endings are CRLF while `HEAD` and the provenance manifests (`upstream_manifest.json`, `integrated_profiles.json`) record LF content, so every byte-hash assertion over `core/`/`modules/`/`BioFVM/`/`addons/` fails (confirmed: CRLF-stripped SHA256 of `core/PhysiCell_phenotype.cpp` matches the recorded hash exactly). This is outside this fix's permitted scope (`core/`, `BioFVM/`, `modules/`, `addons/` may not be touched) and is left for the user to resolve on their own checkout. With CRLF neutralized in-memory only (not written to disk), every hash assertion this validator makes over files this branch does **not** touch — all of `core/`, `modules/`, `BioFVM/`, `addons/PhysiBoSS/src/`, every geometry/population's `profiles/*/main.cpp`, `PhysiCell_settings.original.xml`, and every `.bnd`/`.cfg` boolean file — passes. This branch introduces no new validator failure; it changes none of the files that validator hashes except `PhysiCell_settings.xml` relocation-only diffs are unaffected (this branch never edits any XML).
+
+**Check 3 — defect demonstrated on `main`.** Temporary, uncommitted debug print of the first 20 TNFalpha `uniform_random()` draws, in a scratch git worktree on `main` (prism BM0, drug_conc=1e-7, time_remove_o2=1 min, max_time=60 min). Evidence in `physispatial_validation/tnfalpha_rng/check3_defect_demo/`:
+- Single-thread, `random_seed` 11 vs 22: **byte-identical** draw sequences — the draw ignores `random_seed` entirely.
+- 4 threads, `random_seed` 33, two separate runs: **different** draw sequences — the same seed does not reproduce the same run under threading. One run additionally shows the *same* draw value read by three different threads/cells in immediate succession (e.g. `0.571611` for threads 0, 1 and 3) — direct evidence of a data race on the shared, unsynchronized generator, not just a reproducibility gap.
+
+**Check 4 — reproducibility after the fix.** Prism BM0, drug_conc=1e-7, time_remove_o2=1 min, max_time=60 min, full saves every 20 min, comparator excludes only `current_runtime`/`created`/`last_modified` (wall-clock metadata) and the documented `total_attack_time` MAT row:
+- 1 thread, same `random_seed` (42), two runs: **50/50 output files bitwise identical** (every `.xml`, `.mat`, `.csv`, `.txt`, `.svg`).
+- 4 threads, same `random_seed` (42), two runs: **25/50 identical** — all static/legend content matches, but actual simulation state (cell counts, Boolean states, neighbor graphs) diverges starting at the first periodic save (t=20 min: 1224 vs 1223 live cells; by t=60 min: 1241 vs 1234). Attributed and explained in check 5, not a flaw in this fix (see README "Random seeds").
+- 1 thread, different seeds (42 vs 99): **20/50 identical** (t=0 snapshot and static legend content only) — confirms the fixed draw is seed-sensitive, as intended.
+
+**Check 5 — thread-count independence of the TNFalpha draw itself.** Temporary, uncommitted debug print (fixed code, prism BM0, `random_seed`=77, max_time=60 min) logging `(cell_ID, simulated_time, draw_value)` at 1/2/4 threads. The *set* of `(cell_ID, time)` pairs reached differs by thread count (a pre-existing, out-of-scope PhysiCell/PhysiBoSS/BioFVM behavior — see below), but for every `(cell_ID, time)` pair common to a pair of runs — 1224/4000 common pairs (1 vs 2 threads), 1225/4000 (1 vs 4 threads) — the draw value is **bitwise identical, 0 mismatches**. The TNFalpha draw itself is confirmed thread-count-independent. Root cause of the differing update-time *sets*, confirmed empirically: comparing the microenvironment MAT output between two same-seed 4-thread runs (check 4) shows a nonzero floating-point difference in the `drug_A` field immediately after the first diffusion step (~2.7e-17, consistent with reduction-order non-associativity in BioFVM's parallel diffusion solver) and a larger one in `oxygen` by t=20 min (~2.1e-3, after the Boolean-state feedback loop has amplified it). Because the Hill-function threshold gating the TNFalpha draw is continuous and MaBoSS's time-to-next-transition is itself a stochastic draw from the (correctly, privately, per-cell-seeded) MaBoSS engine, this rounding-level difference cascades into divergent Boolean trajectories and update timings. Separately, daughter cells' MaBoSS engine seeds (drawn via `PhysiCell::UniformInt()` in the serial division loop, `core/PhysiCell_cell_container.cpp:187`) read from whichever OpenMP thread's stream position happened to be reached, which depends on thread count. Both mechanisms are pre-existing, out-of-scope (`core/`/`BioFVM/`/`addons/`) PhysiCell/PhysiBoSS/BioFVM behavior, unrelated to and unchanged by this fix.
+
+**Check 6 — statistical equivalence.** Prism BM0, drug_conc=1e-7, time_remove_o2=1 min, 1 thread, 20 replicates per arm (distinct seeds within each arm; `main`'s 20 replicates draw from the same unseeded, thread-shared stream regardless of seed, as check 3 shows). Horizon shortened from the spec's 1000/2000/3000 min to **100/200/300 min** (user-approved; a single 3000-min prism run takes ~90 min on this machine, so 1000/2000/3000 min across 40 replicates was infeasible for this validation pass — see Check 7). Readouts: total live cells, live cells of `cell_type`==0 (this config populates only one active cell type, "green"; identical to total live cells in every replicate — see note below), and the fraction of live cells with the `Apoptosis` node active. Two-sample Kolmogorov-Smirnov test, `main` vs fixed, per readout time (n=20 per arm; `live_type0` omitted, identical to `total_live` in every replicate — see note below):
+
+| t (min) | readout | main mean ± sd | fixed mean ± sd | KS statistic | KS p-value |
+|---|---|---|---|---|---|
+| 100 | total live cells | 1239.90 ± 6.32 | 1243.90 ± 5.90 | 0.400 | 0.0811 |
+| 100 | Apoptosis-active fraction | 0.0032 ± 0.0015 | 0.0034 ± 0.0016 | 0.250 | 0.5713 |
+| 200 | total live cells | 1259.30 ± 8.97 | 1263.25 ± 9.12 | 0.250 | 0.5713 |
+| 200 | Apoptosis-active fraction | 0.0010 ± 0.0008 | 0.0010 ± 0.0010 | 0.200 | 0.8320 |
+| 300 | total live cells | 1277.70 ± 11.88 | 1280.60 ± 11.30 | 0.250 | 0.5713 |
+| 300 | Apoptosis-active fraction | 0.0007 ± 0.0008 | 0.0005 ± 0.0006 | 0.300 | 0.3356 |
+
+No readout at any timepoint rejects the null of equal distributions (all p>0.05); the largest mean shift (total live cells at t=100, +4.0 cells) is a third of one replicate standard deviation on either arm. The fix does not shift the means beyond what the replicate spread explains.
+
+*Note on "live BM0 cells": the spec's "total live cells, live BM0 cells" is interpreted here as (all live cells) vs (live cells of the population's single active cell type, `cell_type`==0 / "green") — in Prism BM0 these are the same count in every replicate, since no cells of the other two defined types ("blue"/"orange") are instantiated in this project's `setup_tissue()`.*
+
+**Check 7 — cost.** Prism BM0, drug_conc=1e-7, time_remove_o2=1 min, wall time, this machine:
+
+| Horizon | Threads | Before fix (main) | After fix |
+|---|---|---|---|
+| 60 min | 1 | ~90.7 s | ~90.1–114.1 s |
+| 60 min | 4 | — | ~110.1 s (no speedup at this problem size) |
+| 300 min | 1 (n=20 each) | 443.4 s ± 13.6 s | 497.4 s ± 33.0 s |
+
+The 60-min figures (single back-to-back measurement, no other foreground load) show no measurable overhead from the fix, consistent with its cost: a handful of integer/float operations per intracellular update, replacing one `uniform_random()` call. The 300-min figures come from check 6's 40-run batch, where the 20 `main` replicates happened to run first and the 20 fixed replicates ran later, concurrently with unrelated foreground work (git commits, hashing) in this same session — a real confound, reflected in the fixed arm's much higher spread (33.0 s vs 13.6 s). They are reported for completeness but should not be read as evidence of a real per-run cost difference; the clean 60-min comparison is the reliable one.

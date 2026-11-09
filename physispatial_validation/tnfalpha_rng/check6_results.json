@@ -1,0 +1,768 @@
+{
+  "readout_times": [
+    100.0,
+    200.0,
+    300.0
+  ],
+  "n_replicates": 20,
+  "max_time": 300.0,
+  "interval": 50.0,
+  "runs": {
+    "main": [
+      {
+        "seed": 1003,
+        "run": "/home/jorge-linux/GitHub/physispatial_tests/physispatial_validation/tnfalpha_rng/check6_runs/main_seed1003",
+        "returncode": 0,
+        "wall_seconds": 432.0134203250018
+      },
+      {
+        "seed": 1005,
+        "run": "/home/jorge-linux/GitHub/physispatial_tests/physispatial_validation/tnfalpha_rng/check6_runs/main_seed1005",
+        "returncode": 0,
+        "wall_seconds": 433.30285721199834
+      },
+      {
+        "seed": 1001,
+        "run": "/home/jorge-linux/GitHub/physispatial_tests/physispatial_validation/tnfalpha_rng/check6_runs/main_seed1001",
+        "returncode": 0,
+        "wall_seconds": 433.3869740980008
+      },
+      {
+        "seed": 1004,
+        "run": "/home/jorge-linux/GitHub/physispatial_tests/physispatial_validation/tnfalpha_rng/check6_runs/main_seed1004",
+        "returncode": 0,
+        "wall_seconds": 434.52374052100276
+      },
+      {
+        "seed": 1002,
+        "run": "/home/jorge-linux/GitHub/physispatial_tests/physispatial_validation/tnfalpha_rng/check6_runs/main_seed1002",
+        "returncode": 0,
+        "wall_seconds": 434.69248855200203
+      },
+      {
+        "seed": 1000,
+        "run": "/home/jorge-linux/GitHub/physispatial_tests/physispatial_validation/tnfalpha_rng/check6_runs/main_seed1000",
+        "returncode": 0,
+        "wall_seconds": 435.11021629400057
+      },
+      {
+        "seed": 1007,
+        "run": "/home/jorge-linux/GitHub/physispatial_tests/physispatial_validation/tnfalpha_rng/check6_runs/main_seed1007",
+        "returncode": 0,
+        "wall_seconds": 431.1050400490021
+      },
+      {
+        "seed": 1010,
+        "run": "/home/jorge-linux/GitHub/physispatial_tests/physispatial_validation/tnfalpha_rng/check6_runs/main_seed1010",
+        "returncode": 0,
+        "wall_seconds": 433.2362126370026
+      },
+      {
+        "seed": 1006,
+        "run": "/home/jorge-linux/GitHub/physispatial_tests/physispatial_validation/tnfalpha_rng/check6_runs/main_seed1006",
+        "returncode": 0,
+        "wall_seconds": 436.41270320699914
+      },
+      {
+        "seed": 1008,
+        "run": "/home/jorge-linux/GitHub/physispatial_tests/physispatial_validation/tnfalpha_rng/check6_runs/main_seed1008",
+        "returncode": 0,
+        "wall_seconds": 437.47493477100215
+      },
+      {
+        "seed": 1011,
+        "run": "/home/jorge-linux/GitHub/physispatial_tests/physispatial_validation/tnfalpha_rng/check6_runs/main_seed1011",
+        "returncode": 0,
+        "wall_seconds": 439.26085336899996
+      },
+      {
+        "seed": 1009,
+        "run": "/home/jorge-linux/GitHub/physispatial_tests/physispatial_validation/tnfalpha_rng/check6_runs/main_seed1009",
+        "returncode": 0,
+        "wall_seconds": 442.84263210099743
+      },
+      {
+        "seed": 1012,
+        "run": "/home/jorge-linux/GitHub/physispatial_tests/physispatial_validation/tnfalpha_rng/check6_runs/main_seed1012",
+        "returncode": 0,
+        "wall_seconds": 444.42672514199876
+      },
+      {
+        "seed": 1014,
+        "run": "/home/jorge-linux/GitHub/physispatial_tests/physispatial_validation/tnfalpha_rng/check6_runs/main_seed1014",
+        "returncode": 0,
+        "wall_seconds": 448.0727198140012
+      },
+      {
+        "seed": 1015,
+        "run": "/home/jorge-linux/GitHub/physispatial_tests/physispatial_validation/tnfalpha_rng/check6_runs/main_seed1015",
+        "returncode": 0,
+        "wall_seconds": 445.71903602300154
+      },
+      {
+        "seed": 1013,
+        "run": "/home/jorge-linux/GitHub/physispatial_tests/physispatial_validation/tnfalpha_rng/check6_runs/main_seed1013",
+        "returncode": 0,
+        "wall_seconds": 448.993771104997
+      },
+      {
+        "seed": 1017,
+        "run": "/home/jorge-linux/GitHub/physispatial_tests/physispatial_validation/tnfalpha_rng/check6_runs/main_seed1017",
+        "returncode": 0,
+        "wall_seconds": 447.43850833399847
+      },
+      {
+        "seed": 1016,
+        "run": "/home/jorge-linux/GitHub/physispatial_tests/physispatial_validation/tnfalpha_rng/check6_runs/main_seed1016",
+        "returncode": 0,
+        "wall_seconds": 453.5140491339989
+      },
+      {
+        "seed": 1018,
+        "run": "/home/jorge-linux/GitHub/physispatial_tests/physispatial_validation/tnfalpha_rng/check6_runs/main_seed1018",
+        "returncode": 0,
+        "wall_seconds": 476.5376778610007
+      },
+      {
+        "seed": 1019,
+        "run": "/home/jorge-linux/GitHub/physispatial_tests/physispatial_validation/tnfalpha_rng/check6_runs/main_seed1019",
+        "returncode": 0,
+        "wall_seconds": 480.0799653419999
+      }
+    ],
+    "fixed": [
+      {
+        "seed": 2001,
+        "run": "/home/jorge-linux/GitHub/physispatial_tests/physispatial_validation/tnfalpha_rng/check6_runs/fixed_seed2001",
+        "returncode": 0,
+        "wall_seconds": 473.89878887099985
+      },
+      {
+        "seed": 2000,
+        "run": "/home/jorge-linux/GitHub/physispatial_tests/physispatial_validation/tnfalpha_rng/check6_runs/fixed_seed2000",
+        "returncode": 0,
+        "wall_seconds": 477.734145653998
+      },
+      {
+        "seed": 2002,
+        "run": "/home/jorge-linux/GitHub/physispatial_tests/physispatial_validation/tnfalpha_rng/check6_runs/fixed_seed2002",
+        "returncode": 0,
+        "wall_seconds": 478.7733939210011
+      },
+      {
+        "seed": 2003,
+        "run": "/home/jorge-linux/GitHub/physispatial_tests/physispatial_validation/tnfalpha_rng/check6_runs/fixed_seed2003",
+        "returncode": 0,
+        "wall_seconds": 484.53748252499645
+      },
+      {
+        "seed": 2005,
+        "run": "/home/jorge-linux/GitHub/physispatial_tests/physispatial_validation/tnfalpha_rng/check6_runs/fixed_seed2005",
+        "returncode": 0,
+        "wall_seconds": 527.9930731260029
+      },
+      {
+        "seed": 2004,
+        "run": "/home/jorge-linux/GitHub/physispatial_tests/physispatial_validation/tnfalpha_rng/check6_runs/fixed_seed2004",
+        "returncode": 0,
+        "wall_seconds": 539.5899282680002
+      },
+      {
+        "seed": 2006,
+        "run": "/home/jorge-linux/GitHub/physispatial_tests/physispatial_validation/tnfalpha_rng/check6_runs/fixed_seed2006",
+        "returncode": 0,
+        "wall_seconds": 536.3014258709991
+      },
+      {
+        "seed": 2007,
+        "run": "/home/jorge-linux/GitHub/physispatial_tests/physispatial_validation/tnfalpha_rng/check6_runs/fixed_seed2007",
+        "returncode": 0,
+        "wall_seconds": 534.6339992449975
+      },
+      {
+        "seed": 2008,
+        "run": "/home/jorge-linux/GitHub/physispatial_tests/physispatial_validation/tnfalpha_rng/check6_runs/fixed_seed2008",
+        "returncode": 0,
+        "wall_seconds": 532.5317473229989
+      },
+      {
+        "seed": 2009,
+        "run": "/home/jorge-linux/GitHub/physispatial_tests/physispatial_validation/tnfalpha_rng/check6_runs/fixed_seed2009",
+        "returncode": 0,
+        "wall_seconds": 536.7756355079982
+      },
+      {
+        "seed": 2010,
+        "run": "/home/jorge-linux/GitHub/physispatial_tests/physispatial_validation/tnfalpha_rng/check6_runs/fixed_seed2010",
+        "returncode": 0,
+        "wall_seconds": 512.2580045149989
+      },
+      {
+        "seed": 2013,
+        "run": "/home/jorge-linux/GitHub/physispatial_tests/physispatial_validation/tnfalpha_rng/check6_runs/fixed_seed2013",
+        "returncode": 0,
+        "wall_seconds": 502.19431622499906
+      },
+      {
+        "seed": 2012,
+        "run": "/home/jorge-linux/GitHub/physispatial_tests/physispatial_validation/tnfalpha_rng/check6_runs/fixed_seed2012",
+        "returncode": 0,
+        "wall_seconds": 504.64826012799676
+      },
+      {
+        "seed": 2011,
+        "run": "/home/jorge-linux/GitHub/physispatial_tests/physispatial_validation/tnfalpha_rng/check6_runs/fixed_seed2011",
+        "returncode": 0,
+        "wall_seconds": 513.2035476830024
+      },
+      {
+        "seed": 2014,
+        "run": "/home/jorge-linux/GitHub/physispatial_tests/physispatial_validation/tnfalpha_rng/check6_runs/fixed_seed2014",
+        "returncode": 0,
+        "wall_seconds": 504.76899839699763
+      },
+      {
+        "seed": 2015,
+        "run": "/home/jorge-linux/GitHub/physispatial_tests/physispatial_validation/tnfalpha_rng/check6_runs/fixed_seed2015",
+        "returncode": 0,
+        "wall_seconds": 501.4080708270012
+      },
+      {
+        "seed": 2017,
+        "run": "/home/jorge-linux/GitHub/physispatial_tests/physispatial_validation/tnfalpha_rng/check6_runs/fixed_seed2017",
+        "returncode": 0,
+        "wall_seconds": 443.16243807499995
+      },
+      {
+        "seed": 2016,
+        "run": "/home/jorge-linux/GitHub/physispatial_tests/physispatial_validation/tnfalpha_rng/check6_runs/fixed_seed2016",
+        "returncode": 0,
+        "wall_seconds": 449.41712153299886
+      },
+      {
+        "seed": 2018,
+        "run": "/home/jorge-linux/GitHub/physispatial_tests/physispatial_validation/tnfalpha_rng/check6_runs/fixed_seed2018",
+        "returncode": 0,
+        "wall_seconds": 448.43056405600146
+      },
+      {
+        "seed": 2019,
+        "run": "/home/jorge-linux/GitHub/physispatial_tests/physispatial_validation/tnfalpha_rng/check6_runs/fixed_seed2019",
+        "returncode": 0,
+        "wall_seconds": 446.6855322070005
+      }
+    ]
+  },
+  "readouts": {
+    "100.0": {
+      "main": {
+        "total_live": [
+          1241,
+          1239,
+          1237,
+          1240,
+          1236,
+          1248,
+          1235,
+          1245,
+          1242,
+          1245,
+          1251,
+          1249,
+          1234,
+          1232,
+          1235,
+          1245,
+          1226,
+          1244,
+          1239,
+          1235
+        ],
+        "live_type0": [
+          1241,
+          1239,
+          1237,
+          1240,
+          1236,
+          1248,
+          1235,
+          1245,
+          1242,
+          1245,
+          1251,
+          1249,
+          1234,
+          1232,
+          1235,
+          1245,
+          1226,
+          1244,
+          1239,
+          1235
+        ],
+        "apoptosis_fraction": [
+          0.0064464141821112,
+          0.0,
+          0.0032336297493936943,
+          0.0016129032258064516,
+          0.0040453074433656954,
+          0.0016025641025641025,
+          0.004048582995951417,
+          0.0008032128514056225,
+          0.00322061191626409,
+          0.0024096385542168677,
+          0.002398081534772182,
+          0.0040032025620496394,
+          0.004862236628849271,
+          0.002435064935064935,
+          0.0032388663967611335,
+          0.00321285140562249,
+          0.0032626427406199023,
+          0.005627009646302251,
+          0.004035512510088781,
+          0.0032388663967611335
+        ]
+      },
+      "fixed": {
+        "total_live": [
+          1230,
+          1246,
+          1246,
+          1245,
+          1234,
+          1245,
+          1246,
+          1241,
+          1247,
+          1246,
+          1247,
+          1242,
+          1231,
+          1247,
+          1244,
+          1243,
+          1248,
+          1251,
+          1247,
+          1252
+        ],
+        "live_type0": [
+          1230,
+          1246,
+          1246,
+          1245,
+          1234,
+          1245,
+          1246,
+          1241,
+          1247,
+          1246,
+          1247,
+          1242,
+          1231,
+          1247,
+          1244,
+          1243,
+          1248,
+          1251,
+          1247,
+          1252
+        ],
+        "apoptosis_fraction": [
+          0.005691056910569106,
+          0.0032102728731942215,
+          0.006420545746388443,
+          0.0024096385542168677,
+          0.0016207455429497568,
+          0.0,
+          0.0032102728731942215,
+          0.0040290088638195,
+          0.00400962309542903,
+          0.002407704654895666,
+          0.0048115477145148355,
+          0.004025764895330112,
+          0.0008123476848090983,
+          0.0032076984763432237,
+          0.003215434083601286,
+          0.0056315366049879325,
+          0.003205128205128205,
+          0.0031974420463629096,
+          0.0032076984763432237,
+          0.003194888178913738
+        ]
+      },
+      "ks_tests": {
+        "total_live": {
+          "main_mean": 1239.9,
+          "main_std": 6.3237230872493555,
+          "fixed_mean": 1243.9,
+          "fixed_std": 5.90182844103151,
+          "ks_statistic": 0.4,
+          "ks_pvalue": 0.08105771161340149,
+          "n_main": 20,
+          "n_fixed": 20
+        },
+        "live_type0": {
+          "main_mean": 1239.9,
+          "main_std": 6.3237230872493555,
+          "fixed_mean": 1243.9,
+          "fixed_std": 5.90182844103151,
+          "ks_statistic": 0.4,
+          "ks_pvalue": 0.08105771161340149,
+          "n_main": 20,
+          "n_fixed": 20
+        },
+        "apoptosis_fraction": {
+          "main_mean": 0.003186859988898543,
+          "main_std": 0.001536979508561235,
+          "fixed_mean": 0.0033759177740495688,
+          "fixed_std": 0.0015590210408761107,
+          "ks_statistic": 0.25,
+          "ks_pvalue": 0.571336004933722,
+          "n_main": 20,
+          "n_fixed": 20
+        }
+      }
+    },
+    "200.0": {
+      "main": {
+        "total_live": [
+          1257,
+          1255,
+          1261,
+          1253,
+          1260,
+          1267,
+          1259,
+          1259,
+          1262,
+          1266,
+          1277,
+          1268,
+          1248,
+          1246,
+          1242,
+          1268,
+          1256,
+          1272,
+          1249,
+          1261
+        ],
+        "live_type0": [
+          1257,
+          1255,
+          1261,
+          1253,
+          1260,
+          1267,
+          1259,
+          1259,
+          1262,
+          1266,
+          1277,
+          1268,
+          1248,
+          1246,
+          1242,
+          1268,
+          1256,
+          1272,
+          1249,
+          1261
+        ],
+        "apoptosis_fraction": [
+          0.002386634844868735,
+          0.0007968127490039841,
+          0.0023790642347343376,
+          0.0,
+          0.0015873015873015873,
+          0.0,
+          0.0015885623510722795,
+          0.0023828435266084196,
+          0.000792393026941363,
+          0.0007898894154818325,
+          0.0007830853563038371,
+          0.0,
+          0.0008012820512820513,
+          0.0016051364365971107,
+          0.0008051529790660225,
+          0.0015772870662460567,
+          0.0007961783439490446,
+          0.0,
+          0.0,
+          0.0007930214115781126
+        ]
+      },
+      "fixed": {
+        "total_live": [
+          1242,
+          1254,
+          1256,
+          1271,
+          1255,
+          1260,
+          1268,
+          1263,
+          1257,
+          1256,
+          1267,
+          1264,
+          1258,
+          1274,
+          1269,
+          1262,
+          1267,
+          1267,
+          1270,
+          1285
+        ],
+        "live_type0": [
+          1242,
+          1254,
+          1256,
+          1271,
+          1255,
+          1260,
+          1268,
+          1263,
+          1257,
+          1256,
+          1267,
+          1264,
+          1258,
+          1274,
+          1269,
+          1262,
+          1267,
+          1267,
+          1270,
+          1285
+        ],
+        "apoptosis_fraction": [
+          0.0008051529790660225,
+          0.0007974481658692185,
+          0.0,
+          0.0,
+          0.0007968127490039841,
+          0.0,
+          0.0007886435331230284,
+          0.001583531274742676,
+          0.0,
+          0.0015923566878980893,
+          0.0031570639305445935,
+          0.0,
+          0.0023847376788553257,
+          0.0,
+          0.002364066193853428,
+          0.001584786053882726,
+          0.0,
+          0.0007892659826361484,
+          0.0007874015748031496,
+          0.0023346303501945525
+        ]
+      },
+      "ks_tests": {
+        "total_live": {
+          "main_mean": 1259.3,
+          "main_std": 8.968365455720926,
+          "fixed_mean": 1263.25,
+          "fixed_std": 9.12414379544733,
+          "ks_statistic": 0.25,
+          "ks_pvalue": 0.571336004933722,
+          "n_main": 20,
+          "n_fixed": 20
+        },
+        "live_type0": {
+          "main_mean": 1259.3,
+          "main_std": 8.968365455720926,
+          "fixed_mean": 1263.25,
+          "fixed_std": 9.12414379544733,
+          "ks_statistic": 0.25,
+          "ks_pvalue": 0.571336004933722,
+          "n_main": 20,
+          "n_fixed": 20
+        },
+        "apoptosis_fraction": {
+          "main_mean": 0.000993232269051739,
+          "main_std": 0.0008099420224254518,
+          "fixed_mean": 0.0009882948577236471,
+          "fixed_std": 0.0009866883432440318,
+          "ks_statistic": 0.2,
+          "ks_pvalue": 0.8319696107963263,
+          "n_main": 20,
+          "n_fixed": 20
+        }
+      }
+    },
+    "300.0": {
+      "main": {
+        "total_live": [
+          1273,
+          1273,
+          1284,
+          1267,
+          1274,
+          1289,
+          1280,
+          1276,
+          1272,
+          1285,
+          1294,
+          1297,
+          1268,
+          1258,
+          1256,
+          1292,
+          1285,
+          1290,
+          1262,
+          1279
+        ],
+        "live_type0": [
+          1273,
+          1273,
+          1284,
+          1267,
+          1274,
+          1289,
+          1280,
+          1276,
+          1272,
+          1285,
+          1294,
+          1297,
+          1268,
+          1258,
+          1256,
+          1292,
+          1285,
+          1290,
+          1262,
+          1279
+        ],
+        "apoptosis_fraction": [
+          0.002356637863315004,
+          0.0,
+          0.0,
+          0.0007892659826361484,
+          0.0007849293563579278,
+          0.0007757951900698216,
+          0.0015625,
+          0.0007836990595611285,
+          0.0,
+          0.0007782101167315176,
+          0.0,
+          0.0,
+          0.0015772870662460567,
+          0.0,
+          0.0007961783439490446,
+          0.0007739938080495357,
+          0.0007782101167315176,
+          0.0,
+          0.002377179080824089,
+          0.0
+        ]
+      },
+      "fixed": {
+        "total_live": [
+          1248,
+          1269,
+          1273,
+          1289,
+          1279,
+          1279,
+          1278,
+          1284,
+          1287,
+          1278,
+          1284,
+          1275,
+          1268,
+          1296,
+          1290,
+          1279,
+          1283,
+          1289,
+          1283,
+          1301
+        ],
+        "live_type0": [
+          1248,
+          1269,
+          1273,
+          1289,
+          1279,
+          1279,
+          1278,
+          1284,
+          1287,
+          1278,
+          1284,
+          1275,
+          1268,
+          1296,
+          1290,
+          1279,
+          1283,
+          1289,
+          1283,
+          1301
+        ],
+        "apoptosis_fraction": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0007818608287724785,
+          0.0,
+          0.000782472613458529,
+          0.000778816199376947,
+          0.001554001554001554,
+          0.000782472613458529,
+          0.000778816199376947,
+          0.0,
+          0.0,
+          0.0007716049382716049,
+          0.0007751937984496124,
+          0.0023455824863174357,
+          0.000779423226812159,
+          0.0007757951900698216,
+          0.0,
+          0.0
+        ]
+      },
+      "ks_tests": {
+        "total_live": {
+          "main_mean": 1277.7,
+          "main_std": 11.881431776205746,
+          "fixed_mean": 1280.6,
+          "fixed_std": 11.296948819552073,
+          "ks_statistic": 0.25,
+          "ks_pvalue": 0.571336004933722,
+          "n_main": 20,
+          "n_fixed": 20
+        },
+        "live_type0": {
+          "main_mean": 1277.7,
+          "main_std": 11.881431776205746,
+          "fixed_mean": 1280.6,
+          "fixed_std": 11.296948819552073,
+          "ks_statistic": 0.25,
+          "ks_pvalue": 0.571336004933722,
+          "n_main": 20,
+          "n_fixed": 20
+        },
+        "apoptosis_fraction": {
+          "main_mean": 0.0007066942992235896,
+          "main_std": 0.0007624376457649651,
+          "fixed_mean": 0.0005453019824182808,
+          "fixed_std": 0.0006250976269326481,
+          "ks_statistic": 0.3,
+          "ks_pvalue": 0.33559098126008213,
+          "n_main": 20,
+          "n_fixed": 20
+        }
+      }
+    }
+  }
+}
