@@ -1,6 +1,6 @@
 {
-  "run_a": "physispatial_validation/tnfalpha_rng/runs/repro_4t_s42_a",
-  "run_b": "physispatial_validation/tnfalpha_rng/runs/repro_4t_s42_b",
+  "run_a": "/home/jorge-linux/GitHub/physispatial_tests/physispatial_validation/tnfalpha_rng/check4_runs/4t_s42_a",
+  "run_b": "/home/jorge-linux/GitHub/physispatial_tests/physispatial_validation/tnfalpha_rng/check4_runs/4t_s42_b",
   "n_compared": 50,
   "n_identical": 25,
   "files": [
@@ -61,7 +61,7 @@
     {
       "file": "final_cells.mat",
       "identical": false,
-      "note": "shape mismatch (126, 1241) vs (126, 1234)",
+      "note": "shape mismatch (126, 1235) vs (126, 1236)",
       "max_abs_diff": null
     },
     {
@@ -199,7 +199,7 @@
     {
       "file": "output00000001_cells.mat",
       "identical": false,
-      "note": "shape mismatch (126, 1224) vs (126, 1223)",
+      "note": "shape mismatch (126, 1228) vs (126, 1224)",
       "max_abs_diff": null
     },
     {
@@ -241,7 +241,7 @@
     {
       "file": "output00000002_cells.mat",
       "identical": false,
-      "note": "shape mismatch (126, 1232) vs (126, 1226)",
+      "note": "shape mismatch (126, 1230) vs (126, 1233)",
       "max_abs_diff": null
     },
     {
@@ -283,7 +283,7 @@
     {
       "file": "output00000003_cells.mat",
       "identical": false,
-      "note": "shape mismatch (126, 1240) vs (126, 1232)",
+      "note": "shape mismatch (126, 1234) vs (126, 1235)",
       "max_abs_diff": null
     },
     {

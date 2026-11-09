@@ -1,6 +1,6 @@
 {
-  "run_a": "physispatial_validation/tnfalpha_rng/runs/repro_1t_s42_a",
-  "run_b": "physispatial_validation/tnfalpha_rng/runs/repro_1t_s42_b",
+  "run_a": "/home/jorge-linux/GitHub/physispatial_tests/physispatial_validation/tnfalpha_rng/check4_runs/1t_s42_a",
+  "run_b": "/home/jorge-linux/GitHub/physispatial_tests/physispatial_validation/tnfalpha_rng/check4_runs/1t_s42_b",
   "n_compared": 50,
   "n_identical": 50,
   "files": [
