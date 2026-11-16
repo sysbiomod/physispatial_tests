@@ -105,12 +105,25 @@ python3 -B physispatial_tools/run.py \
 | `--concentration` | C en la fuente (`user_parameters/drug_conc`), en las unidades numéricas originales |
 | `--seed` | `user_parameters/random_seed` (en este proyecto la semilla está en `user_parameters`, no en `<options>`) |
 | `--threads` | `parallel/omp_num_threads` |
-| `--smoke-minutes` | `overall/max_time` (sin esta opción se usa el horizonte original de 300.000 min) |
+| `--smoke-minutes` | `overall/max_time`, sólo de 0 a 1 min (sin esta opción ni `--max-time` se usa el horizonte original de 300.000 min) |
+| `--max-time` | `overall/max_time`, cualquier horizonte en min. Incompatible con `--smoke-minutes` |
+| `--drug-time` | `user_parameters/time_remove_o2`: minuto en que se encienden las fuentes del fármaco (0 = desde el principio). Pese al nombre, no quita oxígeno |
+| `--initial-tissue` | sólo prisma. `original` (1.216 células, x de -470 a -110, sección 8 × 8), `half-length` (1.536 células, x de -470 a -10, sección 8 × 8) o `half-volume` (2.400 células, x de -470 a -10, sección completa 10 × 10). Genera el CSV dentro de la ejecución y apunta `initial_conditions/cell_positions/filename` a él |
+| `--cells-file` | prisma o cilindro: un CSV propio (`x,y,z,tipo` en µm, sin cabecera). Se valida, se copia a la ejecución como `custom_<nombre>.csv` y se usa en lugar del original |
 | `--memory-gb`, `--timeout` | límites del proceso; no cambian la biología |
 
-`--prepare-only` sólo crea la carpeta; quítalo para ejecutar. D y C se leen del XML: **cambiarlos no requiere recompilar**. Cambiar de población sí.
+`--prepare-only` sólo crea la carpeta; quítalo para ejecutar. D, C, el tiempo del fármaco y las células iniciales se leen al arrancar: **cambiarlos no requiere recompilar**. Cambiar de población sí. Los ficheros originales de `config/BM*` no se modifican nunca; el `run_manifest.json` guarda `drug_activation_time`, `initial_tissue`, `initial_cells` y el hash del CSV usado.
 
-El fármaco se activa en el minuto 35.000 (prisma) o 30.000 (cilindro y esfera), parámetro `time_remove_o2`. En un smoke run corto es normal que el campo de fármaco sea cero.
+Sin `--drug-time`, el fármaco se activa en el minuto 35.000 (prisma) o 30.000 (cilindro y esfera). En un smoke run corto es normal que el campo de fármaco sea cero.
+
+Ejemplo (prisma medio lleno, fármaco desde el minuto 0, 100.000 min simulados):
+
+```bash
+python3 -B physispatial_tools/run.py --geometry prism --population BM0 \
+  --diffusion 1000 --concentration 1e-6 --seed 1 --threads 8 \
+  --initial-tissue half-volume --drug-time 0 --max-time 100000 \
+  --name prisma_BM0_D1000_C1e-6_half_volume
+```
 
 Barridos de D × C × población × semilla (prepara, no ejecuta): `physispatial_tools/sweep.py`; ver [PHYSISPATIAL_README.md](PHYSISPATIAL_README.md#dc-parameter-sweeps).
 
@@ -129,6 +142,7 @@ Misma receta que en el portátil, cargando antes el módulo de GCC (≥ 11) y co
 ```bash
 python3 -B physispatial_tools/validate_integration.py   # 17 comprobaciones estáticas y de interfaz
 python3 -B physispatial_tools/test_sweeps.py            # 4 comprobaciones de barridos
+python3 -B physispatial_tools/test_tfm_options.py       # 12 comprobaciones de las opciones del TFM
 ```
 
 GitHub Actions ([.github/workflows/physispatial.yml](.github/workflows/physispatial.yml)) compila las tres geometrías, pasa estas comprobaciones y hace el smoke run del prisma en cada push a `main` y en cada pull request. Cilindro y esfera no caben en la memoria de un runner estándar.

@@ -38,6 +38,7 @@ jobs:
         run: |
           python3 -B physispatial_tools/validate_integration.py
           python3 -B physispatial_tools/test_sweeps.py
+          python3 -B physispatial_tools/test_tfm_options.py
 
       - name: Prism full-tissue smoke run
         run: |
