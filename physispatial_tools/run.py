@@ -1,26 +1,39 @@
 """Prepare isolated runs or execute them; never silently overwrite outputs.
 
 TFM options (branch tfm_rafa): --max-time (any horizon), --drug-time (minute at which
-the drug sources switch on, XML user_parameters/time_remove_o2), --initial-tissue
-(prism presets: original, half-length, half-volume) and --cells-file (own x,y,z,type CSV).
+the drug sources switch on, XML user_parameters/time_remove_o2), --initial-tissue and
+--fill-fraction (prism: full cross-section block from the end cap), --source-footprint
+(prism: source plate aligned with the tube interior) and --cells-file (own x,y,z,type CSV).
 Without these options the behaviour is identical to the original run.py."""
 import argparse,csv,datetime,fcntl,hashlib,json,math,os,re,shutil,subprocess,sys,time
 from pathlib import Path
 import xml.etree.ElementTree as ET
 ROOT=Path(__file__).resolve().parents[1]
 GEOMETRIES=['prism','cylinder','sphere'];POPULATIONS=['BM0','BM1','BM2']
-# Prism initial tissues on the original 20 micron lattice. The ECM tube interior spans
-# x -500..500 (closed end cap at x=-510, drug source plate at x=510) and y,z -80..120.
-# 'original' is config/BM*/cells_prisma.csv: x -470..-110, y,z -70..70 (19x8x8=1216 cells).
-# Both presets fill the tube up to its mid-length (front at x=-10):
-#   half-length: same 8x8 cross-section as the original (24x8x8=1536 cells)
-#   half-volume: full 10x10 interior cross-section, y,z -70..110 (24x10x10=2400 cells)
-PRISM_TISSUES={'half-length':dict(x=range(-470,-9,20),yz=range(-70,71,20)),
-               'half-volume':dict(x=range(-470,-9,20),yz=range(-70,111,20))}
-INITIAL_TISSUES=['original']+list(PRISM_TISSUES)
+# Prism geometry (20 micron voxels; centres at -590+20i in x and -170+20j in y,z).
+# ECM tube: end cap at x=-510, walls at y,z=-90 and y,z=130, open end at x=500.
+# Interior lattice: x -490..490 (50 slices), y,z -70..110 (10x10), i.e. voxels i 5..54, j,k 5..14.
+# Original inputs: cells x -470..-110, y,z -70..70 (19x8x8=1216); source plate i=55 (x=510),
+# j,k 4..13 (y,z -90..90), shifted 20 micron down from the tube interior. Its reader skips the
+# first line (no header in the TSV), so 99 of the 100 listed voxels are used.
+PRISM_INTERIOR=dict(x=range(-490,491,20),yz=range(-70,111,20));PRISM_SOURCE_X=510
+INITIAL_TISSUES=['original','full-section']
 CELLS_FROM_CSV=['prism','cylinder'] # the sphere generates its positions from tumor_radius
-def prism_tissue_rows(preset):
-    spec=PRISM_TISSUES[preset];return [(x,y,z,0) for x in spec['x'] for y in spec['yz'] for z in spec['yz']]
+SOURCE_FOOTPRINTS=['original','tube']
+def prism_tissue_rows(fill_fraction):
+    """Full 10x10 cross-section block starting at the end cap (x=-490), filling the nearest
+    whole number of slices to fill_fraction of the 50-slice interior (0.75 -> 38 slices, front x=250)."""
+    n=math.floor(fill_fraction*len(PRISM_INTERIOR['x'])+0.5)
+    if n<1:raise ValueError('fill_fraction too small: no complete slice of cells')
+    yz=PRISM_INTERIOR['yz'];return [(x,y,z,0) for x in PRISM_INTERIOR['x'][:n] for y in yz for z in yz]
+def prism_tube_sources(domain,dx=20):
+    """Voxel indices of a source plate at x=510 covering exactly the tube interior (y,z -70..110)."""
+    index=lambda v,lo:int(round((v-lo)/dx-0.5))
+    return [(index(PRISM_SOURCE_X,domain[0]),index(y,domain[2]),index(z,domain[4])) for y in PRISM_INTERIOR['yz'] for z in PRISM_INTERIOR['yz']]
+def effective_sources(path):
+    """Distinct voxels the original C++ reader actually uses: it always skips the first line."""
+    lines=[l for l in Path(path).read_text().split('\n')[1:] if l.strip()]
+    return len({tuple(int(float(v)) for v in l.split('\t')[:3]) for l in lines})
 def read_cells_csv(path,domain):
     """Validate an x,y,z,type CSV (no header, as the original PhysiCell loader expects)."""
     rows=[]
@@ -54,7 +67,7 @@ def required_inputs(tree):
         if node is not None and node.get('enabled','false').lower()=='true':names.append(str(Path(node.findtext('folder'))/node.findtext('filename')))
     return sorted(set(names))
 def prepare(geometry,population,diffusion=None,concentration=None,seed=None,threads=1,output_root=None,name=None,smoke_minutes=None,
-            max_time=None,drug_time=None,initial_tissue='original',cells_file=None):
+            max_time=None,drug_time=None,initial_tissue='original',cells_file=None,fill_fraction=None,source_footprint='original'):
     if geometry not in GEOMETRIES or population not in POPULATIONS:raise ValueError('Invalid geometry/population')
     if diffusion is not None and (not math.isfinite(diffusion) or diffusion<=0):raise ValueError('D must be finite and >0')
     if concentration is not None and (not math.isfinite(concentration) or concentration<0):raise ValueError('C must be finite and >=0')
@@ -67,12 +80,18 @@ def prepare(geometry,population,diffusion=None,concentration=None,seed=None,thre
     if initial_tissue not in INITIAL_TISSUES:raise ValueError('initial_tissue must be one of '+', '.join(INITIAL_TISSUES))
     if initial_tissue!='original' and geometry!='prism':raise ValueError('Initial-tissue presets exist only for the prism')
     if cells_file is not None and initial_tissue!='original':raise ValueError('Use either --initial-tissue or --cells-file, not both')
+    if fill_fraction is not None and initial_tissue!='full-section':raise ValueError('--fill-fraction only applies to --initial-tissue full-section')
+    if initial_tissue=='full-section':
+        fill_fraction=0.75 if fill_fraction is None else fill_fraction
+        if not math.isfinite(fill_fraction) or not 0<fill_fraction<=1:raise ValueError('fill_fraction must be in (0,1]')
+    if source_footprint not in SOURCE_FOOTPRINTS:raise ValueError('source_footprint must be one of '+', '.join(SOURCE_FOOTPRINTS))
+    if source_footprint!='original' and geometry!='prism':raise ValueError('--source-footprint applies only to the prism')
     if cells_file is not None and geometry not in CELLS_FROM_CSV:raise ValueError('The sphere generates its cells from tumor_radius; --cells-file does not apply')
     project=ROOT/'sample_projects_intracellular/boolean'/('physispatial_'+geometry)
     tree=ET.parse(project/'config'/population/'PhysiCell_settings.xml');root=tree.getroot();before=xml_values(tree)
     domain=[float(root.findtext('domain/'+k)) for k in ['x_min','x_max','y_min','y_max','z_min','z_max']]
     cell_rows=None
-    if initial_tissue!='original':cell_rows=prism_tissue_rows(initial_tissue);cells_name=f'cells_prisma_{initial_tissue}.csv'
+    if initial_tissue!='original':cell_rows=prism_tissue_rows(fill_fraction);cells_name=f'cells_prisma_{initial_tissue}_{fill_fraction:g}.csv'
     if cells_file is not None:cell_rows=read_cells_csv(cells_file,domain);cells_name='custom_'+re.sub(r'[^A-Za-z0-9_.-]','_',Path(cells_file).name)
     parent=Path(output_root or ROOT/'physispatial_runs').resolve()
     if not re.fullmatch(r'[A-Za-z0-9_/.-]+',str(parent)):raise ValueError('Original C++ shell-copy requires paths without spaces/metacharacters')
@@ -94,11 +113,19 @@ def prepare(geometry,population,diffusion=None,concentration=None,seed=None,thre
         assert not target.exists(),target
         with target.open('x',newline='') as f:csv.writer(f,lineterminator='\n').writerows(cell_rows)
         positions.find('filename').text=cells_name
+    if source_footprint=='tube':
+        # Header line on purpose: the original reader always skips the first line. No trailing
+        # newline: its while(!eof) loop would otherwise read one empty extra line.
+        source_path='./config/'+population+'/prisma_wall_drug_tube.tsv';target=run/source_path
+        assert not target.exists(),target
+        with target.open('x',newline='') as f:f.write('\n'.join(['x\ty\tz']+['\t'.join(map(str,v)) for v in prism_tube_sources(domain)]))
+        root.find('user_parameters/blood_source_file').text=source_path
     after=xml_values(tree);changed={k:dict(before=before[k],after=after[k]) for k in before if before[k]!=after[k]}
     allowed={'PhysiCell_settings/microenvironment_setup[0]/variable[1]/physical_parameter_set[0]/diffusion_coefficient[0]',
       'PhysiCell_settings/user_parameters[0]/drug_conc[0]','PhysiCell_settings/user_parameters[0]/random_seed[0]',
       'PhysiCell_settings/parallel[0]/omp_num_threads[0]','PhysiCell_settings/save[0]/folder[0]','PhysiCell_settings/overall[0]/max_time[0]',
-      'PhysiCell_settings/user_parameters[0]/time_remove_o2[0]','PhysiCell_settings/initial_conditions[0]/cell_positions[0]/filename[0]'}
+      'PhysiCell_settings/user_parameters[0]/time_remove_o2[0]','PhysiCell_settings/initial_conditions[0]/cell_positions[0]/filename[0]',
+      'PhysiCell_settings/user_parameters[0]/blood_source_file[0]'}
     assert not set(changed)-allowed,changed
     config=run/'config/run.xml';tree.write(config,encoding='utf-8',xml_declaration=True)
     files={}
@@ -116,7 +143,9 @@ def prepare(geometry,population,diffusion=None,concentration=None,seed=None,thre
       diffusion=float(root.findtext('microenvironment_setup/variable[@name="drug_A"]/physical_parameter_set/diffusion_coefficient')),
       concentration=float(root.findtext('user_parameters/drug_conc')),seed=int(root.findtext('user_parameters/random_seed')),
       threads=threads,max_time=horizon,smoke=smoke_minutes is not None,drug_activation_time=activation,
-      initial_tissue='custom' if cells_file is not None else initial_tissue,
+      initial_tissue='custom' if cells_file is not None else initial_tissue,fill_fraction=fill_fraction,
+      source_footprint=source_footprint,source_file=root.findtext('user_parameters/blood_source_file','').strip() or None,
+      source_voxels=effective_sources(run/root.findtext('user_parameters/blood_source_file').strip()) if geometry=='prism' else None,
       cells_file_source=str(Path(cells_file).resolve()) if cells_file is not None else None,
       initial_cells_csv=cells_csv,initial_cells=n_cells,
       concentration_units='original numeric convention; unresolved unit labels; no conversion',
@@ -181,12 +210,14 @@ def main():
     t=p.add_argument_group('TFM options')
     t.add_argument('--max-time',type=float,help='simulated horizon in min (overall/max_time); default: original 300000')
     t.add_argument('--drug-time',type=float,help='minute at which drug sources switch on (user_parameters/time_remove_o2); 0 = from the start; default: original (35000 prism, 30000 cylinder/sphere)')
-    t.add_argument('--initial-tissue',choices=INITIAL_TISSUES,default='original',help='prism only: original (1216 cells, x -470..-110), half-length (1536 cells, same 8x8 section up to x=-10), half-volume (2400 cells, full 10x10 section up to x=-10)')
+    t.add_argument('--initial-tissue',choices=INITIAL_TISSUES,default='original',help='prism only: original (1216 cells, x -470..-110, y,z -70..70) or full-section (10x10 section y,z -70..110, from the end cap at x=-490; length set by --fill-fraction)')
+    t.add_argument('--fill-fraction',type=float,help='with full-section: fraction of the tube interior filled, rounded to whole 20 micron slices; default 0.75 (38 slices, 3800 cells, front at x=250)')
+    t.add_argument('--source-footprint',choices=SOURCE_FOOTPRINTS,default='original',help='prism only: original (y,z -90..90, 99 voxels used) or tube (y,z -70..110, all 100 voxels used, matching the tube interior)')
     t.add_argument('--cells-file',help='prism/cylinder: own CSV with x,y,z,type per line (micron, no header); copied into the run')
     a=p.parse_args()
     try:
         run=prepare(a.geometry,a.population,a.diffusion,a.concentration,a.seed,a.threads,a.output_root,a.name,a.smoke_minutes,
-                    a.max_time,a.drug_time,a.initial_tissue,a.cells_file)
+                    a.max_time,a.drug_time,a.initial_tissue,a.cells_file,a.fill_fraction,a.source_footprint)
         print(run,flush=True)
         if not a.prepare_only:execute(run,a.jobs,a.timeout,a.memory_gb)
     except (ValueError,AssertionError,RuntimeError,OSError,subprocess.CalledProcessError) as error:p.exit(1,str(error)+'\n')
